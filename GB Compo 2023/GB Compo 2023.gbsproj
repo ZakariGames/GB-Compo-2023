@@ -978,9 +978,9 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                15,
+                0,
+                0,
+                0,
                 15,
                 0,
                 0,
@@ -1013,19 +1013,19 @@
                 15,
                 15,
                 15,
-                0,
                 0,
                 0,
                 0,
                 0,
-                15,
                 0,
                 0,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
@@ -1051,21 +1051,21 @@
                 0,
                 0,
                 15,
-                0,
                 0,
                 0,
                 0,
                 0,
                 0,
                 0,
-                15,
-                0,
                 0,
-                15,
                 0,
                 0,
                 0,
+                15,
                 15,
+                15,
+                15,
+                15,
                 0,
                 0,
                 15,
@@ -1098,16 +1098,16 @@
                 0,
                 0,
                 0,
-                15,
                 0,
                 0,
-                15,
-                15,
-                15,
-                15,
+                0,
                 15,
+                0,
+                0,
                 0,
                 0,
+                0,
+                0,
                 15,
                 0,
                 0,
@@ -1138,7 +1138,7 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 0,
                 0,
                 15,
@@ -1175,16 +1175,16 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                15,
-                15,
                 0,
                 0,
-                15,
+                0,
+                0,
                 0,
                 0,
+                15,
+                0,
                 0,
+                15,
                 0,
                 0,
                 0,
@@ -1215,12 +1215,12 @@
                 0,
                 0,
                 0,
-                15,
                 0,
                 0,
                 0,
                 0,
                 0,
+                0,
                 15,
                 0,
                 0,
@@ -1255,12 +1255,12 @@
                 0,
                 0,
                 0,
-                15,
                 0,
                 0,
                 0,
                 0,
                 0,
+                0,
                 15,
                 0,
                 0,
@@ -1295,12 +1295,12 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                15,
-                15,
-                15,
+                0,
+                0,
+                0,
                 0,
+                0,
+                0,
                 15,
                 0,
                 0,
@@ -1339,7 +1339,7 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 0,
                 15,
                 0,
@@ -1379,7 +1379,7 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 0,
                 15,
                 0,
@@ -1419,7 +1419,7 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 0,
                 15,
                 0,
@@ -1459,8 +1459,276 @@
             "symbol": "scene_1",
             "x": 382,
             "y": 259,
-            "actors": [],
-            "triggers": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "a8b1762c-b01a-4002-927f-1e7f55a3638e",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_0",
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_VALUE",
+                                        "args": {
+                                            "variable": "1",
+                                            "operator": "==",
+                                            "comparator": 2,
+                                            "__collapseElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "L0",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "I'm out of your way.\nLeave me be!"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "d05037dc-70a8-4bff-9274-ee60becbcc75"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Alright, alright.\nI'll move."
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "378c80f5-77c7-4c74-96bf-4631d8683b68"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "x": 2,
+                                                                    "y": 0,
+                                                                    "moveType": "horizontal",
+                                                                    "useCollisions": false,
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "b1b492b3-2849-4098-a19e-b648dffd9072"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "direction": {
+                                                                        "type": "direction",
+                                                                        "value": "down"
+                                                                    },
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "c617ff27-63cd-4c00-9351-d4bd897e6687"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_SET_TRUE",
+                                                                "args": {
+                                                                    "variable": "L0",
+                                                                    "__collapse": false
+                                                                },
+                                                                "id": "66a1f987-49f5-4410-8dc8-8bd6d9056553"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "f0b25342-af44-44e1-895c-63b275aa4232"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You have collected\n$01$ rock so far."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "d056704f-2e80-4d81-8b0a-de3dd58cbd94"
+                                                }
+                                            ]
+                                        },
+                                        "id": "66a7d319-c298-4931-ab8b-b4f677d23023"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "minHeight": 4,
+                                            "maxHeight": 4,
+                                            "position": "bottom",
+                                            "showBorder": "true",
+                                            "clearPrevious": true,
+                                            "textX": 1,
+                                            "textY": 1,
+                                            "textHeight": 8,
+                                            "closeWhen": "key",
+                                            "closeButton": "any",
+                                            "text": [
+                                                "I would let you\ndown here.",
+                                                "But, its not\nfinished yet.",
+                                                "Tell ya what, you\nfind me two rocks,",
+                                                "and I will move\nout of the way."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "4094169b-8e84-48c8-a42c-0255be750f66"
+                                    },
+                                    {
+                                        "command": "EVENT_CHOICE",
+                                        "args": {
+                                            "variable": "0",
+                                            "trueText": "Sure",
+                                            "falseText": "I'm busy",
+                                            "__collapse": false
+                                        },
+                                        "id": "c99d73a1-3c58-47ed-b53c-4a357cd6bb6d"
+                                    }
+                                ]
+                            },
+                            "id": "1df68ba8-afb6-4f14-9cdd-081e05ca5818"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "904411d3-6661-48e3-8421-8093fa0dcf35",
+                    "x": 24,
+                    "y": 20
+                }
+            ],
+            "triggers": [
+                {
+                    "name": "",
+                    "id": "73cae526-0927-497f-ada8-93f56296b2d9",
+                    "x": 19,
+                    "y": 11,
+                    "symbol": "trigger_0",
+                    "width": 3,
+                    "height": 3,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_INPUT_SCRIPT",
+                                        "args": {
+                                            "input": [
+                                                "a"
+                                            ],
+                                            "override": false,
+                                            "__scriptTabs": "press",
+                                            "__collapse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_IF_VALUE",
+                                                    "args": {
+                                                        "variable": "1",
+                                                        "operator": "==",
+                                                        "comparator": 2,
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [],
+                                                        "false": [
+                                                            {
+                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                "args": {
+                                                                    "__scriptTabs": "text",
+                                                                    "minHeight": 4,
+                                                                    "maxHeight": 7,
+                                                                    "position": "bottom",
+                                                                    "showBorder": "true",
+                                                                    "clearPrevious": true,
+                                                                    "textX": 1,
+                                                                    "textY": 1,
+                                                                    "textHeight": 3,
+                                                                    "closeWhen": "key",
+                                                                    "closeButton": "a",
+                                                                    "text": [
+                                                                        "Rock collected!"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__collapse": false
+                                                                },
+                                                                "id": "59926812-d9e7-4826-a564-e40572648a8c"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_INC_VALUE",
+                                                                "args": {
+                                                                    "variable": "1"
+                                                                },
+                                                                "id": "d1766852-c404-4354-a63f-577cc7ac104b"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "d34281b2-770f-43e0-956b-231734e7cd57"
+                                                }
+                                            ]
+                                        },
+                                        "id": "94b8e77a-72da-43af-a07a-00b5e81c2c48"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "c1c2ae9e-df22-45e7-9a75-2062bf47af30"
+                        }
+                    ],
+                    "leaveScript": [
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "a"
+                                ],
+                                "override": false,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": []
+                            },
+                            "id": "541518f0-b940-4bb2-bbb5-d3b9a1567d72"
+                        }
+                    ]
+                }
+            ],
             "script": [],
             "playerHit1Script": [],
             "playerHit2Script": [],
@@ -1477,7 +1745,8 @@
             "height": 36,
             "imageWidth": 320,
             "imageHeight": 288,
-            "filename": "fantasy_exterior.png"
+            "filename": "fantasy_exterior.png",
+            "tileColors": []
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -5598,7 +5867,58 @@
             "filename": "sweat.png"
         }
     ],
-    "variables": [],
+    "variables": [
+        {
+            "id": "0",
+            "name": "Quest Accepted",
+            "symbol": "var_quest_accepted"
+        },
+        {
+            "id": "1",
+            "name": "Rock Amount",
+            "symbol": "var_rock_amount"
+        },
+        {
+            "id": "904411d3-6661-48e3-8421-8093fa0dcf35__L0",
+            "name": "Local 0",
+            "symbol": "var_local_0"
+        },
+        {
+            "id": "aba2f251-b829-489c-acc9-9b476358c40a__L0",
+            "name": "Disable",
+            "symbol": "var_disable"
+        },
+        {
+            "id": "303e10b1-6dc1-48cf-89c4-ea8c7625a24b__L0",
+            "name": "Disable",
+            "symbol": "var_disable_0"
+        },
+        {
+            "id": "715a0aea-1889-4e3b-a973-c3ba96550291__L0",
+            "name": "Disable",
+            "symbol": "var_disable_1"
+        },
+        {
+            "id": "74931116-0bb3-435c-9122-cb50e3d9bd82__L0",
+            "name": "Disable",
+            "symbol": "var_disable_2"
+        },
+        {
+            "id": "2e3a58e2-d025-4908-921d-c8b6af32159f__L0",
+            "name": "Disable",
+            "symbol": "var_disable_3"
+        },
+        {
+            "id": "0a648f09-8693-4240-a265-10b00817eeb7__L0",
+            "name": "Disable",
+            "symbol": "var_disable_4"
+        },
+        {
+            "id": "bf29b44c-4ada-4bcb-8472-327007e9dc11__L0",
+            "name": "Disable",
+            "symbol": "var_disable_5"
+        }
+    ],
     "engineFieldValues": [
         {
             "id": "fade_style",
@@ -5615,7 +5935,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 690,
-        "worldScrollY": 573,
+        "worldScrollY": 673,
         "zoom": 250,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -5644,9 +5964,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            814,
-            247,
-            247
+            590,
+            179,
+            179
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
