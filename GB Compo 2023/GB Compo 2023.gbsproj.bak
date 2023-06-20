@@ -1483,14 +1483,98 @@
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_IF_VALUE",
                                         "args": {
-                                            "text": [
-                                                "You have collected\n$01$ rock so far."
-                                            ],
-                                            "avatarId": ""
+                                            "variable": "1",
+                                            "operator": "==",
+                                            "comparator": 2,
+                                            "__collapseElse": true,
+                                            "__collapse": false
                                         },
-                                        "id": "d056704f-2e80-4d81-8b0a-de3dd58cbd94"
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "L0",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "I'm out of your way.\nLeave me be!"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "d05037dc-70a8-4bff-9274-ee60becbcc75"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Alright, alright.\nI'll move."
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "378c80f5-77c7-4c74-96bf-4631d8683b68"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "x": 2,
+                                                                    "y": 0,
+                                                                    "moveType": "horizontal",
+                                                                    "useCollisions": false,
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "b1b492b3-2849-4098-a19e-b648dffd9072"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "direction": {
+                                                                        "type": "direction",
+                                                                        "value": "down"
+                                                                    },
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "c617ff27-63cd-4c00-9351-d4bd897e6687"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_SET_TRUE",
+                                                                "args": {
+                                                                    "variable": "L0",
+                                                                    "__collapse": false
+                                                                },
+                                                                "id": "66a1f987-49f5-4410-8dc8-8bd6d9056553"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "f0b25342-af44-44e1-895c-63b275aa4232"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You have collected\n$01$ rock so far."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "d056704f-2e80-4d81-8b0a-de3dd58cbd94"
+                                                }
+                                            ]
+                                        },
+                                        "id": "66a7d319-c298-4931-ab8b-b4f677d23023"
                                     }
                                 ],
                                 "false": [
@@ -1546,12 +1630,12 @@
             "triggers": [
                 {
                     "name": "",
-                    "id": "aba2f251-b829-489c-acc9-9b476358c40a",
+                    "id": "73cae526-0927-497f-ada8-93f56296b2d9",
                     "x": 19,
                     "y": 11,
                     "symbol": "trigger_0",
                     "width": 3,
-                    "height": 4,
+                    "height": 3,
                     "script": [
                         {
                             "command": "EVENT_IF_TRUE",
@@ -1562,32 +1646,17 @@
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_IF_INPUT",
+                                        "command": "EVENT_SET_INPUT_SCRIPT",
                                         "args": {
                                             "input": [
                                                 "a"
                                             ],
-                                            "__collapseElse": true
+                                            "override": false,
+                                            "__scriptTabs": "press",
+                                            "__collapse": true
                                         },
                                         "children": {
                                             "true": [
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "Rock collected!"
-                                                        ],
-                                                        "avatarId": ""
-                                                    },
-                                                    "id": "bc29397c-d916-4cf1-9123-a169ffc06823"
-                                                },
-                                                {
-                                                    "command": "EVENT_INC_VALUE",
-                                                    "args": {
-                                                        "variable": "1"
-                                                    },
-                                                    "id": "a3c94a52-bd39-4346-b49f-f2287868b9f2"
-                                                },
                                                 {
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -1597,44 +1666,67 @@
                                                         "__collapseElse": false
                                                     },
                                                     "children": {
-                                                        "true": [
+                                                        "true": [],
+                                                        "false": [
                                                             {
-                                                                "command": "EVENT_SET_TRUE",
+                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                                                 "args": {
-                                                                    "variable": "L0"
+                                                                    "__scriptTabs": "text",
+                                                                    "minHeight": 4,
+                                                                    "maxHeight": 7,
+                                                                    "position": "bottom",
+                                                                    "showBorder": "true",
+                                                                    "clearPrevious": true,
+                                                                    "textX": 1,
+                                                                    "textY": 1,
+                                                                    "textHeight": 3,
+                                                                    "closeWhen": "key",
+                                                                    "closeButton": "a",
+                                                                    "text": [
+                                                                        "Rock collected!"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__collapse": false
                                                                 },
-                                                                "id": "a53f20dd-a2d7-4b17-91eb-f7ec8d597f76"
+                                                                "id": "59926812-d9e7-4826-a564-e40572648a8c"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_INC_VALUE",
+                                                                "args": {
+                                                                    "variable": "1"
+                                                                },
+                                                                "id": "d1766852-c404-4354-a63f-577cc7ac104b"
                                                             }
-                                                        ],
-                                                        "false": []
+                                                        ]
                                                     },
-                                                    "id": "2edbbc7e-cff8-4707-bdd5-eb2907035776"
+                                                    "id": "d34281b2-770f-43e0-956b-231734e7cd57"
                                                 }
-                                            ],
-                                            "false": []
+                                            ]
                                         },
-                                        "id": "812f1fe2-7700-4829-bd79-a87347362fe5"
+                                        "id": "94b8e77a-72da-43af-a07a-00b5e81c2c48"
                                     }
                                 ],
-                                "false": [
-                                    {
-                                        "command": "EVENT_IF_TRUE",
-                                        "args": {
-                                            "variable": "L0",
-                                            "__collapseElse": true
-                                        },
-                                        "children": {
-                                            "true": [],
-                                            "false": []
-                                        },
-                                        "id": "0bb78d42-c099-42aa-9eaf-abd20ea76e19"
-                                    }
-                                ]
+                                "false": []
                             },
-                            "id": "3c1c49ab-8c64-410f-a19b-c33b5b2d526d"
+                            "id": "c1c2ae9e-df22-45e7-9a75-2062bf47af30"
                         }
                     ],
-                    "leaveScript": []
+                    "leaveScript": [
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "a"
+                                ],
+                                "override": false,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": []
+                            },
+                            "id": "541518f0-b940-4bb2-bbb5-d3b9a1567d72"
+                        }
+                    ]
                 }
             ],
             "script": [],
