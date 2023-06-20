@@ -15,6 +15,7 @@ Weird West
 
 **Potenial Mechanics:**
 Megaman ass boss battle w/ side scroller after
+	
 	- Similar to Metroid Escape sequence
 
 ## Programming things that need to be done: 
