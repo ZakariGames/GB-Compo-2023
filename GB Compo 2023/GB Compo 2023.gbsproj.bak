@@ -1749,22 +1749,37 @@
                     "height": 1,
                     "script": [
                         {
-                            "command": "EVENT_MENU",
+                            "command": "EVENT_IF_INPUT",
                             "args": {
-                                "variable": "L0",
-                                "items": 2,
-                                "option1": "Save",
-                                "option2": "Cancel",
-                                "option3": "",
-                                "option4": "",
-                                "option5": "",
-                                "option6": "",
-                                "option7": "",
-                                "option8": "",
-                                "cancelOnB": true,
-                                "layout": "menu"
+                                "input": [
+                                    "a"
+                                ],
+                                "__collapseElse": true
                             },
-                            "id": "25706632-a771-47f1-b939-d9c3b19b76b5"
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_MENU",
+                                        "args": {
+                                            "variable": "L0",
+                                            "items": 2,
+                                            "option1": "Save",
+                                            "option2": "Cancel",
+                                            "option3": "",
+                                            "option4": "",
+                                            "option5": "",
+                                            "option6": "",
+                                            "option7": "",
+                                            "option8": "",
+                                            "cancelOnB": true,
+                                            "layout": "menu"
+                                        },
+                                        "id": "25706632-a771-47f1-b939-d9c3b19b76b5"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "ee4600c3-349b-4e57-801f-8955fe78ad4b"
                         },
                         {
                             "command": "EVENT_IF_VALUE",
@@ -2252,6 +2267,11 @@
                             }
                         ],
                         "false": [
+                            {
+                                "command": "EVENT_SHOW_SPRITES",
+                                "args": {},
+                                "id": "a04e4396-807d-4eb8-9c31-7cfbf925d604"
+                            },
                             {
                                 "command": "EVENT_LOAD_DATA",
                                 "args": {
@@ -6467,8 +6487,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 353,
-        "worldScrollY": 456,
+        "worldScrollX": 0,
+        "worldScrollY": 380,
         "zoom": 250,
         "customColorsEnabled": false,
         "sgbEnabled": false,
