@@ -1457,8 +1457,8 @@
             "autoFadeSpeed": 1,
             "id": "02bb0c08-240f-4098-986e-3b22ad123571",
             "symbol": "scene_1",
-            "x": 382,
-            "y": 259,
+            "x": 163.59999999999994,
+            "y": 348.60000000000036,
             "actors": [
                 {
                     "name": "",
@@ -1483,14 +1483,98 @@
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_IF_VALUE",
                                         "args": {
-                                            "text": [
-                                                "You have collected\n$01$ rock so far."
-                                            ],
-                                            "avatarId": ""
+                                            "variable": "1",
+                                            "operator": "==",
+                                            "comparator": 2,
+                                            "__collapseElse": true,
+                                            "__collapse": false
                                         },
-                                        "id": "d056704f-2e80-4d81-8b0a-de3dd58cbd94"
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "L0",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "I'm out of your way.\nLeave me be!"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "d05037dc-70a8-4bff-9274-ee60becbcc75"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Alright, alright.\nI'll move."
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "378c80f5-77c7-4c74-96bf-4631d8683b68"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "x": 2,
+                                                                    "y": 0,
+                                                                    "moveType": "horizontal",
+                                                                    "useCollisions": false,
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "b1b492b3-2849-4098-a19e-b648dffd9072"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "direction": {
+                                                                        "type": "direction",
+                                                                        "value": "down"
+                                                                    },
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "c617ff27-63cd-4c00-9351-d4bd897e6687"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_SET_TRUE",
+                                                                "args": {
+                                                                    "variable": "L0",
+                                                                    "__collapse": false
+                                                                },
+                                                                "id": "66a1f987-49f5-4410-8dc8-8bd6d9056553"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "f0b25342-af44-44e1-895c-63b275aa4232"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You have collected\n$01$ rock so far."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "d056704f-2e80-4d81-8b0a-de3dd58cbd94"
+                                                }
+                                            ]
+                                        },
+                                        "id": "66a7d319-c298-4931-ab8b-b4f677d23023"
                                     }
                                 ],
                                 "false": [
@@ -1546,12 +1630,12 @@
             "triggers": [
                 {
                     "name": "",
-                    "id": "aba2f251-b829-489c-acc9-9b476358c40a",
+                    "id": "73cae526-0927-497f-ada8-93f56296b2d9",
                     "x": 19,
                     "y": 11,
                     "symbol": "trigger_0",
                     "width": 3,
-                    "height": 4,
+                    "height": 3,
                     "script": [
                         {
                             "command": "EVENT_IF_TRUE",
@@ -1562,32 +1646,17 @@
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_IF_INPUT",
+                                        "command": "EVENT_SET_INPUT_SCRIPT",
                                         "args": {
                                             "input": [
                                                 "a"
                                             ],
-                                            "__collapseElse": true
+                                            "override": false,
+                                            "__scriptTabs": "press",
+                                            "__collapse": true
                                         },
                                         "children": {
                                             "true": [
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "Rock collected!"
-                                                        ],
-                                                        "avatarId": ""
-                                                    },
-                                                    "id": "bc29397c-d916-4cf1-9123-a169ffc06823"
-                                                },
-                                                {
-                                                    "command": "EVENT_INC_VALUE",
-                                                    "args": {
-                                                        "variable": "1"
-                                                    },
-                                                    "id": "a3c94a52-bd39-4346-b49f-f2287868b9f2"
-                                                },
                                                 {
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
@@ -1597,51 +1666,627 @@
                                                         "__collapseElse": false
                                                     },
                                                     "children": {
-                                                        "true": [
+                                                        "true": [],
+                                                        "false": [
                                                             {
-                                                                "command": "EVENT_SET_TRUE",
+                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                                                 "args": {
-                                                                    "variable": "L0"
+                                                                    "__scriptTabs": "text",
+                                                                    "minHeight": 4,
+                                                                    "maxHeight": 7,
+                                                                    "position": "bottom",
+                                                                    "showBorder": "true",
+                                                                    "clearPrevious": true,
+                                                                    "textX": 1,
+                                                                    "textY": 1,
+                                                                    "textHeight": 3,
+                                                                    "closeWhen": "key",
+                                                                    "closeButton": "a",
+                                                                    "text": [
+                                                                        "Rock collected!"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__collapse": false
                                                                 },
-                                                                "id": "a53f20dd-a2d7-4b17-91eb-f7ec8d597f76"
+                                                                "id": "59926812-d9e7-4826-a564-e40572648a8c"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_INC_VALUE",
+                                                                "args": {
+                                                                    "variable": "1"
+                                                                },
+                                                                "id": "d1766852-c404-4354-a63f-577cc7ac104b"
                                                             }
-                                                        ],
-                                                        "false": []
+                                                        ]
                                                     },
-                                                    "id": "2edbbc7e-cff8-4707-bdd5-eb2907035776"
+                                                    "id": "d34281b2-770f-43e0-956b-231734e7cd57"
                                                 }
-                                            ],
-                                            "false": []
+                                            ]
                                         },
-                                        "id": "812f1fe2-7700-4829-bd79-a87347362fe5"
+                                        "id": "94b8e77a-72da-43af-a07a-00b5e81c2c48"
                                     }
                                 ],
-                                "false": [
+                                "false": []
+                            },
+                            "id": "c1c2ae9e-df22-45e7-9a75-2062bf47af30"
+                        }
+                    ],
+                    "leaveScript": [
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "a"
+                                ],
+                                "override": false,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": []
+                            },
+                            "id": "541518f0-b940-4bb2-bbb5-d3b9a1567d72"
+                        }
+                    ]
+                },
+                {
+                    "name": "",
+                    "id": "03e4be04-e134-4d19-9fac-ea9c4ce1ba40",
+                    "x": 9,
+                    "y": 35,
+                    "symbol": "trigger_1",
+                    "width": 2,
+                    "height": 1,
+                    "script": [],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "3391e7f5-29f6-4042-8867-a47d46efde98",
+                    "x": 8,
+                    "y": 10,
+                    "symbol": "trigger_2",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_INPUT",
+                            "args": {
+                                "input": [
+                                    "a"
+                                ],
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
                                     {
-                                        "command": "EVENT_IF_TRUE",
+                                        "command": "EVENT_MENU",
                                         "args": {
                                             "variable": "L0",
-                                            "__collapseElse": true
+                                            "items": 2,
+                                            "option1": "Save",
+                                            "option2": "Cancel",
+                                            "option3": "",
+                                            "option4": "",
+                                            "option5": "",
+                                            "option6": "",
+                                            "option7": "",
+                                            "option8": "",
+                                            "cancelOnB": true,
+                                            "layout": "menu"
+                                        },
+                                        "id": "25706632-a771-47f1-b939-d9c3b19b76b5"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "ee4600c3-349b-4e57-801f-8955fe78ad4b"
+                        },
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "L0",
+                                "operator": "==",
+                                "comparator": 1,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SAVE_DATA",
+                                        "args": {
+                                            "saveSlot": 0,
+                                            "__scriptTabs": "save"
                                         },
                                         "children": {
-                                            "true": [],
-                                            "false": []
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Progress Saved."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "ec459831-4ff0-4b17-811d-0f5b8c80da97"
+                                                }
+                                            ]
                                         },
-                                        "id": "0bb78d42-c099-42aa-9eaf-abd20ea76e19"
+                                        "id": "be6a630b-c5b1-417c-a6ce-252222b051fe"
                                     }
-                                ]
+                                ],
+                                "false": []
                             },
-                            "id": "3c1c49ab-8c64-410f-a19b-c33b5b2d526d"
+                            "id": "66876514-57a6-44ae-a95f-f80023f3a1c3"
                         }
                     ],
                     "leaveScript": []
                 }
             ],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_SHOW_SPRITES",
+                    "args": {},
+                    "id": "397a39af-3185-4329-bf13-15dd2d74814a"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
             "playerSpriteSheetId": "98f0bb5e-e0d4-429b-8c6d-69ac608c8aaa"
+        },
+        {
+            "name": "Main Menu",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "autoFadeSpeed": 1,
+            "id": "6a0f5461-8a06-4c0a-9a11-caca25a07a37",
+            "symbol": "scene_2",
+            "x": 219.20000000000013,
+            "y": 169.20000000000007,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "command": "PT_EVENT_BACKGROUND_TEXT",
+                    "args": {
+                        "text": "GB Compo 2023",
+                        "x": 1,
+                        "y": 5
+                    },
+                    "id": "19dea49b-ae79-487b-84e8-13e9d51c222a"
+                },
+                {
+                    "command": "EVENT_HIDE_SPRITES",
+                    "args": {},
+                    "id": "6368bc0d-7fb4-4f1a-98a6-b3a0c7900669"
+                },
+                {
+                    "command": "EVENT_MENU",
+                    "args": {
+                        "variable": "L0",
+                        "items": 2,
+                        "option1": "New Game",
+                        "option2": "Continue",
+                        "option3": "",
+                        "option4": "",
+                        "option5": "",
+                        "option6": "",
+                        "option7": "",
+                        "option8": "",
+                        "cancelOnB": true,
+                        "layout": "dialogue"
+                    },
+                    "id": "17e0cddf-4b4b-4b26-bf4d-fa55820cb4fe"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "L0",
+                        "operator": "==",
+                        "comparator": 1,
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "02bb0c08-240f-4098-986e-3b22ad123571",
+                                    "x": 13,
+                                    "y": 24,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
+                                },
+                                "id": "fd05661e-b51b-4022-8f71-1c6846d1f320"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_SHOW_SPRITES",
+                                "args": {},
+                                "id": "a04e4396-807d-4eb8-9c31-7cfbf925d604"
+                            },
+                            {
+                                "command": "EVENT_LOAD_DATA",
+                                "args": {
+                                    "saveSlot": 0
+                                },
+                                "id": "e9df0c20-5285-4e00-aeee-297d05648bb9"
+                            }
+                        ]
+                    },
+                    "id": "fb3d91ca-decd-43e0-8ea3-d45437b2b6a5"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
         }
     ],
     "backgrounds": [
@@ -5834,16 +6479,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "02bb0c08-240f-4098-986e-3b22ad123571",
-        "startX": 13,
-        "startY": 23,
+        "startSceneId": "6a0f5461-8a06-4c0a-9a11-caca25a07a37",
+        "startX": 0,
+        "startY": 0,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 690,
-        "worldScrollY": 673,
+        "worldScrollX": 0,
+        "worldScrollY": 380,
         "zoom": 250,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -5872,9 +6517,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            590,
-            179,
-            179
+            820,
+            248,
+            248
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
