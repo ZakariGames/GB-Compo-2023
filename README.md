@@ -48,6 +48,7 @@ Megaman ass boss battle w/ side scroller after
 	- [ ] Dodging - lives/hits
 - [ ] Ability selection
 	- [ ] Trade health or other energy source for powerup efficiency
+- [ ] Save/Load
 
 ## Art things that need to be done:
 
