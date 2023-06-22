@@ -22,10 +22,11 @@ Megaman ass boss battle w/ side scroller after
 
 ### **Scenes:**
 - [ ] Logos
-- [ ] Titles Screen
+- [x] Title Screen
 - [ ] Town
+	- [ ] Shop
 - [ ] Cinematic Cutscenes
-- [ ] Boss Levels
+- [ ] Side-scroller Levels
 	- [ ] Jumping
 		- Basic jumping puzzle challenge
 	- [ ] Timing
@@ -34,11 +35,12 @@ Megaman ass boss battle w/ side scroller after
 		- Targets pop in and out and at different locations
 	- [ ] Dodging
 		- Bullet pattern dodging
+- [ ] Boss fights
 
 ### **Menus:**
 - [ ] Main menu
 - [ ] Boss selection screen
-- [ ] Pause menu
+- [x] Pause menu
 	- [ ] Item tracking
 	- [ ] Skill overviews
 - [ ] Screen overlays
