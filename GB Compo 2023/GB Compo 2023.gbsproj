@@ -4159,7 +4159,109 @@
             "symbol": "scene_4",
             "x": 533.6000000000014,
             "y": 348.6666666666676,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "280c332b-e4c3-493c-b126-580e97a8f87b",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_1",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Double jump\nactivated!"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "c4aaae10-4886-44d5-8875-b3b78105179d"
+                        },
+                        {
+                            "command": "EVENT_ENGINE_FIELD_SET",
+                            "args": {
+                                "engineFieldKey": "plat_extra_jumps",
+                                "value": {
+                                    "type": "slider",
+                                    "value": 1
+                                }
+                            },
+                            "id": "598fd78c-6752-43a2-904f-c2018bc53cbd"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "e4f2f08e-f23c-4efc-9733-edb2fe228fe5",
+                    "x": 44,
+                    "y": 14
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "9ddebdff-cc53-4433-8317-c29df9e46a31",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_2",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Dash Activated!"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "c0f88e7c-fb16-4e0f-abf5-67885635087c"
+                        },
+                        {
+                            "command": "EVENT_ENGINE_FIELD_SET",
+                            "args": {
+                                "engineFieldKey": "plat_dash",
+                                "value": {
+                                    "type": "select",
+                                    "value": 2
+                                }
+                            },
+                            "id": "08ee096a-9340-4a03-adf4-e4a1aa902e0c"
+                        },
+                        {
+                            "command": "EVENT_ENGINE_FIELD_SET",
+                            "args": {
+                                "engineFieldKey": "plat_dash_style",
+                                "value": {
+                                    "type": "select",
+                                    "value": 2
+                                }
+                            },
+                            "id": "cc294522-6188-44d9-bb4a-6ecd108280b3"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "8b5f95da-a3d3-43e6-abf0-5abe6804772c",
+                    "x": 52,
+                    "y": 14
+                }
+            ],
             "triggers": [],
             "script": [
                 {
@@ -13803,9 +13905,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 85,
-        "worldScrollY": 0,
-        "zoom": 100,
+        "worldScrollX": 1278,
+        "worldScrollY": 595,
+        "zoom": 250,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -13833,9 +13935,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            592,
-            178,
-            178
+            818,
+            245,
+            245
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
