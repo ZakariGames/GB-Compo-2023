@@ -43,11 +43,10 @@ Megaman ass boss battle w/ side scroller after
 - [x] Pause menu
 	- [ ] Item tracking
 	- [ ] Skill overviews
-- [ ] Screen overlays
-	- [ ] Jumping - timed
-	- [ ] Timing - lives/hits
-	- [ ] Aiming - score keeping
-	- [ ] Dodging - lives/hits
+- [ ] Screen overlay
+	- [ ] Timer
+ 	- [ ] Health
+  	- [ ] Boss Health
 - [ ] Ability selection
 	- [ ] Trade health or other energy source for powerup efficiency
 - [x] Save/Load
@@ -59,8 +58,7 @@ Megaman ass boss battle w/ side scroller after
 - [ ] Boss selection screen
 - [ ] Pause menu
 - [ ] Cutscene backgrounds
-- [ ] Various boss battle bacgrounds
-  - [ ] Sidescrolling for the most part
+- [ ] Various boss battle backgrounds
 
 ### **Sprites:**
 - [ ] Main character in top-down
