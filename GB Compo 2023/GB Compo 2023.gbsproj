@@ -1829,7 +1829,7 @@
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "11d4c82e-36b6-4451-b2e7-5edd8ea75e37"
+                        "musicId": "51d9b77b-1426-4dfe-a297-7f9112892e57"
                     },
                     "id": "51fdad19-83ae-4c01-a41f-1f9197e79ce3"
                 }
@@ -2227,7 +2227,7 @@
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "b1e026a8-95d8-462d-be24-76936e7666cf"
+                        "musicId": "0cb6e9e6-7cff-4981-b201-88dd9cb0677e"
                     },
                     "id": "49a70ead-f68d-4e6c-85a2-026cc6e61f33"
                 },
@@ -4595,7 +4595,7 @@
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
                         "musicId": "af528046-543a-489d-92fd-33aa1c0efd20",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "id": "c2086295-01c4-4855-b41b-d7d29c5860d9"
                 }
