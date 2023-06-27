@@ -1802,7 +1802,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -1825,6 +1825,13 @@
                         ]
                     },
                     "id": "fa2b6908-7145-439e-82a3-b9181d63ea33"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "11d4c82e-36b6-4451-b2e7-5edd8ea75e37"
+                    },
+                    "id": "51fdad19-83ae-4c01-a41f-1f9197e79ce3"
                 }
             ],
             "playerHit1Script": [],
@@ -2220,13 +2227,15 @@
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "11d4c82e-36b6-4451-b2e7-5edd8ea75e37"
+                        "musicId": "b1e026a8-95d8-462d-be24-76936e7666cf"
                     },
                     "id": "49a70ead-f68d-4e6c-85a2-026cc6e61f33"
                 },
                 {
                     "command": "EVENT_LOOP",
-                    "args": {},
+                    "args": {
+                        "__collapse": true
+                    },
                     "children": {
                         "true": [
                             {
@@ -17022,6 +17031,14 @@
             "type": "uge"
         },
         {
+            "id": "b1e026a8-95d8-462d-be24-76936e7666cf",
+            "name": "song_template 2",
+            "symbol": "song_song_template_2",
+            "filename": "song_template 2.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
             "id": "11d4c82e-36b6-4451-b2e7-5edd8ea75e37",
             "name": "song_template",
             "symbol": "song_song_template",
@@ -17201,15 +17218,15 @@
         }
     ],
     "settings": {
-        "startSceneId": "14878eed-9b4a-4c69-a265-e9f793ee1c7c",
-        "startX": 2,
-        "startY": 14,
+        "startSceneId": "6a0f5461-8a06-4c0a-9a11-caca25a07a37",
+        "startX": 0,
+        "startY": 0,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 713,
+        "worldScrollX": 126,
         "worldScrollY": 0,
         "zoom": 150,
         "customColorsEnabled": false,

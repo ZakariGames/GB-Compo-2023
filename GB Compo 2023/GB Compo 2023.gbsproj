@@ -6070,7 +6070,7 @@
                 0,
                 0
             ],
-            "autoFadeSpeed": 1,
+            "autoFadeSpeed": null,
             "id": "14878eed-9b4a-4c69-a265-e9f793ee1c7c",
             "symbol": "scene_5",
             "x": 593.9999999999999,
@@ -6478,7 +6478,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -7135,6 +7135,18 @@
                         ]
                     },
                     "id": "59a6299d-a235-47aa-8c3f-34d5d6d0c6e3"
+                },
+                {
+                    "command": "EVENT_FADE_IN",
+                    "args": {
+                        "speed": "2"
+                    },
+                    "id": "2e9394be-c041-4925-931b-80c0d0beb3f8"
+                },
+                {
+                    "command": "EVENT_SCENE_PUSH_STATE",
+                    "args": {},
+                    "id": "685e3d39-211e-4fe2-84e6-0610cac17545"
                 }
             ],
             "playerHit1Script": [
@@ -7149,7 +7161,7 @@
             "playerHit2Script": [],
             "playerHit3Script": [],
             "playerSpriteSheetId": "edd7753d-3d13-40b3-897c-0def8e75c141",
-            "autoFadeEventCollapse": true
+            "autoFadeEventCollapse": false
         }
     ],
     "backgrounds": [
@@ -16818,7 +16830,7 @@
                 "V0": {
                     "id": "V0",
                     "name": "Variable A",
-                    "passByReference": false
+                    "passByReference": true
                 }
             },
             "actors": {},
@@ -16831,6 +16843,28 @@
                         "expression": "$02$ - $V0$"
                     },
                     "id": "bab0338d-f119-4445-9bdb-22aef601ea29"
+                },
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "2",
+                        "operator": "<=",
+                        "comparator": "0",
+                        "__collapseElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SCENE_POP_STATE",
+                                "args": {
+                                    "fadeSpeed": "2"
+                                },
+                                "id": "d31a8b60-b348-4d2d-998e-55426cccb5dc"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "af391a5e-4c03-4f23-b797-8a56dc57c39b"
                 }
             ]
         },
@@ -17031,7 +17065,7 @@
             "type": "uge"
         },
         {
-            "id": "b1e026a8-95d8-462d-be24-76936e7666cf",
+            "id": "4b47748e-a74f-4035-8cd9-4898a5ecc7ab",
             "name": "song_template 2",
             "symbol": "song_song_template_2",
             "filename": "song_template 2.uge",
@@ -17218,16 +17252,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "6a0f5461-8a06-4c0a-9a11-caca25a07a37",
-        "startX": 0,
-        "startY": 0,
+        "startSceneId": "14878eed-9b4a-4c69-a265-e9f793ee1c7c",
+        "startX": 5,
+        "startY": 13,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 126,
-        "worldScrollY": 0,
+        "worldScrollX": 683,
+        "worldScrollY": 2,
         "zoom": 150,
         "customColorsEnabled": false,
         "sgbEnabled": false,
