@@ -1802,7 +1802,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -1825,6 +1825,13 @@
                         ]
                     },
                     "id": "fa2b6908-7145-439e-82a3-b9181d63ea33"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "11d4c82e-36b6-4451-b2e7-5edd8ea75e37"
+                    },
+                    "id": "51fdad19-83ae-4c01-a41f-1f9197e79ce3"
                 }
             ],
             "playerHit1Script": [],
@@ -2220,13 +2227,15 @@
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "11d4c82e-36b6-4451-b2e7-5edd8ea75e37"
+                        "musicId": "b1e026a8-95d8-462d-be24-76936e7666cf"
                     },
                     "id": "49a70ead-f68d-4e6c-85a2-026cc6e61f33"
                 },
                 {
                     "command": "EVENT_LOOP",
-                    "args": {},
+                    "args": {
+                        "__collapse": true
+                    },
                     "children": {
                         "true": [
                             {
@@ -6065,7 +6074,7 @@
             "id": "14878eed-9b4a-4c69-a265-e9f793ee1c7c",
             "symbol": "scene_5",
             "x": 593.9999999999999,
-            "y": 65.99999999999997,
+            "y": 65.3333333333333,
             "actors": [
                 {
                     "name": "",
@@ -6088,9 +6097,32 @@
                                 "$variable[V0]$": {
                                     "type": "number",
                                     "value": 2
-                                }
+                                },
+                                "__collapse": true
                             },
                             "id": "f0d53970-7a6f-4347-9f4c-eb2ec448f9df"
+                        },
+                        {
+                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                            "args": {
+                                "type": "tone",
+                                "priority": "medium",
+                                "pitch": 8,
+                                "frequency": 100,
+                                "duration": 0.1,
+                                "wait": true,
+                                "effect": 0,
+                                "__collapse": true
+                            },
+                            "id": "4b75898b-2319-444c-8677-da79f88ba90f"
+                        },
+                        {
+                            "command": "EVENT_PLAYER_BOUNCE",
+                            "args": {
+                                "height": "low",
+                                "__collapse": true
+                            },
+                            "id": "6f511f65-5e42-46eb-bb5f-a0bade68444c"
                         }
                     ],
                     "startScript": [
@@ -6387,7 +6419,8 @@
                 {
                     "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
-                        "customEventId": "2f06fdb2-b671-4d4b-8d1c-7edcaf3ee9cb"
+                        "customEventId": "2f06fdb2-b671-4d4b-8d1c-7edcaf3ee9cb",
+                        "__collapse": true
                     },
                     "id": "7af4f6b3-ad4f-4078-bf32-c1269307246c"
                 },
@@ -6445,7 +6478,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -6570,9 +6603,58 @@
                                     "option16_r": 0,
                                     "option16_u": 0,
                                     "option16_d": 0,
-                                    "__collapse": true
+                                    "__collapse": true,
+                                    "__comment": true
                                 },
                                 "id": "c6bcf7ce-cb5a-49a1-877b-9dd31d776508"
+                            },
+                            {
+                                "command": "EVENT_SOUND_PLAY_EFFECT",
+                                "args": {
+                                    "type": "tone",
+                                    "priority": "medium",
+                                    "pitch": 8,
+                                    "frequency": 500,
+                                    "duration": 0.1,
+                                    "wait": true,
+                                    "effect": 0,
+                                    "__collapse": true
+                                },
+                                "id": "da1c81d3-7682-4f07-afed-329a3d2dc475"
+                            },
+                            {
+                                "command": "EVENT_INC_VALUE",
+                                "args": {
+                                    "variable": "3"
+                                },
+                                "id": "cafcaffb-5e5a-4634-8155-77151c01f59b"
+                            },
+                            {
+                                "command": "EVENT_IF_VALUE",
+                                "args": {
+                                    "variable": "3",
+                                    "operator": ">",
+                                    "comparator": 4,
+                                    "__collapseElse": true,
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "3",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                }
+                                            },
+                                            "id": "e8bff4f6-f5f1-40f3-bc3c-902c6fb51eed"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "e0c9b151-da13-4cf3-8b7c-3e0818c73367"
                             },
                             {
                                 "command": "EVENT_SWITCH",
@@ -6611,8 +6693,8 @@
                                     "value14": 15,
                                     "__collapseCase15": false,
                                     "value15": 16,
-                                    "__collapseElse": false,
-                                    "__collapse": false
+                                    "__collapseElse": true,
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true0": [
@@ -6726,6 +6808,329 @@
                                     "false": []
                                 },
                                 "id": "08111122-2fb6-4e83-bb91-b3bececca85e"
+                            },
+                            {
+                                "command": "EVENT_IF_INPUT",
+                                "args": {
+                                    "input": [
+                                        "select"
+                                    ],
+                                    "__collapseElse": true,
+                                    "__collapse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_TIMER_SCRIPT",
+                                            "args": {
+                                                "duration": 1,
+                                                "frames": 30,
+                                                "__scriptTabs": "end"
+                                            },
+                                            "children": {
+                                                "script": [
+                                                    {
+                                                        "command": "EVENT_IF_INPUT",
+                                                        "args": {
+                                                            "input": [
+                                                                "select"
+                                                            ],
+                                                            "__collapseElse": true
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "PT_EVENT_ADVANCED_MENU",
+                                                                    "args": {
+                                                                        "variable": "3",
+                                                                        "__scriptTabs": "items",
+                                                                        "width": 20,
+                                                                        "height": 4,
+                                                                        "from": "bottom",
+                                                                        "items": 4,
+                                                                        "option_1_text": "Shadow",
+                                                                        "option1_x": 1,
+                                                                        "option1_y": 1,
+                                                                        "option1_l": 0,
+                                                                        "option1_r": 2,
+                                                                        "option1_u": 0,
+                                                                        "option1_d": 3,
+                                                                        "option_2_text": "Bone",
+                                                                        "option2_x": 10,
+                                                                        "option2_y": 1,
+                                                                        "option2_l": 1,
+                                                                        "option2_r": 0,
+                                                                        "option2_u": 0,
+                                                                        "option2_d": 4,
+                                                                        "option_3_text": "Fire",
+                                                                        "option3_x": 1,
+                                                                        "option3_y": 2,
+                                                                        "option3_l": 0,
+                                                                        "option3_r": 4,
+                                                                        "option3_u": 1,
+                                                                        "option3_d": 0,
+                                                                        "option_4_text": "Blood",
+                                                                        "option4_x": 10,
+                                                                        "option4_y": 2,
+                                                                        "option4_l": 3,
+                                                                        "option4_r": 0,
+                                                                        "option4_u": 2,
+                                                                        "option4_d": 0,
+                                                                        "option_5_text": "Blood",
+                                                                        "option5_x": 1,
+                                                                        "option5_y": 3,
+                                                                        "option5_l": 0,
+                                                                        "option5_r": 6,
+                                                                        "option5_u": 3,
+                                                                        "option5_d": 0,
+                                                                        "option_6_text": "Bone",
+                                                                        "option6_x": 10,
+                                                                        "option6_y": 3,
+                                                                        "option6_l": 5,
+                                                                        "option6_r": 0,
+                                                                        "option6_u": 4,
+                                                                        "option6_d": 0,
+                                                                        "option_7_text": "",
+                                                                        "option7_x": 0,
+                                                                        "option7_y": 0,
+                                                                        "option7_l": 0,
+                                                                        "option7_r": 0,
+                                                                        "option7_u": 0,
+                                                                        "option7_d": 0,
+                                                                        "option_8_text": "",
+                                                                        "option8_x": 0,
+                                                                        "option8_y": 0,
+                                                                        "option8_l": 0,
+                                                                        "option8_r": 0,
+                                                                        "option8_u": 0,
+                                                                        "option8_d": 0,
+                                                                        "option_9_text": "",
+                                                                        "option9_x": 0,
+                                                                        "option9_y": 0,
+                                                                        "option9_l": 0,
+                                                                        "option9_r": 0,
+                                                                        "option9_u": 0,
+                                                                        "option9_d": 0,
+                                                                        "option_10_text": "",
+                                                                        "option10_x": 0,
+                                                                        "option10_y": 0,
+                                                                        "option10_l": 0,
+                                                                        "option10_r": 0,
+                                                                        "option10_u": 0,
+                                                                        "option10_d": 0,
+                                                                        "option_11_text": "",
+                                                                        "option11_x": 0,
+                                                                        "option11_y": 0,
+                                                                        "option11_l": 0,
+                                                                        "option11_r": 0,
+                                                                        "option11_u": 0,
+                                                                        "option11_d": 0,
+                                                                        "option_12_text": "",
+                                                                        "option12_x": 0,
+                                                                        "option12_y": 0,
+                                                                        "option12_l": 0,
+                                                                        "option12_r": 0,
+                                                                        "option12_u": 0,
+                                                                        "option12_d": 0,
+                                                                        "option_13_text": "",
+                                                                        "option13_x": 0,
+                                                                        "option13_y": 0,
+                                                                        "option13_l": 0,
+                                                                        "option13_r": 0,
+                                                                        "option13_u": 0,
+                                                                        "option13_d": 0,
+                                                                        "option_14_text": "",
+                                                                        "option14_x": 0,
+                                                                        "option14_y": 0,
+                                                                        "option14_l": 0,
+                                                                        "option14_r": 0,
+                                                                        "option14_u": 0,
+                                                                        "option14_d": 0,
+                                                                        "option_15_text": "",
+                                                                        "option15_x": 0,
+                                                                        "option15_y": 0,
+                                                                        "option15_l": 0,
+                                                                        "option15_r": 0,
+                                                                        "option15_u": 0,
+                                                                        "option15_d": 0,
+                                                                        "option_16_text": "",
+                                                                        "option16_x": 0,
+                                                                        "option16_y": 0,
+                                                                        "option16_l": 0,
+                                                                        "option16_r": 0,
+                                                                        "option16_u": 0,
+                                                                        "option16_d": 0,
+                                                                        "__collapse": true,
+                                                                        "__comment": false
+                                                                    },
+                                                                    "id": "7009b594-a72b-4c1a-93a7-e2540be3687b"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SWITCH",
+                                                                    "args": {
+                                                                        "variable": "3",
+                                                                        "choices": 4,
+                                                                        "__collapseCase0": true,
+                                                                        "value0": 1,
+                                                                        "__collapseCase1": true,
+                                                                        "value1": 2,
+                                                                        "__collapseCase2": true,
+                                                                        "value2": 3,
+                                                                        "__collapseCase3": true,
+                                                                        "value3": 4,
+                                                                        "__collapseCase4": false,
+                                                                        "value4": 5,
+                                                                        "__collapseCase5": false,
+                                                                        "value5": 6,
+                                                                        "__collapseCase6": false,
+                                                                        "value6": 7,
+                                                                        "__collapseCase7": false,
+                                                                        "value7": 8,
+                                                                        "__collapseCase8": false,
+                                                                        "value8": 9,
+                                                                        "__collapseCase9": false,
+                                                                        "value9": 10,
+                                                                        "__collapseCase10": false,
+                                                                        "value10": 11,
+                                                                        "__collapseCase11": false,
+                                                                        "value11": 12,
+                                                                        "__collapseCase12": false,
+                                                                        "value12": 13,
+                                                                        "__collapseCase13": false,
+                                                                        "value13": 14,
+                                                                        "__collapseCase14": false,
+                                                                        "value14": 15,
+                                                                        "__collapseCase15": false,
+                                                                        "value15": 16,
+                                                                        "__collapseElse": true,
+                                                                        "__collapse": true
+                                                                    },
+                                                                    "children": {
+                                                                        "true0": [
+                                                                            {
+                                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                                "args": {
+                                                                                    "__scriptTabs": "text",
+                                                                                    "minHeight": 2,
+                                                                                    "maxHeight": 2,
+                                                                                    "position": "bottom",
+                                                                                    "showBorder": false,
+                                                                                    "clearPrevious": true,
+                                                                                    "textX": 0,
+                                                                                    "textY": 0,
+                                                                                    "textHeight": 3,
+                                                                                    "closeWhen": "notModal",
+                                                                                    "closeButton": "a",
+                                                                                    "text": [
+                                                                                        "Health: $02$\nSkill: Shadow"
+                                                                                    ],
+                                                                                    "avatarId": "",
+                                                                                    "__collapse": false
+                                                                                },
+                                                                                "id": "00ab2027-3c38-413a-b989-dbd9dcb4b62e"
+                                                                            }
+                                                                        ],
+                                                                        "true1": [
+                                                                            {
+                                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                                "args": {
+                                                                                    "__scriptTabs": "text",
+                                                                                    "minHeight": 2,
+                                                                                    "maxHeight": 2,
+                                                                                    "position": "bottom",
+                                                                                    "showBorder": false,
+                                                                                    "clearPrevious": true,
+                                                                                    "textX": 0,
+                                                                                    "textY": 0,
+                                                                                    "textHeight": 3,
+                                                                                    "closeWhen": "notModal",
+                                                                                    "closeButton": "a",
+                                                                                    "text": [
+                                                                                        "Health: $02$\nSkill: Bone"
+                                                                                    ],
+                                                                                    "avatarId": "",
+                                                                                    "__collapse": false
+                                                                                },
+                                                                                "id": "4328a16f-f917-4d2c-85ab-fc4a285ba8f3"
+                                                                            }
+                                                                        ],
+                                                                        "true2": [
+                                                                            {
+                                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                                "args": {
+                                                                                    "__scriptTabs": "text",
+                                                                                    "minHeight": 2,
+                                                                                    "maxHeight": 2,
+                                                                                    "position": "bottom",
+                                                                                    "showBorder": false,
+                                                                                    "clearPrevious": true,
+                                                                                    "textX": 0,
+                                                                                    "textY": 0,
+                                                                                    "textHeight": 3,
+                                                                                    "closeWhen": "notModal",
+                                                                                    "closeButton": "a",
+                                                                                    "text": [
+                                                                                        "Health: $02$\nSkill: Fire"
+                                                                                    ],
+                                                                                    "avatarId": "",
+                                                                                    "__collapse": false
+                                                                                },
+                                                                                "id": "eb80005d-d153-4d05-9b28-6dbf5d3c5817"
+                                                                            }
+                                                                        ],
+                                                                        "true3": [
+                                                                            {
+                                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                                "args": {
+                                                                                    "__scriptTabs": "text",
+                                                                                    "minHeight": 2,
+                                                                                    "maxHeight": 2,
+                                                                                    "position": "bottom",
+                                                                                    "showBorder": false,
+                                                                                    "clearPrevious": true,
+                                                                                    "textX": 0,
+                                                                                    "textY": 0,
+                                                                                    "textHeight": 3,
+                                                                                    "closeWhen": "notModal",
+                                                                                    "closeButton": "a",
+                                                                                    "text": [
+                                                                                        "Health: $02$\nSkill: Blood"
+                                                                                    ],
+                                                                                    "avatarId": "",
+                                                                                    "__collapse": false
+                                                                                },
+                                                                                "id": "6f84b7d6-5362-43b2-8827-0a41d3d21b50"
+                                                                            }
+                                                                        ],
+                                                                        "true4": [],
+                                                                        "true5": [],
+                                                                        "true6": [],
+                                                                        "true7": [],
+                                                                        "true8": [],
+                                                                        "true9": [],
+                                                                        "true10": [],
+                                                                        "true11": [],
+                                                                        "true12": [],
+                                                                        "true13": [],
+                                                                        "true14": [],
+                                                                        "true15": [],
+                                                                        "false": []
+                                                                    },
+                                                                    "id": "befdfa98-406e-4c9d-ba92-086ce5a6716b"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "f8f427e7-e51a-4e88-bf18-8b278ac49b11"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "24cfd7c3-471f-4b22-8b6c-8750b3ccf849"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "0318fe26-6a3a-43f4-852e-5204293a3df4"
                             }
                         ]
                     },
@@ -16474,7 +16879,7 @@
                         "value14": 15,
                         "__collapseCase15": false,
                         "value15": 16,
-                        "__collapseElse": false,
+                        "__collapseElse": true,
                         "__collapse": false
                     },
                     "children": {
@@ -16554,7 +16959,7 @@
                             {
                                 "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                 "args": {
-                                    "__scriptTabs": "text",
+                                    "__scriptTabs": "layout",
                                     "minHeight": 2,
                                     "maxHeight": 2,
                                     "position": "bottom",
@@ -16590,7 +16995,7 @@
                             {
                                 "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                 "args": {
-                                    "__scriptTabs": "text",
+                                    "__scriptTabs": "layout",
                                     "minHeight": 2,
                                     "maxHeight": 2,
                                     "position": "bottom",
@@ -16622,6 +17027,14 @@
             "name": "song_template 1",
             "symbol": "song_song_template_1",
             "filename": "song_template 1.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
+            "id": "b1e026a8-95d8-462d-be24-76936e7666cf",
+            "name": "song_template 2",
+            "symbol": "song_song_template_2",
+            "filename": "song_template 2.uge",
             "settings": {},
             "type": "uge"
         },
@@ -16740,6 +17153,16 @@
             "symbol": "var_rock_amount"
         },
         {
+            "id": "2",
+            "name": "playerHealth",
+            "symbol": "var_playerhealth"
+        },
+        {
+            "id": "3",
+            "name": "activeSkill",
+            "symbol": "var_activeskill"
+        },
+        {
             "id": "904411d3-6661-48e3-8421-8093fa0dcf35__L0",
             "name": "Local 0",
             "symbol": "var_local_0"
@@ -16778,16 +17201,6 @@
             "id": "bf29b44c-4ada-4bcb-8472-327007e9dc11__L0",
             "name": "Disable",
             "symbol": "var_disable_5"
-        },
-        {
-            "id": "2",
-            "name": "playerHealth",
-            "symbol": "var_playerhealth"
-        },
-        {
-            "id": "3",
-            "name": "activeSkill",
-            "symbol": "var_activeskill"
         }
     ],
     "engineFieldValues": [
@@ -16805,15 +17218,15 @@
         }
     ],
     "settings": {
-        "startSceneId": "14878eed-9b4a-4c69-a265-e9f793ee1c7c",
-        "startX": 2,
-        "startY": 14,
+        "startSceneId": "6a0f5461-8a06-4c0a-9a11-caca25a07a37",
+        "startX": 0,
+        "startY": 0,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 826,
+        "worldScrollX": 126,
         "worldScrollY": 0,
         "zoom": 150,
         "customColorsEnabled": false,
