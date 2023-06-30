@@ -6073,7 +6073,7 @@
             "autoFadeSpeed": null,
             "id": "14878eed-9b4a-4c69-a265-e9f793ee1c7c",
             "symbol": "scene_5",
-            "x": 611.6666666666669,
+            "x": 612.666666666667,
             "y": 137.33333333333326,
             "actors": [
                 {
@@ -6434,6 +6434,184 @@
                     "id": "18908fa8-103d-4266-bf09-0e857a719ac6",
                     "x": 2,
                     "y": 1
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "c4c9e526-f7f1-4f45-8ec0-e972494aec6e",
+                    "direction": "down",
+                    "moveSpeed": 4,
+                    "animSpeed": 0,
+                    "paletteId": "",
+                    "isPinned": true,
+                    "persistent": true,
+                    "collisionGroup": "",
+                    "symbol": "actor_5",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+                            "args": {
+                                "actorId": "$self$",
+                                "speed": 255
+                            },
+                            "id": "13d4f0eb-ae53-42cc-b97e-359bb9fa9ac1"
+                        }
+                    ],
+                    "updateScript": [
+                        {
+                            "command": "EVENT_SWITCH",
+                            "args": {
+                                "variable": "3",
+                                "choices": 4,
+                                "__collapseCase0": false,
+                                "value0": 1,
+                                "__collapseCase1": false,
+                                "value1": 2,
+                                "__collapseCase2": false,
+                                "value2": 3,
+                                "__collapseCase3": false,
+                                "value3": 4,
+                                "__collapseCase4": false,
+                                "value4": 5,
+                                "__collapseCase5": false,
+                                "value5": 6,
+                                "__collapseCase6": false,
+                                "value6": 7,
+                                "__collapseCase7": false,
+                                "value7": 8,
+                                "__collapseCase8": false,
+                                "value8": 9,
+                                "__collapseCase9": false,
+                                "value9": 10,
+                                "__collapseCase10": false,
+                                "value10": 11,
+                                "__collapseCase11": false,
+                                "value11": 12,
+                                "__collapseCase12": false,
+                                "value12": 13,
+                                "__collapseCase13": false,
+                                "value13": 14,
+                                "__collapseCase14": false,
+                                "value14": 15,
+                                "__collapseCase15": false,
+                                "value15": 16,
+                                "__collapseElse": false,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true0": [
+                                    {
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "7f36607e-3fe3-44f9-9605-27cfde65ed1b"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_FRAME",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "frame": {
+                                                "type": "number",
+                                                "value": 0
+                                            }
+                                        },
+                                        "id": "e9239dd3-062d-4f05-bce4-27664568f153"
+                                    }
+                                ],
+                                "true1": [
+                                    {
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "8c916dca-403e-4497-bb94-67a7ce5e5db8"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_FRAME",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "frame": {
+                                                "type": "number",
+                                                "value": 1
+                                            }
+                                        },
+                                        "id": "543e66dd-45ae-4f4e-8b4f-59e113562fb4"
+                                    }
+                                ],
+                                "true2": [
+                                    {
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "b1303938-0ada-479c-b96d-b818189c0f40"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_FRAME",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "frame": {
+                                                "type": "number",
+                                                "value": 2
+                                            }
+                                        },
+                                        "id": "fd7bc136-d941-4447-a4f0-52c0c3e96101"
+                                    }
+                                ],
+                                "true3": [
+                                    {
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "75d994c2-8946-44bb-8888-0279526f8149"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_FRAME",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "frame": {
+                                                "type": "number",
+                                                "value": 3
+                                            }
+                                        },
+                                        "id": "f1829f6e-553b-45d2-8ea5-e0fcd7d47487"
+                                    }
+                                ],
+                                "true4": [],
+                                "true5": [],
+                                "true6": [],
+                                "true7": [],
+                                "true8": [],
+                                "true9": [],
+                                "true10": [],
+                                "true11": [],
+                                "true12": [],
+                                "true13": [],
+                                "true14": [],
+                                "true15": [],
+                                "false": [
+                                    {
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "9d98a762-adf6-4160-8d04-0c4d6f1252f3"
+                                    }
+                                ]
+                            },
+                            "id": "80cd4872-b243-44b9-a664-83f49c2fc42b"
+                        }
+                    ],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "678a572c-c36c-4e30-bfb5-63896c44496a",
+                    "x": 17,
+                    "y": 1
                 }
             ],
             "triggers": [],
@@ -6534,8 +6712,8 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true,
-                        "__comment": true
+                        "__collapse": false,
+                        "__comment": false
                     },
                     "children": {
                         "true": [
@@ -6693,7 +6871,7 @@
                                     "operator": ">",
                                     "comparator": 4,
                                     "__collapseElse": true,
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "true": [
@@ -6718,13 +6896,13 @@
                                 "args": {
                                     "variable": "3",
                                     "choices": 4,
-                                    "__collapseCase0": true,
+                                    "__collapseCase0": false,
                                     "value0": 1,
-                                    "__collapseCase1": true,
+                                    "__collapseCase1": false,
                                     "value1": 2,
-                                    "__collapseCase2": true,
+                                    "__collapseCase2": false,
                                     "value2": 3,
-                                    "__collapseCase3": true,
+                                    "__collapseCase3": false,
                                     "value3": 4,
                                     "__collapseCase4": false,
                                     "value4": 5,
@@ -6751,103 +6929,59 @@
                                     "__collapseCase15": false,
                                     "value15": 16,
                                     "__collapseElse": true,
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "true0": [
                                         {
-                                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                            "command": "EVENT_SET_VALUE",
                                             "args": {
-                                                "__scriptTabs": "text",
-                                                "minHeight": 2,
-                                                "maxHeight": 2,
-                                                "position": "bottom",
-                                                "showBorder": false,
-                                                "clearPrevious": true,
-                                                "textX": 0,
-                                                "textY": 0,
-                                                "textHeight": 3,
-                                                "closeWhen": "notModal",
-                                                "closeButton": "a",
-                                                "text": [
-                                                    "Health: $02$\nSkill: Shadow"
-                                                ],
-                                                "avatarId": "",
-                                                "__collapse": false
+                                                "variable": "3",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                }
                                             },
-                                            "id": "0846277b-edc6-430e-839c-ff3ceaae2445"
+                                            "id": "b1224813-b78e-4ed0-b3a8-d0544d548b09"
                                         }
                                     ],
                                     "true1": [
                                         {
-                                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                            "command": "EVENT_SET_VALUE",
                                             "args": {
-                                                "__scriptTabs": "text",
-                                                "minHeight": 2,
-                                                "maxHeight": 2,
-                                                "position": "bottom",
-                                                "showBorder": false,
-                                                "clearPrevious": true,
-                                                "textX": 0,
-                                                "textY": 0,
-                                                "textHeight": 3,
-                                                "closeWhen": "notModal",
-                                                "closeButton": "a",
-                                                "text": [
-                                                    "Health: $02$\nSkill: Bone"
-                                                ],
-                                                "avatarId": "",
-                                                "__collapse": false
+                                                "variable": "3",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 2
+                                                }
                                             },
-                                            "id": "d7494f5b-fc14-4cfa-8385-97c4dac4ac04"
+                                            "id": "b6b316d8-314c-4704-8f55-746569931022"
                                         }
                                     ],
                                     "true2": [
                                         {
-                                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                            "command": "EVENT_SET_VALUE",
                                             "args": {
-                                                "__scriptTabs": "text",
-                                                "minHeight": 2,
-                                                "maxHeight": 2,
-                                                "position": "bottom",
-                                                "showBorder": false,
-                                                "clearPrevious": true,
-                                                "textX": 0,
-                                                "textY": 0,
-                                                "textHeight": 3,
-                                                "closeWhen": "notModal",
-                                                "closeButton": "a",
-                                                "text": [
-                                                    "Health: $02$\nSkill: Fire"
-                                                ],
-                                                "avatarId": "",
-                                                "__collapse": false
+                                                "variable": "3",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 3
+                                                }
                                             },
-                                            "id": "bf5ae752-fb95-426a-bc7f-07ccc82ae567"
+                                            "id": "0170346c-27f5-448d-9b58-ad3759dfb134"
                                         }
                                     ],
                                     "true3": [
                                         {
-                                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                            "command": "EVENT_SET_VALUE",
                                             "args": {
-                                                "__scriptTabs": "text",
-                                                "minHeight": 2,
-                                                "maxHeight": 2,
-                                                "position": "bottom",
-                                                "showBorder": false,
-                                                "clearPrevious": true,
-                                                "textX": 0,
-                                                "textY": 0,
-                                                "textHeight": 3,
-                                                "closeWhen": "notModal",
-                                                "closeButton": "a",
-                                                "text": [
-                                                    "Health: $02$\nSkill: Blood"
-                                                ],
-                                                "avatarId": "",
-                                                "__collapse": false
+                                                "variable": "3",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 4
+                                                }
                                             },
-                                            "id": "fb5631fa-4dc6-4149-8318-2e59e104f86f"
+                                            "id": "fa6acb3e-fab2-4070-bd09-95bbc3c4f999"
                                         }
                                     ],
                                     "true4": [],
@@ -6873,7 +7007,7 @@
                                         "select"
                                     ],
                                     "__collapseElse": true,
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -7027,13 +7161,13 @@
                                                                     "args": {
                                                                         "variable": "3",
                                                                         "choices": 4,
-                                                                        "__collapseCase0": true,
+                                                                        "__collapseCase0": false,
                                                                         "value0": 1,
-                                                                        "__collapseCase1": true,
+                                                                        "__collapseCase1": false,
                                                                         "value1": 2,
-                                                                        "__collapseCase2": true,
+                                                                        "__collapseCase2": false,
                                                                         "value2": 3,
-                                                                        "__collapseCase3": true,
+                                                                        "__collapseCase3": false,
                                                                         "value3": 4,
                                                                         "__collapseCase4": false,
                                                                         "value4": 5,
@@ -7060,7 +7194,7 @@
                                                                         "__collapseCase15": false,
                                                                         "value15": 16,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true0": [
@@ -7082,9 +7216,21 @@
                                                                                         "Health: $02$\nSkill: Shadow"
                                                                                     ],
                                                                                     "avatarId": "",
-                                                                                    "__collapse": false
+                                                                                    "__collapse": false,
+                                                                                    "__comment": true
                                                                                 },
                                                                                 "id": "00ab2027-3c38-413a-b989-dbd9dcb4b62e"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_SET_VALUE",
+                                                                                "args": {
+                                                                                    "variable": "3",
+                                                                                    "value": {
+                                                                                        "type": "number",
+                                                                                        "value": 1
+                                                                                    }
+                                                                                },
+                                                                                "id": "e4e9556f-cb93-47a2-8209-b3aa72e50707"
                                                                             }
                                                                         ],
                                                                         "true1": [
@@ -7106,9 +7252,21 @@
                                                                                         "Health: $02$\nSkill: Bone"
                                                                                     ],
                                                                                     "avatarId": "",
-                                                                                    "__collapse": false
+                                                                                    "__collapse": false,
+                                                                                    "__comment": true
                                                                                 },
                                                                                 "id": "4328a16f-f917-4d2c-85ab-fc4a285ba8f3"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_SET_VALUE",
+                                                                                "args": {
+                                                                                    "variable": "3",
+                                                                                    "value": {
+                                                                                        "type": "number",
+                                                                                        "value": 2
+                                                                                    }
+                                                                                },
+                                                                                "id": "82dd0335-8525-4037-8e31-9be006683c04"
                                                                             }
                                                                         ],
                                                                         "true2": [
@@ -7130,9 +7288,21 @@
                                                                                         "Health: $02$\nSkill: Fire"
                                                                                     ],
                                                                                     "avatarId": "",
-                                                                                    "__collapse": false
+                                                                                    "__collapse": false,
+                                                                                    "__comment": true
                                                                                 },
                                                                                 "id": "eb80005d-d153-4d05-9b28-6dbf5d3c5817"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_SET_VALUE",
+                                                                                "args": {
+                                                                                    "variable": "3",
+                                                                                    "value": {
+                                                                                        "type": "number",
+                                                                                        "value": 3
+                                                                                    }
+                                                                                },
+                                                                                "id": "6682264e-b5cf-4990-927f-84abefd228a1"
                                                                             }
                                                                         ],
                                                                         "true3": [
@@ -7154,9 +7324,21 @@
                                                                                         "Health: $02$\nSkill: Blood"
                                                                                     ],
                                                                                     "avatarId": "",
-                                                                                    "__collapse": false
+                                                                                    "__collapse": false,
+                                                                                    "__comment": true
                                                                                 },
                                                                                 "id": "6f84b7d6-5362-43b2-8827-0a41d3d21b50"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_SET_VALUE",
+                                                                                "args": {
+                                                                                    "variable": "3",
+                                                                                    "value": {
+                                                                                        "type": "number",
+                                                                                        "value": 4
+                                                                                    }
+                                                                                },
+                                                                                "id": "e32eba03-64f8-4562-817f-84722aee9f1b"
                                                                             }
                                                                         ],
                                                                         "true4": [],
@@ -11286,7 +11468,7 @@
                     ]
                 }
             ],
-            "numTiles": 2,
+            "numTiles": 1,
             "canvasWidth": 16,
             "canvasHeight": 16,
             "boundsX": 0,
@@ -11415,6 +11597,227 @@
                 }
             ],
             "numTiles": 2,
+            "canvasWidth": 16,
+            "canvasHeight": 16,
+            "boundsX": 0,
+            "boundsY": 0,
+            "boundsWidth": 16,
+            "boundsHeight": 16,
+            "animSpeed": 15
+        },
+        {
+            "id": "c4c9e526-f7f1-4f45-8ec0-e972494aec6e",
+            "name": "elements",
+            "symbol": "sprite_elements",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "elements.png",
+            "checksum": "adf9f3cc2f78cc1e0f2fabf94cb0ba987b1c7d7b",
+            "width": 64,
+            "height": 16,
+            "states": [
+                {
+                    "id": "2f370735-0539-4a65-ad03-0e83fdaa0601",
+                    "name": "",
+                    "animationType": "fixed",
+                    "flipLeft": false,
+                    "animations": [
+                        {
+                            "id": "29d2c3c8-1657-4303-a6fe-24b739449f0e",
+                            "frames": [
+                                {
+                                    "id": "b283b339-b64a-4302-9b2d-bc90dd02b812",
+                                    "tiles": [
+                                        {
+                                            "id": "7fa6db0f-1969-4cda-8bac-1f321339c79b",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 0,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "b958c358-9a9c-42a2-9a58-c0487dcc568b",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 8,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "afb76e80-90e7-493c-9535-1ed9df5a4f36",
+                                    "tiles": [
+                                        {
+                                            "id": "c1013034-111a-4f8c-8c28-5711d8460626",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 16,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "b1b2f91b-2e7a-4a3e-b2de-5a809bb09163",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 24,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "a17ae935-3b83-4986-ab41-583c82e3f56d",
+                                    "tiles": [
+                                        {
+                                            "id": "810690b3-5477-4787-9766-3a731003545e",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 32,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "b87649ab-c989-4ffe-ac0a-bc0a720ce646",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 40,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "dfa5b5d6-0a69-48d9-934d-9dc83ea2563a",
+                                    "tiles": [
+                                        {
+                                            "id": "58a0d1a9-bc7e-4707-a359-8d7101139de4",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 48,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "40f13e31-0339-48b4-a2c7-016e9dadfc68",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 56,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "14c183c0-f0bc-4aa0-9d10-341084948449",
+                            "frames": [
+                                {
+                                    "id": "8d2ba12b-1a76-48dc-96bc-23f1264f9736",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "a0e39cf8-b684-43a1-80ea-9391dc685ed8",
+                            "frames": [
+                                {
+                                    "id": "9edfda5f-9011-487c-8958-135033dc2105",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "8c067801-258f-42df-877b-6b0f3ece60b4",
+                            "frames": [
+                                {
+                                    "id": "b4fbc5fb-910f-4603-b0de-93148f481fcc",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "42badef2-5d15-4e86-875f-9234a69b9ebc",
+                            "frames": [
+                                {
+                                    "id": "b3edc513-cc3f-49d2-a806-333ec22b88a3",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "296124ff-6118-426a-b853-deb3b8c5ca82",
+                            "frames": [
+                                {
+                                    "id": "1516b4df-413e-4987-aaac-1095813c3f31",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7b9b789e-2569-4bc9-aded-d31348a91882",
+                            "frames": [
+                                {
+                                    "id": "114032dc-66ab-4f5f-8751-5ce3b92bcf3e",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2ea6fc5b-7298-4542-94c9-f2bce466ebe5",
+                            "frames": [
+                                {
+                                    "id": "bdb595eb-ebee-4b82-9022-fa60e39323ce",
+                                    "tiles": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "numTiles": 7,
             "canvasWidth": 16,
             "canvasHeight": 16,
             "boundsX": 0,
@@ -17759,14 +18162,14 @@
     "settings": {
         "startSceneId": "14878eed-9b4a-4c69-a265-e9f793ee1c7c",
         "startX": 5,
-        "startY": 13,
+        "startY": 14,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1797,
-        "worldScrollY": 323,
+        "worldScrollX": 1316,
+        "worldScrollY": 179,
         "zoom": 300,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -17795,9 +18198,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            539,
-            205,
-            205
+            744,
+            282,
+            282
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
