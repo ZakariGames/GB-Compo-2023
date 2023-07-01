@@ -67,8 +67,10 @@ Megaman ass boss battle w/ side scroller after
 - [ ] Bosses
 - [ ] Textbox and font
 - [ ] Any items
+- [ ] Abilities
+	- [ ] Fire Dash
 
-### **Music:**
+### **Music/Sound Effects:**
 - [ ] Menu
 - [ ] Town
 - [ ] Cutscene
