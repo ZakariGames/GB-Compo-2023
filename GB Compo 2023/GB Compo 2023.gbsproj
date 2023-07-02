@@ -7167,7 +7167,7 @@
                     "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
                         "customEventId": "2f06fdb2-b671-4d4b-8d1c-7edcaf3ee9cb",
-                        "__collapse": false,
+                        "__collapse": true,
                         "__comment": false
                     },
                     "id": "7af4f6b3-ad4f-4078-bf32-c1269307246c"
@@ -7177,7 +7177,7 @@
                     "args": {
                         "__collapse": true,
                         "__label": "Fire Dash",
-                        "__comment": true
+                        "__comment": false
                     },
                     "children": {
                         "true": [
@@ -7186,7 +7186,7 @@
                                 "args": {
                                     "state": "9",
                                     "__scriptTabs": "scriptinput",
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "script": [
@@ -7213,7 +7213,7 @@
                                         {
                                             "command": "EVENT_LAUNCH_PROJECTILE",
                                             "args": {
-                                                "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+                                                "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
                                                 "spriteStateId": "",
                                                 "actorId": "$self$",
                                                 "x": -3,
@@ -7412,7 +7412,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true,
+                        "__collapse": false,
                         "__comment": false
                     },
                     "children": {
@@ -7630,7 +7630,7 @@
                                     "__collapseCase15": false,
                                     "value15": 16,
                                     "__collapseElse": true,
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "true0": [
@@ -7901,7 +7901,7 @@
                                         "select"
                                     ],
                                     "__collapseElse": true,
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "true": [
@@ -8088,33 +8088,10 @@
                                                                         "__collapseCase15": false,
                                                                         "value15": 16,
                                                                         "__collapseElse": true,
-                                                                        "__collapse": false
+                                                                        "__collapse": true
                                                                     },
                                                                     "children": {
                                                                         "true0": [
-                                                                            {
-                                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                                                                "args": {
-                                                                                    "__scriptTabs": "text",
-                                                                                    "minHeight": 2,
-                                                                                    "maxHeight": 2,
-                                                                                    "position": "bottom",
-                                                                                    "showBorder": false,
-                                                                                    "clearPrevious": true,
-                                                                                    "textX": 0,
-                                                                                    "textY": 0,
-                                                                                    "textHeight": 3,
-                                                                                    "closeWhen": "notModal",
-                                                                                    "closeButton": "a",
-                                                                                    "text": [
-                                                                                        "Health: $02$\nSkill: Shadow"
-                                                                                    ],
-                                                                                    "avatarId": "",
-                                                                                    "__collapse": false,
-                                                                                    "__comment": true
-                                                                                },
-                                                                                "id": "00ab2027-3c38-413a-b989-dbd9dcb4b62e"
-                                                                            },
                                                                             {
                                                                                 "command": "EVENT_SET_VALUE",
                                                                                 "args": {
@@ -8124,33 +8101,22 @@
                                                                                         "value": 1
                                                                                     }
                                                                                 },
-                                                                                "id": "e4e9556f-cb93-47a2-8209-b3aa72e50707"
+                                                                                "id": "c3f2aad4-19bb-4cb8-8d4f-42366ce72f87"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_ENGINE_FIELD_SET",
+                                                                                "args": {
+                                                                                    "engineFieldKey": "plat_dash",
+                                                                                    "value": {
+                                                                                        "type": "select",
+                                                                                        "value": 0
+                                                                                    },
+                                                                                    "__collapse": true
+                                                                                },
+                                                                                "id": "decbf7cf-8132-46e5-92d2-e750992e1c8f"
                                                                             }
                                                                         ],
                                                                         "true1": [
-                                                                            {
-                                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                                                                "args": {
-                                                                                    "__scriptTabs": "text",
-                                                                                    "minHeight": 2,
-                                                                                    "maxHeight": 2,
-                                                                                    "position": "bottom",
-                                                                                    "showBorder": false,
-                                                                                    "clearPrevious": true,
-                                                                                    "textX": 0,
-                                                                                    "textY": 0,
-                                                                                    "textHeight": 3,
-                                                                                    "closeWhen": "notModal",
-                                                                                    "closeButton": "a",
-                                                                                    "text": [
-                                                                                        "Health: $02$\nSkill: Bone"
-                                                                                    ],
-                                                                                    "avatarId": "",
-                                                                                    "__collapse": false,
-                                                                                    "__comment": true
-                                                                                },
-                                                                                "id": "4328a16f-f917-4d2c-85ab-fc4a285ba8f3"
-                                                                            },
                                                                             {
                                                                                 "command": "EVENT_SET_VALUE",
                                                                                 "args": {
@@ -8160,33 +8126,22 @@
                                                                                         "value": 2
                                                                                     }
                                                                                 },
-                                                                                "id": "82dd0335-8525-4037-8e31-9be006683c04"
+                                                                                "id": "61c77253-6ae4-4135-a31e-0f62414e170a"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_ENGINE_FIELD_SET",
+                                                                                "args": {
+                                                                                    "engineFieldKey": "plat_dash",
+                                                                                    "value": {
+                                                                                        "type": "select",
+                                                                                        "value": 0
+                                                                                    },
+                                                                                    "__collapse": true
+                                                                                },
+                                                                                "id": "eb847a31-7565-4844-9e98-965df1050c21"
                                                                             }
                                                                         ],
                                                                         "true2": [
-                                                                            {
-                                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                                                                "args": {
-                                                                                    "__scriptTabs": "text",
-                                                                                    "minHeight": 2,
-                                                                                    "maxHeight": 2,
-                                                                                    "position": "bottom",
-                                                                                    "showBorder": false,
-                                                                                    "clearPrevious": true,
-                                                                                    "textX": 0,
-                                                                                    "textY": 0,
-                                                                                    "textHeight": 3,
-                                                                                    "closeWhen": "notModal",
-                                                                                    "closeButton": "a",
-                                                                                    "text": [
-                                                                                        "Health: $02$\nSkill: Fire"
-                                                                                    ],
-                                                                                    "avatarId": "",
-                                                                                    "__collapse": false,
-                                                                                    "__comment": true
-                                                                                },
-                                                                                "id": "eb80005d-d153-4d05-9b28-6dbf5d3c5817"
-                                                                            },
                                                                             {
                                                                                 "command": "EVENT_SET_VALUE",
                                                                                 "args": {
@@ -8196,33 +8151,22 @@
                                                                                         "value": 3
                                                                                     }
                                                                                 },
-                                                                                "id": "6682264e-b5cf-4990-927f-84abefd228a1"
+                                                                                "id": "a4adb2d3-8a48-4669-a37a-9b1d2383ab2a"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_ENGINE_FIELD_SET",
+                                                                                "args": {
+                                                                                    "engineFieldKey": "plat_dash",
+                                                                                    "value": {
+                                                                                        "type": "select",
+                                                                                        "value": 2
+                                                                                    },
+                                                                                    "__collapse": true
+                                                                                },
+                                                                                "id": "2343a0ae-29ee-4f9f-934f-4efe6c609514"
                                                                             }
                                                                         ],
                                                                         "true3": [
-                                                                            {
-                                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                                                                "args": {
-                                                                                    "__scriptTabs": "text",
-                                                                                    "minHeight": 2,
-                                                                                    "maxHeight": 2,
-                                                                                    "position": "bottom",
-                                                                                    "showBorder": false,
-                                                                                    "clearPrevious": true,
-                                                                                    "textX": 0,
-                                                                                    "textY": 0,
-                                                                                    "textHeight": 3,
-                                                                                    "closeWhen": "notModal",
-                                                                                    "closeButton": "a",
-                                                                                    "text": [
-                                                                                        "Health: $02$\nSkill: Blood"
-                                                                                    ],
-                                                                                    "avatarId": "",
-                                                                                    "__collapse": false,
-                                                                                    "__comment": true
-                                                                                },
-                                                                                "id": "6f84b7d6-5362-43b2-8827-0a41d3d21b50"
-                                                                            },
                                                                             {
                                                                                 "command": "EVENT_SET_VALUE",
                                                                                 "args": {
@@ -8232,7 +8176,19 @@
                                                                                         "value": 4
                                                                                     }
                                                                                 },
-                                                                                "id": "e32eba03-64f8-4562-817f-84722aee9f1b"
+                                                                                "id": "e588b37b-d75f-4720-aeda-b6c9dd89f62e"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_ENGINE_FIELD_SET",
+                                                                                "args": {
+                                                                                    "engineFieldKey": "plat_dash",
+                                                                                    "value": {
+                                                                                        "type": "select",
+                                                                                        "value": 0
+                                                                                    },
+                                                                                    "__collapse": true
+                                                                                },
+                                                                                "id": "6a878996-bf29-4091-8f7a-5f5869b94d62"
                                                                             }
                                                                         ],
                                                                         "true4": [],
@@ -8249,7 +8205,152 @@
                                                                         "true15": [],
                                                                         "false": []
                                                                     },
-                                                                    "id": "befdfa98-406e-4c9d-ba92-086ce5a6716b"
+                                                                    "id": "81d4b3c1-29f3-433d-8de2-72d2ca50c821"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SWITCH",
+                                                                    "args": {
+                                                                        "variable": "3",
+                                                                        "choices": 4,
+                                                                        "__collapseCase0": false,
+                                                                        "value0": 1,
+                                                                        "__collapseCase1": false,
+                                                                        "value1": 2,
+                                                                        "__collapseCase2": false,
+                                                                        "value2": 3,
+                                                                        "__collapseCase3": false,
+                                                                        "value3": 4,
+                                                                        "__collapseCase4": false,
+                                                                        "value4": 5,
+                                                                        "__collapseCase5": false,
+                                                                        "value5": 6,
+                                                                        "__collapseCase6": false,
+                                                                        "value6": 7,
+                                                                        "__collapseCase7": false,
+                                                                        "value7": 8,
+                                                                        "__collapseCase8": false,
+                                                                        "value8": 9,
+                                                                        "__collapseCase9": false,
+                                                                        "value9": 10,
+                                                                        "__collapseCase10": false,
+                                                                        "value10": 11,
+                                                                        "__collapseCase11": false,
+                                                                        "value11": 12,
+                                                                        "__collapseCase12": false,
+                                                                        "value12": 13,
+                                                                        "__collapseCase13": false,
+                                                                        "value13": 14,
+                                                                        "__collapseCase14": false,
+                                                                        "value14": 15,
+                                                                        "__collapseCase15": false,
+                                                                        "value15": 16,
+                                                                        "__collapseElse": false,
+                                                                        "__collapse": true
+                                                                    },
+                                                                    "children": {
+                                                                        "true0": [
+                                                                            {
+                                                                                "command": "EVENT_ACTOR_SHOW",
+                                                                                "args": {
+                                                                                    "actorId": "678a572c-c36c-4e30-bfb5-63896c44496a"
+                                                                                },
+                                                                                "id": "33a1b414-563d-4da3-b9f9-aa5bb2558856"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_ACTOR_SET_FRAME",
+                                                                                "args": {
+                                                                                    "actorId": "678a572c-c36c-4e30-bfb5-63896c44496a",
+                                                                                    "frame": {
+                                                                                        "type": "number",
+                                                                                        "value": 0
+                                                                                    }
+                                                                                },
+                                                                                "id": "ae45b0d9-bcda-4951-9d1c-ab0c0d0b7d28"
+                                                                            }
+                                                                        ],
+                                                                        "true1": [
+                                                                            {
+                                                                                "command": "EVENT_ACTOR_SHOW",
+                                                                                "args": {
+                                                                                    "actorId": "678a572c-c36c-4e30-bfb5-63896c44496a"
+                                                                                },
+                                                                                "id": "8ed3a806-eaa5-4bd9-80df-8816486a9e2b"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_ACTOR_SET_FRAME",
+                                                                                "args": {
+                                                                                    "actorId": "678a572c-c36c-4e30-bfb5-63896c44496a",
+                                                                                    "frame": {
+                                                                                        "type": "number",
+                                                                                        "value": 1
+                                                                                    }
+                                                                                },
+                                                                                "id": "5dde4d03-ebad-40e0-b1d2-5b2b048ee69b"
+                                                                            }
+                                                                        ],
+                                                                        "true2": [
+                                                                            {
+                                                                                "command": "EVENT_ACTOR_SHOW",
+                                                                                "args": {
+                                                                                    "actorId": "678a572c-c36c-4e30-bfb5-63896c44496a"
+                                                                                },
+                                                                                "id": "7e5aed74-fe8b-42c5-978f-047472d5fc61"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_ACTOR_SET_FRAME",
+                                                                                "args": {
+                                                                                    "actorId": "678a572c-c36c-4e30-bfb5-63896c44496a",
+                                                                                    "frame": {
+                                                                                        "type": "number",
+                                                                                        "value": 2
+                                                                                    }
+                                                                                },
+                                                                                "id": "8c4df560-8b2c-437a-b390-b26927fe0eb1"
+                                                                            }
+                                                                        ],
+                                                                        "true3": [
+                                                                            {
+                                                                                "command": "EVENT_ACTOR_SHOW",
+                                                                                "args": {
+                                                                                    "actorId": "678a572c-c36c-4e30-bfb5-63896c44496a"
+                                                                                },
+                                                                                "id": "bc23ba77-712e-41ca-9fa7-9f1fcb1900b2"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_ACTOR_SET_FRAME",
+                                                                                "args": {
+                                                                                    "actorId": "678a572c-c36c-4e30-bfb5-63896c44496a",
+                                                                                    "frame": {
+                                                                                        "type": "number",
+                                                                                        "value": 3
+                                                                                    }
+                                                                                },
+                                                                                "id": "f20c3ce9-5def-441f-8bbf-4923c3a9ee95"
+                                                                            }
+                                                                        ],
+                                                                        "true4": [],
+                                                                        "true5": [],
+                                                                        "true6": [],
+                                                                        "true7": [],
+                                                                        "true8": [],
+                                                                        "true9": [],
+                                                                        "true10": [],
+                                                                        "true11": [],
+                                                                        "true12": [],
+                                                                        "true13": [],
+                                                                        "true14": [],
+                                                                        "true15": [],
+                                                                        "false": [
+                                                                            {
+                                                                                "command": "EVENT_ACTOR_HIDE",
+                                                                                "args": {
+                                                                                    "actorId": "$self$"
+                                                                                },
+                                                                                "id": "c279cde9-7a8f-490c-a394-b036ff85b137"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "id": "c0a6a758-d891-47b4-ae39-84884bb9a781"
                                                                 }
                                                             ],
                                                             "false": []
@@ -8740,7 +8841,8 @@
                             "up"
                         ],
                         "override": true,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -23679,6 +23781,31 @@
             "symbol": "var_immunity"
         },
         {
+            "id": "5",
+            "name": "sHits",
+            "symbol": "var_shits"
+        },
+        {
+            "id": "6",
+            "name": "boHits",
+            "symbol": "var_bohits"
+        },
+        {
+            "id": "7",
+            "name": "fHits",
+            "symbol": "var_fhits"
+        },
+        {
+            "id": "8",
+            "name": "blHits",
+            "symbol": "var_blhits"
+        },
+        {
+            "id": "9",
+            "name": "finisherActive",
+            "symbol": "var_finisheractive"
+        },
+        {
             "id": "904411d3-6661-48e3-8421-8093fa0dcf35__L0",
             "name": "Local 0",
             "symbol": "var_local_0"
@@ -23727,31 +23854,6 @@
             "id": "df1d971c-655b-468a-b124-5efaab2e8033__L0",
             "name": "jumpInterval",
             "symbol": "var_jumpinterval_0"
-        },
-        {
-            "id": "5",
-            "name": "sHits",
-            "symbol": "var_shits"
-        },
-        {
-            "id": "6",
-            "name": "boHits",
-            "symbol": "var_bohits"
-        },
-        {
-            "id": "7",
-            "name": "fHits",
-            "symbol": "var_fhits"
-        },
-        {
-            "id": "8",
-            "name": "blHits",
-            "symbol": "var_blhits"
-        },
-        {
-            "id": "9",
-            "name": "finisherActive",
-            "symbol": "var_finisheractive"
         }
     ],
     "engineFieldValues": [
