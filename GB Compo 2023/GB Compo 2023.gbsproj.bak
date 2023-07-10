@@ -8622,6 +8622,29 @@
                                             "id": "032658bb-4aa8-42b3-8b61-68c3330b04eb"
                                         },
                                         {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "crash",
+                                                "priority": "medium",
+                                                "pitch": 1,
+                                                "frequency": 200,
+                                                "duration": 0.1,
+                                                "wait": false,
+                                                "effect": 0
+                                            },
+                                            "id": "1edf29bb-1160-42bb-add1-c71a144bb37e"
+                                        },
+                                        {
+                                            "command": "EVENT_CAMERA_SHAKE",
+                                            "args": {
+                                                "time": 0.5,
+                                                "frames": 1,
+                                                "shakeDirection": "horizontal",
+                                                "units": "frames"
+                                            },
+                                            "id": "63f73d3d-10de-4ff3-81e2-3cf0c4081cc1"
+                                        },
+                                        {
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
                                             "args": {
                                                 "customEventId": "86479e8b-e4a2-49e6-993a-7c09f2748b01",
@@ -27274,9 +27297,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            558,
-            195,
-            195
+            770,
+            269,
+            269
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
