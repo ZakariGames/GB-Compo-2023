@@ -7118,7 +7118,7 @@
                             "type": "variable",
                             "value": "2"
                         },
-                        "__collapse": false,
+                        "__collapse": true,
                         "$actor[0]$": "18908fa8-103d-4266-bf09-0e857a719ac6"
                     },
                     "id": "02f65209-4d78-4b38-a124-edba616059a6"
@@ -7131,7 +7131,7 @@
                             "type": "variable",
                             "value": "2"
                         },
-                        "__collapse": false,
+                        "__collapse": true,
                         "$actor[0]$": "1385f984-f262-494c-a457-b0e01b46850c"
                     },
                     "id": "c48670f2-2159-4901-a951-11f774b2de22"
@@ -8584,44 +8584,82 @@
                     "children": {
                         "true": [
                             {
-                                "command": "EVENT_LAUNCH_PROJECTILE",
+                                "command": "EVENT_IF_VALUE",
                                 "args": {
-                                    "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-                                    "spriteStateId": "",
-                                    "actorId": "player",
-                                    "x": 0,
-                                    "y": 0,
-                                    "otherActorId": "$self$",
-                                    "direction": "right",
-                                    "angle": 0,
-                                    "angleVariable": "L0",
-                                    "directionType": "actor",
-                                    "initialOffset": 0,
-                                    "speed": 4,
-                                    "animSpeed": 15,
-                                    "lifeTime": 1,
-                                    "loopAnim": false,
-                                    "destroyOnHit": true,
-                                    "collisionGroup": "3",
-                                    "collisionMask": [
-                                        "1"
+                                    "variable": "9",
+                                    "operator": ">",
+                                    "comparator": "0",
+                                    "__collapseElse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_LAUNCH_PROJECTILE",
+                                            "args": {
+                                                "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
+                                                "spriteStateId": "",
+                                                "actorId": "player",
+                                                "x": 0,
+                                                "y": 0,
+                                                "otherActorId": "$self$",
+                                                "direction": "right",
+                                                "angle": 0,
+                                                "angleVariable": "L0",
+                                                "directionType": "actor",
+                                                "initialOffset": 0,
+                                                "speed": 4,
+                                                "animSpeed": 15,
+                                                "lifeTime": 1,
+                                                "loopAnim": false,
+                                                "destroyOnHit": true,
+                                                "collisionGroup": "3",
+                                                "collisionMask": [
+                                                    "1"
+                                                ],
+                                                "__collapse": false,
+                                                "__comment": false
+                                            },
+                                            "id": "032658bb-4aa8-42b3-8b61-68c3330b04eb"
+                                        },
+                                        {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "crash",
+                                                "priority": "medium",
+                                                "pitch": 1,
+                                                "frequency": 200,
+                                                "duration": 0.1,
+                                                "wait": false,
+                                                "effect": 0
+                                            },
+                                            "id": "1edf29bb-1160-42bb-add1-c71a144bb37e"
+                                        },
+                                        {
+                                            "command": "EVENT_CAMERA_SHAKE",
+                                            "args": {
+                                                "time": 0.5,
+                                                "frames": 1,
+                                                "shakeDirection": "horizontal",
+                                                "units": "frames"
+                                            },
+                                            "id": "63f73d3d-10de-4ff3-81e2-3cf0c4081cc1"
+                                        },
+                                        {
+                                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                                            "args": {
+                                                "customEventId": "86479e8b-e4a2-49e6-993a-7c09f2748b01",
+                                                "$variable[V0]$": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                },
+                                                "$actor[0]$": "1385f984-f262-494c-a457-b0e01b46850c"
+                                            },
+                                            "id": "5c8cfff1-aec6-4dd6-b04c-dafdbdf32432"
+                                        }
                                     ],
-                                    "__collapse": true,
-                                    "__comment": false
+                                    "false": []
                                 },
-                                "id": "032658bb-4aa8-42b3-8b61-68c3330b04eb"
-                            },
-                            {
-                                "command": "EVENT_CALL_CUSTOM_EVENT",
-                                "args": {
-                                    "customEventId": "86479e8b-e4a2-49e6-993a-7c09f2748b01",
-                                    "$variable[V0]$": {
-                                        "type": "number",
-                                        "value": 1
-                                    },
-                                    "$actor[0]$": "1385f984-f262-494c-a457-b0e01b46850c"
-                                },
-                                "id": "5c8cfff1-aec6-4dd6-b04c-dafdbdf32432"
+                                "id": "f01964d4-22c2-491f-a4cf-55bbc38600c4"
                             }
                         ]
                     },
@@ -8840,6 +8878,30 @@
                         ]
                     },
                     "id": "d0829204-f6d1-4888-a6a7-3f8c88103260"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "down"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press",
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "e71aa80f-efeb-49ff-b63a-785f77cef3ec",
+                                    "$actor[0]$": "1385f984-f262-494c-a457-b0e01b46850c"
+                                },
+                                "id": "e7e72cb0-7522-47fc-9a5a-af45a4d9d24a"
+                            }
+                        ]
+                    },
+                    "id": "eec8c964-19c0-4043-bf08-507f1789a37d"
                 },
                 {
                     "command": "EVENT_FADE_IN",
@@ -26885,22 +26947,7 @@
                         "__collapseElse": true
                     },
                     "children": {
-                        "true": [
-                            {
-                                "command": "EVENT_SET_INPUT_SCRIPT",
-                                "args": {
-                                    "input": [
-                                        "b"
-                                    ],
-                                    "override": true,
-                                    "__scriptTabs": "press"
-                                },
-                                "children": {
-                                    "true": []
-                                },
-                                "id": "8da37c50-8c36-4dc5-95c8-1a058014d752"
-                            }
-                        ],
+                        "true": [],
                         "false": []
                     },
                     "id": "ff9fd694-42ae-4f53-8e16-c0a53a8da449"
@@ -27221,7 +27268,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 1808,
-        "worldScrollY": 1807,
+        "worldScrollY": 1707,
         "zoom": 325,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -27250,9 +27297,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            558,
-            195,
-            195
+            770,
+            269,
+            269
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
