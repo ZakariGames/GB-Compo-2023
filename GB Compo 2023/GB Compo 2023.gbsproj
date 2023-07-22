@@ -5276,7 +5276,7 @@
                                 "variable": "4",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -13560,9 +13560,180 @@
                     "paletteId": "",
                     "isPinned": false,
                     "persistent": false,
-                    "collisionGroup": "",
+                    "collisionGroup": "1",
                     "symbol": "actor_1",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "4",
+                                "__collapseElse": true,
+                                "__disableElse": true,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "4",
+                                            "__collapse": true
+                                        },
+                                        "id": "5891edef-79d8-4687-858b-95a3fa026b03"
+                                    },
+                                    {
+                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                        "args": {
+                                            "customEventId": "b1d8b746-6898-4e02-b713-eb1b7ca6df3a",
+                                            "$variable[V0]$": {
+                                                "type": "number",
+                                                "value": 1
+                                            },
+                                            "__collapse": false,
+                                            "$actor[0]$": "player"
+                                        },
+                                        "id": "40c77e82-27f6-4da1-bd14-dea71a7e6ae7"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_FRAME",
+                                        "args": {
+                                            "actorId": "d3bd5f41-251c-417c-a696-40c272528a89",
+                                            "frame": {
+                                                "type": "variable",
+                                                "value": "2"
+                                            },
+                                            "__comment": false,
+                                            "__collapse": false
+                                        },
+                                        "id": "8d750522-04dc-40b5-959a-3735d1f50b72"
+                                    },
+                                    {
+                                        "command": "EVENT_GROUP",
+                                        "args": {
+                                            "__collapse": false,
+                                            "__label": "Player Hit Effect"
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                    "args": {
+                                                        "type": "beep",
+                                                        "priority": "medium",
+                                                        "pitch": 4,
+                                                        "frequency": 100,
+                                                        "duration": 0.1,
+                                                        "wait": true,
+                                                        "effect": 0,
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "a46f5576-7dd0-49ab-979f-4871fdd7039b"
+                                                },
+                                                {
+                                                    "command": "EVENT_PLAYER_BOUNCE",
+                                                    "args": {
+                                                        "height": "low",
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "0b10a3f0-3f95-4a00-98b5-4b9783d64bb9"
+                                                },
+                                                {
+                                                    "command": "EVENT_CAMERA_SHAKE",
+                                                    "args": {
+                                                        "time": 0.2,
+                                                        "frames": 30,
+                                                        "shakeDirection": "horizontal"
+                                                    },
+                                                    "id": "895f8833-1d78-4349-b0d3-5e692f8ae8b6"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "player"
+                                                    },
+                                                    "id": "9c6cd545-c343-4f6a-bf95-63c4ea0af116"
+                                                },
+                                                {
+                                                    "command": "EVENT_WAIT",
+                                                    "args": {
+                                                        "time": 0.2,
+                                                        "frames": 30,
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "af42fc35-7e96-44cb-a3e5-120dce335555"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SHOW",
+                                                    "args": {
+                                                        "actorId": "player",
+                                                        "time": 0.3,
+                                                        "frames": 30,
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "fa722535-affb-4111-b592-af2b6a3165ac"
+                                                },
+                                                {
+                                                    "command": "EVENT_WAIT",
+                                                    "args": {
+                                                        "time": 0.2,
+                                                        "frames": 30,
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "c57afb22-6a46-44f1-82b8-20e2ecd3fbf6"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "player"
+                                                    },
+                                                    "id": "589743b3-e075-44f1-ba46-a2ee82741df1"
+                                                },
+                                                {
+                                                    "command": "EVENT_WAIT",
+                                                    "args": {
+                                                        "time": 0.2,
+                                                        "frames": 30,
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "eca97cc2-f407-4d11-a04e-3a98c8c578ff"
+                                                },
+                                                {
+                                                    "command": "EVENT_ACTOR_SHOW",
+                                                    "args": {
+                                                        "actorId": "player",
+                                                        "time": 0.3,
+                                                        "frames": 30,
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "10a846db-c003-4cf7-acf1-316065c13389"
+                                                }
+                                            ]
+                                        },
+                                        "id": "85cad8d7-a513-4892-b948-88b643895bdb"
+                                    },
+                                    {
+                                        "command": "EVENT_WAIT",
+                                        "args": {
+                                            "time": 0.3,
+                                            "frames": 30,
+                                            "__collapse": true
+                                        },
+                                        "id": "52c0c2a3-2baa-4f5a-974d-8a383d4e3230"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_FALSE",
+                                        "args": {
+                                            "variable": "4",
+                                            "__collapse": true
+                                        },
+                                        "id": "5a4b5bd8-3c39-4145-b56c-5a3a5b4d41fd"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "2ee18d47-2a8f-48a5-956c-d27a0878660a"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -13652,7 +13823,7 @@
                     "name": "Bird",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "137d2dfa-7386-4861-979d-5bff00d90653",
+                    "spriteSheetId": "867bff70-b12c-45aa-a0c0-94aa9d7965b4",
                     "direction": "down",
                     "moveSpeed": 3,
                     "animSpeed": 15,
@@ -15456,7 +15627,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "Dashes",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -15567,6 +15738,13 @@
                         "true": []
                     },
                     "id": "623c1885-f9cd-4299-908b-1cc4421aa066"
+                },
+                {
+                    "command": "EVENT_SCENE_PUSH_STATE",
+                    "args": {
+                        "__collapse": true
+                    },
+                    "id": "8ff497e9-f71a-4766-b3b3-e11ce7c9299d"
                 }
             ],
             "playerHit1Script": [],
@@ -29231,22 +29409,11 @@
             "symbol": "script_7",
             "script": [
                 {
-                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "command": "EVENT_GBVM_SCRIPT",
                     "args": {
-                        "input": [
-                            "left",
-                            "down",
-                            "right",
-                            "up"
-                        ],
-                        "override": true,
-                        "__scriptTabs": "press",
-                        "__collapse": true
+                        "script": "VM_LOCK"
                     },
-                    "children": {
-                        "true": []
-                    },
-                    "id": "2966cb05-a92a-4788-adb3-3bf1aa4b47e6"
+                    "id": "b0b29b5d-b321-468e-8aea-12698562684e"
                 },
                 {
                     "command": "EVENT_IF_ACTOR_DIRECTION",
@@ -30785,16 +30952,11 @@
                     "id": "25e91022-d455-4eeb-887a-fdaffe4ff8f3"
                 },
                 {
-                    "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                    "command": "EVENT_GBVM_SCRIPT",
                     "args": {
-                        "input": [
-                            "left",
-                            "up",
-                            "down",
-                            "right"
-                        ]
+                        "script": "VM_UNLOCK"
                     },
-                    "id": "318fe3a7-b170-4a80-9cca-258176dcecf8"
+                    "id": "4de965e4-7071-4b07-9bbc-fa70a7ff81b2"
                 }
             ]
         },
@@ -30823,12 +30985,20 @@
             "symbol": "script_8",
             "script": [
                 {
+                    "command": "EVENT_GBVM_SCRIPT",
+                    "args": {
+                        "script": "VM_LOCK",
+                        "__collapse": true
+                    },
+                    "id": "8add5881-6602-4ab6-9fd0-da02cba8c72e"
+                },
+                {
                     "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                     "args": {
                         "actorId": "$self$",
                         "speed": 7,
                         "__collapse": true,
-                        "__comment": true
+                        "__comment": false
                     },
                     "id": "805b832c-384a-4746-8a1a-c33225355a28"
                 },
@@ -30844,6 +31014,28 @@
                         "__comment": true
                     },
                     "id": "a6b7364f-1e69-4779-bec0-1dc9070f5c87"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                    "args": {
+                        "actorId": "$self$",
+                        "x": 0,
+                        "y": -4,
+                        "moveType": "vertical",
+                        "useCollisions": false
+                    },
+                    "id": "1df3ec86-bbcb-4f2b-943f-69d242d16482"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                    "args": {
+                        "actorId": "$self$",
+                        "x": 0,
+                        "y": 4,
+                        "moveType": "horizontal",
+                        "useCollisions": false
+                    },
+                    "id": "530e34e2-6847-43d6-b69e-4be5e13d67d4"
                 },
                 {
                     "command": "EVENT_CAMERA_SHAKE",
@@ -30874,7 +31066,7 @@
                     "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
                     "args": {
                         "actorId": "0",
-                        "operator": ">",
+                        "operator": ">=",
                         "distance": {
                             "type": "number",
                             "value": 0
@@ -30970,11 +31162,27 @@
                     "id": "4388665b-6829-4772-a7ad-cc4ba19f92db"
                 },
                 {
+                    "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                    "args": {
+                        "actorId": "$self$",
+                        "speed": 1,
+                        "__collapse": true
+                    },
+                    "id": "aa85b8b5-ba78-4036-b9e4-a1a1e04b67d1"
+                },
+                {
+                    "command": "EVENT_GBVM_SCRIPT",
+                    "args": {
+                        "script": "VM_UNLOCK"
+                    },
+                    "id": "53261043-7c48-4a2d-88d0-44edb896053d"
+                },
+                {
                     "command": "EVENT_WAIT",
                     "args": {
                         "time": 3,
                         "frames": 30,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "id": "17c77fd4-9318-486a-913c-bb7dcd98b38e"
                 },
@@ -30982,7 +31190,7 @@
                     "command": "EVENT_ACTOR_DEACTIVATE",
                     "args": {
                         "actorId": "0",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "id": "bdc7770f-ba30-43c3-acad-add8757ef3ec"
                 }
@@ -31005,7 +31213,7 @@
                     "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
                     "args": {
                         "actorId": "0",
-                        "operator": ">",
+                        "operator": ">=",
                         "distance": {
                             "type": "number",
                             "value": 0
@@ -31026,7 +31234,7 @@
                                     "pitch": 3,
                                     "frequency": 200,
                                     "duration": 0.1,
-                                    "wait": false,
+                                    "wait": true,
                                     "effect": 0
                                 },
                                 "id": "efa8aa24-baef-4f66-bf7b-d53334512921"
@@ -31055,39 +31263,68 @@
                                 "id": "95cab843-3ec3-4338-93d1-188d0ec12cc5"
                             },
                             {
-                                "command": "EVENT_ACTOR_MOVE_RELATIVE",
-                                "args": {
-                                    "actorId": "0",
-                                    "x": 9,
-                                    "y": -9,
-                                    "moveType": "diagonal",
-                                    "useCollisions": false
+                                "command": "EVENT_GROUP",
+                                "args": {},
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                            "args": {
+                                                "actorId": "0",
+                                                "x": 0,
+                                                "y": -6,
+                                                "moveType": "diagonal",
+                                                "useCollisions": false
+                                            },
+                                            "id": "03763348-a5cf-4d25-983f-5bf5092b5c19"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                            "args": {
+                                                "actorId": "0",
+                                                "x": 6,
+                                                "y": 6,
+                                                "moveType": "diagonal",
+                                                "useCollisions": false
+                                            },
+                                            "id": "77c1edc3-b797-46c7-9b0c-4c8ed9b4cdd7"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                            "args": {
+                                                "actorId": "0",
+                                                "x": -6,
+                                                "y": 6,
+                                                "moveType": "diagonal",
+                                                "useCollisions": false
+                                            },
+                                            "id": "3b957e91-5698-44c0-871d-193aa4f12f74"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                            "args": {
+                                                "actorId": "0",
+                                                "x": -6,
+                                                "y": -6,
+                                                "moveType": "diagonal",
+                                                "useCollisions": false
+                                            },
+                                            "id": "290e3f5f-c399-493b-b070-1ffb7d5a3660"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                            "args": {
+                                                "actorId": "0",
+                                                "x": 6,
+                                                "y": -6,
+                                                "moveType": "diagonal",
+                                                "useCollisions": false
+                                            },
+                                            "id": "ada72c1d-5d71-4884-9f38-6b85f9eebee2"
+                                        }
+                                    ]
                                 },
-                                "id": "4bebac52-3efe-4f04-925c-bcd3fb2690d5"
-                            },
-                            {
-                                "command": "EVENT_ACTOR_MOVE_RELATIVE",
-                                "args": {
-                                    "actorId": "0",
-                                    "x": 2,
-                                    "y": 9,
-                                    "moveType": "diagonal",
-                                    "useCollisions": false,
-                                    "__comment": false
-                                },
-                                "id": "cc70b5b3-d894-4fc2-9076-e9fb5de0dbb1"
-                            },
-                            {
-                                "command": "EVENT_ACTOR_MOVE_RELATIVE",
-                                "args": {
-                                    "actorId": "0",
-                                    "x": -9,
-                                    "y": 0,
-                                    "moveType": "horizontal",
-                                    "useCollisions": false,
-                                    "__comment": false
-                                },
-                                "id": "43403fa3-c6cf-47a1-bf34-75d0e26bb8e8"
+                                "id": "08b53371-4f72-449c-8460-6f4ef8408eed"
                             },
                             {
                                 "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
@@ -32510,8 +32747,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 7,
-        "worldScrollY": 833,
+        "worldScrollX": 6,
+        "worldScrollY": 967,
         "zoom": 175,
         "customColorsEnabled": true,
         "sgbEnabled": false,
