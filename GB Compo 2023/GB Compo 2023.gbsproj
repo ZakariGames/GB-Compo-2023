@@ -12413,8 +12413,8 @@
             "autoFadeSpeed": 1,
             "id": "3ecb3fca-49e8-4e7f-8a7f-b0792908c4a9",
             "symbol": "scene_6",
-            "x": 620.7999999999997,
-            "y": 261.35064935064975,
+            "x": 620.4363636363634,
+            "y": 260.9870129870134,
             "actors": [
                 {
                     "name": "",
@@ -22142,7 +22142,7 @@
                         "comparator": 2,
                         "__collapseElse": false,
                         "__label": "B Attach",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -22166,7 +22166,8 @@
                                                 "operator": ">",
                                                 "comparator": "0",
                                                 "__collapseElse": true,
-                                                "__collapse": true
+                                                "__collapse": false,
+                                                "__comment": true
                                             },
                                             "children": {
                                                 "true": [
@@ -22261,6 +22262,13 @@
                                                 "false": []
                                             },
                                             "id": "1492decc-220c-4dd4-9f75-57a475792a06"
+                                        },
+                                        {
+                                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                                            "args": {
+                                                "customEventId": "88cf3e97-6832-4700-b180-9da7920e49f4"
+                                            },
+                                            "id": "da043c2f-32dc-4c3a-8b18-4ad8b3c9d4c2"
                                         }
                                     ]
                                 },
@@ -22542,7 +22550,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "A Attach",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -22988,83 +22996,11 @@
                                                                                                                                                                                                         "children": {
                                                                                                                                                                                                             "true": [
                                                                                                                                                                                                                 {
-                                                                                                                                                                                                                    "command": "EVENT_IF_VALUE",
+                                                                                                                                                                                                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                                                                                                                                                                                                     "args": {
-                                                                                                                                                                                                                        "variable": "9",
-                                                                                                                                                                                                                        "operator": ">",
-                                                                                                                                                                                                                        "comparator": "0",
-                                                                                                                                                                                                                        "__collapseElse": false,
-                                                                                                                                                                                                                        "__collapse": false
+                                                                                                                                                                                                                        "customEventId": "88cf3e97-6832-4700-b180-9da7920e49f4"
                                                                                                                                                                                                                     },
-                                                                                                                                                                                                                    "children": {
-                                                                                                                                                                                                                        "true": [
-                                                                                                                                                                                                                            {
-                                                                                                                                                                                                                                "command": "EVENT_LAUNCH_PROJECTILE",
-                                                                                                                                                                                                                                "args": {
-                                                                                                                                                                                                                                    "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-                                                                                                                                                                                                                                    "spriteStateId": "",
-                                                                                                                                                                                                                                    "actorId": "player",
-                                                                                                                                                                                                                                    "x": 0,
-                                                                                                                                                                                                                                    "y": 0,
-                                                                                                                                                                                                                                    "otherActorId": "player",
-                                                                                                                                                                                                                                    "direction": "right",
-                                                                                                                                                                                                                                    "angle": 0,
-                                                                                                                                                                                                                                    "angleVariable": "L0",
-                                                                                                                                                                                                                                    "directionType": "actor",
-                                                                                                                                                                                                                                    "initialOffset": 0,
-                                                                                                                                                                                                                                    "speed": 4,
-                                                                                                                                                                                                                                    "animSpeed": 15,
-                                                                                                                                                                                                                                    "lifeTime": 1,
-                                                                                                                                                                                                                                    "loopAnim": false,
-                                                                                                                                                                                                                                    "destroyOnHit": true,
-                                                                                                                                                                                                                                    "collisionGroup": "3",
-                                                                                                                                                                                                                                    "collisionMask": [
-                                                                                                                                                                                                                                        "1"
-                                                                                                                                                                                                                                    ],
-                                                                                                                                                                                                                                    "__collapse": false,
-                                                                                                                                                                                                                                    "__comment": false
-                                                                                                                                                                                                                                },
-                                                                                                                                                                                                                                "id": "e231b194-9048-49c6-be8c-5a55586e244d"
-                                                                                                                                                                                                                            },
-                                                                                                                                                                                                                            {
-                                                                                                                                                                                                                                "command": "EVENT_SOUND_PLAY_EFFECT",
-                                                                                                                                                                                                                                "args": {
-                                                                                                                                                                                                                                    "type": "crash",
-                                                                                                                                                                                                                                    "priority": "medium",
-                                                                                                                                                                                                                                    "pitch": 1,
-                                                                                                                                                                                                                                    "frequency": 200,
-                                                                                                                                                                                                                                    "duration": 0.1,
-                                                                                                                                                                                                                                    "wait": false,
-                                                                                                                                                                                                                                    "effect": 0
-                                                                                                                                                                                                                                },
-                                                                                                                                                                                                                                "id": "bde13142-a8aa-42ea-9d34-233f65a1839c"
-                                                                                                                                                                                                                            },
-                                                                                                                                                                                                                            {
-                                                                                                                                                                                                                                "command": "EVENT_CAMERA_SHAKE",
-                                                                                                                                                                                                                                "args": {
-                                                                                                                                                                                                                                    "time": 0.5,
-                                                                                                                                                                                                                                    "frames": 1,
-                                                                                                                                                                                                                                    "shakeDirection": "horizontal",
-                                                                                                                                                                                                                                    "units": "frames"
-                                                                                                                                                                                                                                },
-                                                                                                                                                                                                                                "id": "f9701803-39c5-4d42-a4e2-2fb566956bc9"
-                                                                                                                                                                                                                            },
-                                                                                                                                                                                                                            {
-                                                                                                                                                                                                                                "command": "EVENT_CALL_CUSTOM_EVENT",
-                                                                                                                                                                                                                                "args": {
-                                                                                                                                                                                                                                    "customEventId": "86479e8b-e4a2-49e6-993a-7c09f2748b01",
-                                                                                                                                                                                                                                    "$variable[V0]$": {
-                                                                                                                                                                                                                                        "type": "number",
-                                                                                                                                                                                                                                        "value": 1
-                                                                                                                                                                                                                                    },
-                                                                                                                                                                                                                                    "$actor[0]$": "603a5649-ff37-477b-95a7-f7cd2ff3f555"
-                                                                                                                                                                                                                                },
-                                                                                                                                                                                                                                "id": "6d43e334-91a5-4126-b6a1-480d0ce65dc4"
-                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                        ],
-                                                                                                                                                                                                                        "false": []
-                                                                                                                                                                                                                    },
-                                                                                                                                                                                                                    "id": "52becc29-8aba-4a2e-a55d-7bc29711cca9"
+                                                                                                                                                                                                                    "id": "83ae3191-9b7f-4e41-8ae8-01b699aacbdd"
                                                                                                                                                                                                                 }
                                                                                                                                                                                                             ]
                                                                                                                                                                                                         },
@@ -23108,86 +23044,15 @@
                                                                                                                                                                                             "children": {
                                                                                                                                                                                                 "true": [
                                                                                                                                                                                                     {
-                                                                                                                                                                                                        "command": "EVENT_IF_VALUE",
+                                                                                                                                                                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
                                                                                                                                                                                                         "args": {
-                                                                                                                                                                                                            "variable": "9",
-                                                                                                                                                                                                            "operator": ">",
-                                                                                                                                                                                                            "comparator": "0",
-                                                                                                                                                                                                            "__collapseElse": false
+                                                                                                                                                                                                            "customEventId": "88cf3e97-6832-4700-b180-9da7920e49f4"
                                                                                                                                                                                                         },
-                                                                                                                                                                                                        "children": {
-                                                                                                                                                                                                            "true": [
-                                                                                                                                                                                                                {
-                                                                                                                                                                                                                    "command": "EVENT_LAUNCH_PROJECTILE",
-                                                                                                                                                                                                                    "args": {
-                                                                                                                                                                                                                        "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-                                                                                                                                                                                                                        "spriteStateId": "",
-                                                                                                                                                                                                                        "actorId": "player",
-                                                                                                                                                                                                                        "x": 0,
-                                                                                                                                                                                                                        "y": 0,
-                                                                                                                                                                                                                        "otherActorId": "player",
-                                                                                                                                                                                                                        "direction": "right",
-                                                                                                                                                                                                                        "angle": 0,
-                                                                                                                                                                                                                        "angleVariable": "L0",
-                                                                                                                                                                                                                        "directionType": "actor",
-                                                                                                                                                                                                                        "initialOffset": 0,
-                                                                                                                                                                                                                        "speed": 4,
-                                                                                                                                                                                                                        "animSpeed": 15,
-                                                                                                                                                                                                                        "lifeTime": 1,
-                                                                                                                                                                                                                        "loopAnim": false,
-                                                                                                                                                                                                                        "destroyOnHit": true,
-                                                                                                                                                                                                                        "collisionGroup": "3",
-                                                                                                                                                                                                                        "collisionMask": [
-                                                                                                                                                                                                                            "1"
-                                                                                                                                                                                                                        ],
-                                                                                                                                                                                                                        "__collapse": false,
-                                                                                                                                                                                                                        "__comment": false
-                                                                                                                                                                                                                    },
-                                                                                                                                                                                                                    "id": "ca24e3fd-6518-4895-a796-abbf3f24f5aa"
-                                                                                                                                                                                                                },
-                                                                                                                                                                                                                {
-                                                                                                                                                                                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
-                                                                                                                                                                                                                    "args": {
-                                                                                                                                                                                                                        "type": "crash",
-                                                                                                                                                                                                                        "priority": "medium",
-                                                                                                                                                                                                                        "pitch": 1,
-                                                                                                                                                                                                                        "frequency": 200,
-                                                                                                                                                                                                                        "duration": 0.1,
-                                                                                                                                                                                                                        "wait": false,
-                                                                                                                                                                                                                        "effect": 0
-                                                                                                                                                                                                                    },
-                                                                                                                                                                                                                    "id": "a6c0a9fe-0d72-473d-9aeb-e00375a20495"
-                                                                                                                                                                                                                },
-                                                                                                                                                                                                                {
-                                                                                                                                                                                                                    "command": "EVENT_CAMERA_SHAKE",
-                                                                                                                                                                                                                    "args": {
-                                                                                                                                                                                                                        "time": 0.5,
-                                                                                                                                                                                                                        "frames": 1,
-                                                                                                                                                                                                                        "shakeDirection": "horizontal",
-                                                                                                                                                                                                                        "units": "frames"
-                                                                                                                                                                                                                    },
-                                                                                                                                                                                                                    "id": "bfcf772a-beb7-425e-b42c-6d7e460e0c84"
-                                                                                                                                                                                                                },
-                                                                                                                                                                                                                {
-                                                                                                                                                                                                                    "command": "EVENT_CALL_CUSTOM_EVENT",
-                                                                                                                                                                                                                    "args": {
-                                                                                                                                                                                                                        "customEventId": "86479e8b-e4a2-49e6-993a-7c09f2748b01",
-                                                                                                                                                                                                                        "$variable[V0]$": {
-                                                                                                                                                                                                                            "type": "number",
-                                                                                                                                                                                                                            "value": 1
-                                                                                                                                                                                                                        },
-                                                                                                                                                                                                                        "$actor[0]$": "603a5649-ff37-477b-95a7-f7cd2ff3f555"
-                                                                                                                                                                                                                    },
-                                                                                                                                                                                                                    "id": "c03576bf-a0d2-4b02-ade7-349e242eb9a8"
-                                                                                                                                                                                                                }
-                                                                                                                                                                                                            ],
-                                                                                                                                                                                                            "false": []
-                                                                                                                                                                                                        },
-                                                                                                                                                                                                        "id": "2b444559-37ae-44a3-97de-b3041b1d205d"
+                                                                                                                                                                                                        "id": "82b31aa4-7a3a-4241-8646-06f3b985059f"
                                                                                                                                                                                                     }
                                                                                                                                                                                                 ]
                                                                                                                                                                                             },
-                                                                                                                                                                                            "id": "e83dbe58-a57b-4e5e-91f9-13e1af2717dd"
+                                                                                                                                                                                            "id": "1bdf6088-517b-404e-9cfc-0d39c9c502d7"
                                                                                                                                                                                         }
                                                                                                                                                                                     ]
                                                                                                                                                                                 },
@@ -23231,86 +23096,15 @@
                                                                                                                                                                     "children": {
                                                                                                                                                                         "true": [
                                                                                                                                                                             {
-                                                                                                                                                                                "command": "EVENT_IF_VALUE",
+                                                                                                                                                                                "command": "EVENT_CALL_CUSTOM_EVENT",
                                                                                                                                                                                 "args": {
-                                                                                                                                                                                    "variable": "9",
-                                                                                                                                                                                    "operator": ">",
-                                                                                                                                                                                    "comparator": "0",
-                                                                                                                                                                                    "__collapseElse": false
+                                                                                                                                                                                    "customEventId": "88cf3e97-6832-4700-b180-9da7920e49f4"
                                                                                                                                                                                 },
-                                                                                                                                                                                "children": {
-                                                                                                                                                                                    "true": [
-                                                                                                                                                                                        {
-                                                                                                                                                                                            "command": "EVENT_LAUNCH_PROJECTILE",
-                                                                                                                                                                                            "args": {
-                                                                                                                                                                                                "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-                                                                                                                                                                                                "spriteStateId": "",
-                                                                                                                                                                                                "actorId": "player",
-                                                                                                                                                                                                "x": 0,
-                                                                                                                                                                                                "y": 0,
-                                                                                                                                                                                                "otherActorId": "player",
-                                                                                                                                                                                                "direction": "right",
-                                                                                                                                                                                                "angle": 0,
-                                                                                                                                                                                                "angleVariable": "L0",
-                                                                                                                                                                                                "directionType": "actor",
-                                                                                                                                                                                                "initialOffset": 0,
-                                                                                                                                                                                                "speed": 4,
-                                                                                                                                                                                                "animSpeed": 15,
-                                                                                                                                                                                                "lifeTime": 1,
-                                                                                                                                                                                                "loopAnim": false,
-                                                                                                                                                                                                "destroyOnHit": true,
-                                                                                                                                                                                                "collisionGroup": "3",
-                                                                                                                                                                                                "collisionMask": [
-                                                                                                                                                                                                    "1"
-                                                                                                                                                                                                ],
-                                                                                                                                                                                                "__collapse": false,
-                                                                                                                                                                                                "__comment": false
-                                                                                                                                                                                            },
-                                                                                                                                                                                            "id": "1eac3d99-43af-4cf0-a248-6609daf95bc6"
-                                                                                                                                                                                        },
-                                                                                                                                                                                        {
-                                                                                                                                                                                            "command": "EVENT_SOUND_PLAY_EFFECT",
-                                                                                                                                                                                            "args": {
-                                                                                                                                                                                                "type": "crash",
-                                                                                                                                                                                                "priority": "medium",
-                                                                                                                                                                                                "pitch": 1,
-                                                                                                                                                                                                "frequency": 200,
-                                                                                                                                                                                                "duration": 0.1,
-                                                                                                                                                                                                "wait": false,
-                                                                                                                                                                                                "effect": 0
-                                                                                                                                                                                            },
-                                                                                                                                                                                            "id": "13b041dc-a6cd-4712-be7d-7400f45f6275"
-                                                                                                                                                                                        },
-                                                                                                                                                                                        {
-                                                                                                                                                                                            "command": "EVENT_CAMERA_SHAKE",
-                                                                                                                                                                                            "args": {
-                                                                                                                                                                                                "time": 0.5,
-                                                                                                                                                                                                "frames": 1,
-                                                                                                                                                                                                "shakeDirection": "horizontal",
-                                                                                                                                                                                                "units": "frames"
-                                                                                                                                                                                            },
-                                                                                                                                                                                            "id": "13b786bb-b70b-4cdd-b989-ae0d586c3a21"
-                                                                                                                                                                                        },
-                                                                                                                                                                                        {
-                                                                                                                                                                                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                                                                                                                                                                                            "args": {
-                                                                                                                                                                                                "customEventId": "86479e8b-e4a2-49e6-993a-7c09f2748b01",
-                                                                                                                                                                                                "$variable[V0]$": {
-                                                                                                                                                                                                    "type": "number",
-                                                                                                                                                                                                    "value": 1
-                                                                                                                                                                                                },
-                                                                                                                                                                                                "$actor[0]$": "603a5649-ff37-477b-95a7-f7cd2ff3f555"
-                                                                                                                                                                                            },
-                                                                                                                                                                                            "id": "2e41de26-6b5c-4194-8957-c1c5542dfb25"
-                                                                                                                                                                                        }
-                                                                                                                                                                                    ],
-                                                                                                                                                                                    "false": []
-                                                                                                                                                                                },
-                                                                                                                                                                                "id": "8ea52e97-3636-4894-9aca-fff829457dbf"
+                                                                                                                                                                                "id": "1941b5d0-8c76-4a9f-bde9-f58887619f29"
                                                                                                                                                                             }
                                                                                                                                                                         ]
                                                                                                                                                                     },
-                                                                                                                                                                    "id": "02c85c60-1d95-426a-86cc-6121c39f26fa"
+                                                                                                                                                                    "id": "b5e490a2-e8f5-4e2e-a5c5-49ce397c6207"
                                                                                                                                                                 }
                                                                                                                                                             ]
                                                                                                                                                         },
@@ -23354,87 +23148,15 @@
                                                                                                                                             "children": {
                                                                                                                                                 "true": [
                                                                                                                                                     {
-                                                                                                                                                        "command": "EVENT_IF_VALUE",
+                                                                                                                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
                                                                                                                                                         "args": {
-                                                                                                                                                            "variable": "9",
-                                                                                                                                                            "operator": ">",
-                                                                                                                                                            "comparator": "0",
-                                                                                                                                                            "__collapseElse": false,
-                                                                                                                                                            "__collapse": false
+                                                                                                                                                            "customEventId": "88cf3e97-6832-4700-b180-9da7920e49f4"
                                                                                                                                                         },
-                                                                                                                                                        "children": {
-                                                                                                                                                            "true": [
-                                                                                                                                                                {
-                                                                                                                                                                    "command": "EVENT_LAUNCH_PROJECTILE",
-                                                                                                                                                                    "args": {
-                                                                                                                                                                        "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-                                                                                                                                                                        "spriteStateId": "",
-                                                                                                                                                                        "actorId": "player",
-                                                                                                                                                                        "x": 0,
-                                                                                                                                                                        "y": 0,
-                                                                                                                                                                        "otherActorId": "player",
-                                                                                                                                                                        "direction": "right",
-                                                                                                                                                                        "angle": 0,
-                                                                                                                                                                        "angleVariable": "L0",
-                                                                                                                                                                        "directionType": "actor",
-                                                                                                                                                                        "initialOffset": 0,
-                                                                                                                                                                        "speed": 4,
-                                                                                                                                                                        "animSpeed": 15,
-                                                                                                                                                                        "lifeTime": 1,
-                                                                                                                                                                        "loopAnim": false,
-                                                                                                                                                                        "destroyOnHit": true,
-                                                                                                                                                                        "collisionGroup": "3",
-                                                                                                                                                                        "collisionMask": [
-                                                                                                                                                                            "1"
-                                                                                                                                                                        ],
-                                                                                                                                                                        "__collapse": false,
-                                                                                                                                                                        "__comment": false
-                                                                                                                                                                    },
-                                                                                                                                                                    "id": "1cf158c1-44d6-443b-8a4c-75125ee6e573"
-                                                                                                                                                                },
-                                                                                                                                                                {
-                                                                                                                                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
-                                                                                                                                                                    "args": {
-                                                                                                                                                                        "type": "crash",
-                                                                                                                                                                        "priority": "medium",
-                                                                                                                                                                        "pitch": 1,
-                                                                                                                                                                        "frequency": 200,
-                                                                                                                                                                        "duration": 0.1,
-                                                                                                                                                                        "wait": false,
-                                                                                                                                                                        "effect": 0
-                                                                                                                                                                    },
-                                                                                                                                                                    "id": "c6d4872a-18cf-4a53-b064-ca03b273baac"
-                                                                                                                                                                },
-                                                                                                                                                                {
-                                                                                                                                                                    "command": "EVENT_CAMERA_SHAKE",
-                                                                                                                                                                    "args": {
-                                                                                                                                                                        "time": 0.5,
-                                                                                                                                                                        "frames": 1,
-                                                                                                                                                                        "shakeDirection": "horizontal",
-                                                                                                                                                                        "units": "frames"
-                                                                                                                                                                    },
-                                                                                                                                                                    "id": "235109df-efb8-430d-8d38-a81f1fab08c0"
-                                                                                                                                                                },
-                                                                                                                                                                {
-                                                                                                                                                                    "command": "EVENT_CALL_CUSTOM_EVENT",
-                                                                                                                                                                    "args": {
-                                                                                                                                                                        "customEventId": "86479e8b-e4a2-49e6-993a-7c09f2748b01",
-                                                                                                                                                                        "$variable[V0]$": {
-                                                                                                                                                                            "type": "number",
-                                                                                                                                                                            "value": 1
-                                                                                                                                                                        },
-                                                                                                                                                                        "$actor[0]$": "603a5649-ff37-477b-95a7-f7cd2ff3f555"
-                                                                                                                                                                    },
-                                                                                                                                                                    "id": "317ef2a9-953a-43ee-b1c7-33e13977f665"
-                                                                                                                                                                }
-                                                                                                                                                            ],
-                                                                                                                                                            "false": []
-                                                                                                                                                        },
-                                                                                                                                                        "id": "027eec66-4fbc-4de3-b9d0-cc41ce02de12"
+                                                                                                                                                        "id": "d0a2c437-6e31-42c0-be62-01df0e0574d1"
                                                                                                                                                     }
                                                                                                                                                 ]
                                                                                                                                             },
-                                                                                                                                            "id": "c6fe02fc-a820-4d06-bf55-08ce4a4fe358"
+                                                                                                                                            "id": "81c92c51-4189-441b-ab94-6f6f2eb2374b"
                                                                                                                                         }
                                                                                                                                     ]
                                                                                                                                 },
@@ -23480,86 +23202,15 @@
                                                                                                                     "children": {
                                                                                                                         "true": [
                                                                                                                             {
-                                                                                                                                "command": "EVENT_IF_VALUE",
+                                                                                                                                "command": "EVENT_CALL_CUSTOM_EVENT",
                                                                                                                                 "args": {
-                                                                                                                                    "variable": "9",
-                                                                                                                                    "operator": ">",
-                                                                                                                                    "comparator": "0",
-                                                                                                                                    "__collapseElse": false
+                                                                                                                                    "customEventId": "88cf3e97-6832-4700-b180-9da7920e49f4"
                                                                                                                                 },
-                                                                                                                                "children": {
-                                                                                                                                    "true": [
-                                                                                                                                        {
-                                                                                                                                            "command": "EVENT_LAUNCH_PROJECTILE",
-                                                                                                                                            "args": {
-                                                                                                                                                "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-                                                                                                                                                "spriteStateId": "",
-                                                                                                                                                "actorId": "player",
-                                                                                                                                                "x": 0,
-                                                                                                                                                "y": 0,
-                                                                                                                                                "otherActorId": "player",
-                                                                                                                                                "direction": "right",
-                                                                                                                                                "angle": 0,
-                                                                                                                                                "angleVariable": "L0",
-                                                                                                                                                "directionType": "actor",
-                                                                                                                                                "initialOffset": 0,
-                                                                                                                                                "speed": 4,
-                                                                                                                                                "animSpeed": 15,
-                                                                                                                                                "lifeTime": 1,
-                                                                                                                                                "loopAnim": false,
-                                                                                                                                                "destroyOnHit": true,
-                                                                                                                                                "collisionGroup": "3",
-                                                                                                                                                "collisionMask": [
-                                                                                                                                                    "1"
-                                                                                                                                                ],
-                                                                                                                                                "__collapse": false,
-                                                                                                                                                "__comment": false
-                                                                                                                                            },
-                                                                                                                                            "id": "2a0b5379-7b06-408c-9086-01baacaa7b0a"
-                                                                                                                                        },
-                                                                                                                                        {
-                                                                                                                                            "command": "EVENT_SOUND_PLAY_EFFECT",
-                                                                                                                                            "args": {
-                                                                                                                                                "type": "crash",
-                                                                                                                                                "priority": "medium",
-                                                                                                                                                "pitch": 1,
-                                                                                                                                                "frequency": 200,
-                                                                                                                                                "duration": 0.1,
-                                                                                                                                                "wait": false,
-                                                                                                                                                "effect": 0
-                                                                                                                                            },
-                                                                                                                                            "id": "c6b2e359-0b2c-4d0c-bb22-d24f2458867d"
-                                                                                                                                        },
-                                                                                                                                        {
-                                                                                                                                            "command": "EVENT_CAMERA_SHAKE",
-                                                                                                                                            "args": {
-                                                                                                                                                "time": 0.5,
-                                                                                                                                                "frames": 1,
-                                                                                                                                                "shakeDirection": "horizontal",
-                                                                                                                                                "units": "frames"
-                                                                                                                                            },
-                                                                                                                                            "id": "648ead14-8c1e-4ac7-8fc0-7c7260712890"
-                                                                                                                                        },
-                                                                                                                                        {
-                                                                                                                                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                                                                                                                                            "args": {
-                                                                                                                                                "customEventId": "86479e8b-e4a2-49e6-993a-7c09f2748b01",
-                                                                                                                                                "$variable[V0]$": {
-                                                                                                                                                    "type": "number",
-                                                                                                                                                    "value": 1
-                                                                                                                                                },
-                                                                                                                                                "$actor[0]$": "603a5649-ff37-477b-95a7-f7cd2ff3f555"
-                                                                                                                                            },
-                                                                                                                                            "id": "1a6199bf-0439-43e5-9703-4dcc8ec74ca1"
-                                                                                                                                        }
-                                                                                                                                    ],
-                                                                                                                                    "false": []
-                                                                                                                                },
-                                                                                                                                "id": "e722ba1a-e251-4fcf-97e1-e6a2555a95a9"
+                                                                                                                                "id": "a00f9ec7-980d-4784-8c64-635f7015b6fd"
                                                                                                                             }
                                                                                                                         ]
                                                                                                                     },
-                                                                                                                    "id": "3ac1348f-8804-4469-8d4d-02aaa43b5126"
+                                                                                                                    "id": "fcb35bd6-5a00-4e0e-819e-8c4ccc63bfc2"
                                                                                                                 }
                                                                                                             ]
                                                                                                         },
@@ -23604,86 +23255,15 @@
                                                                                             "children": {
                                                                                                 "true": [
                                                                                                     {
-                                                                                                        "command": "EVENT_IF_VALUE",
+                                                                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
                                                                                                         "args": {
-                                                                                                            "variable": "9",
-                                                                                                            "operator": ">",
-                                                                                                            "comparator": "0",
-                                                                                                            "__collapseElse": false
+                                                                                                            "customEventId": "88cf3e97-6832-4700-b180-9da7920e49f4"
                                                                                                         },
-                                                                                                        "children": {
-                                                                                                            "true": [
-                                                                                                                {
-                                                                                                                    "command": "EVENT_LAUNCH_PROJECTILE",
-                                                                                                                    "args": {
-                                                                                                                        "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-                                                                                                                        "spriteStateId": "",
-                                                                                                                        "actorId": "player",
-                                                                                                                        "x": 0,
-                                                                                                                        "y": 0,
-                                                                                                                        "otherActorId": "player",
-                                                                                                                        "direction": "right",
-                                                                                                                        "angle": 0,
-                                                                                                                        "angleVariable": "L0",
-                                                                                                                        "directionType": "actor",
-                                                                                                                        "initialOffset": 0,
-                                                                                                                        "speed": 4,
-                                                                                                                        "animSpeed": 15,
-                                                                                                                        "lifeTime": 1,
-                                                                                                                        "loopAnim": false,
-                                                                                                                        "destroyOnHit": true,
-                                                                                                                        "collisionGroup": "3",
-                                                                                                                        "collisionMask": [
-                                                                                                                            "1"
-                                                                                                                        ],
-                                                                                                                        "__collapse": false,
-                                                                                                                        "__comment": false
-                                                                                                                    },
-                                                                                                                    "id": "18961ef8-1d0d-4ac8-aee0-bba9f9750b8f"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
-                                                                                                                    "args": {
-                                                                                                                        "type": "crash",
-                                                                                                                        "priority": "medium",
-                                                                                                                        "pitch": 1,
-                                                                                                                        "frequency": 200,
-                                                                                                                        "duration": 0.1,
-                                                                                                                        "wait": false,
-                                                                                                                        "effect": 0
-                                                                                                                    },
-                                                                                                                    "id": "f07d85fd-be91-48b1-870a-a5ab3a5bea85"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "command": "EVENT_CAMERA_SHAKE",
-                                                                                                                    "args": {
-                                                                                                                        "time": 0.5,
-                                                                                                                        "frames": 1,
-                                                                                                                        "shakeDirection": "horizontal",
-                                                                                                                        "units": "frames"
-                                                                                                                    },
-                                                                                                                    "id": "2c1b609a-6164-4d52-9e26-bc928cdaa2d4"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "command": "EVENT_CALL_CUSTOM_EVENT",
-                                                                                                                    "args": {
-                                                                                                                        "customEventId": "86479e8b-e4a2-49e6-993a-7c09f2748b01",
-                                                                                                                        "$variable[V0]$": {
-                                                                                                                            "type": "number",
-                                                                                                                            "value": 1
-                                                                                                                        },
-                                                                                                                        "$actor[0]$": "603a5649-ff37-477b-95a7-f7cd2ff3f555"
-                                                                                                                    },
-                                                                                                                    "id": "94d31f71-6b53-46cb-a823-63463bf5ad3e"
-                                                                                                                }
-                                                                                                            ],
-                                                                                                            "false": []
-                                                                                                        },
-                                                                                                        "id": "49ff6e1d-8d6b-4f8d-9226-859dd7968036"
+                                                                                                        "id": "161bb281-33d0-465f-9521-bf150f94c5ad"
                                                                                                     }
                                                                                                 ]
                                                                                             },
-                                                                                            "id": "1897d672-500a-4062-8403-4148208134c8"
+                                                                                            "id": "a065f033-8d54-4894-99d4-98ec289f9c17"
                                                                                         }
                                                                                     ]
                                                                                 },
@@ -27258,7 +26838,8 @@
             "height": 32,
             "imageWidth": 640,
             "imageHeight": 256,
-            "filename": "dungeon.png"
+            "filename": "dungeon.png",
+            "tileColors": []
         },
         {
             "id": "8cd0ac4e-46e1-4717-9f80-aa4b83378efd",
@@ -28707,6 +28288,107 @@
             "numTiles": 17,
             "canvasWidth": 16,
             "canvasHeight": 16,
+            "boundsX": 0,
+            "boundsY": 0,
+            "boundsWidth": 16,
+            "boundsHeight": 16,
+            "animSpeed": 15
+        },
+        {
+            "id": "5a55201c-b81c-4c02-b8fc-8e5c01a74c73",
+            "name": "Oyun",
+            "symbol": "sprite_oyun",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "Oyun.png",
+            "checksum": "040bbfe25f69173d777b63dd8fbb99d1c8b6bb56",
+            "width": 64,
+            "height": 48,
+            "states": [
+                {
+                    "id": "34dfbdd5-c34f-40b0-8a0f-9daabd5351a4",
+                    "name": "",
+                    "animationType": "multi_movement",
+                    "flipLeft": true,
+                    "animations": [
+                        {
+                            "id": "97aee41f-f53d-4c9d-877d-faaf37fd5b08",
+                            "frames": [
+                                {
+                                    "id": "528b5504-f9bf-4a40-aefe-929de620ffe5",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "fc6d8e6a-42d7-4a9e-b1dc-652d9407e279",
+                            "frames": [
+                                {
+                                    "id": "4da8baa4-a106-4b9d-8893-e9748651df0b",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "d29c4d6f-f243-4b6f-9379-96eb1528839d",
+                            "frames": [
+                                {
+                                    "id": "2a89457e-376a-44ed-aae2-ea74c01da4f4",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "6a9dbef2-3b0c-44da-848b-4ef25397df93",
+                            "frames": [
+                                {
+                                    "id": "0a63c500-db4c-4893-9bca-0333ddda87bd",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "691702f6-e4b1-4552-991a-449786ecfbee",
+                            "frames": [
+                                {
+                                    "id": "8ed6e3c2-8bfe-47a4-905c-662f899ea588",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "558743fb-f096-48d2-b732-1eb18f641d84",
+                            "frames": [
+                                {
+                                    "id": "2cf40a7f-e137-491e-ae2d-a44d4d5297ac",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "c384c848-e135-418a-9f82-53911dcacc2a",
+                            "frames": [
+                                {
+                                    "id": "45d9b90f-346a-46db-a80d-20a4ed2bf789",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "c7609fa9-24f3-41a1-bda2-d37734bc15cd",
+                            "frames": [
+                                {
+                                    "id": "c46fbcb9-0ae4-4721-8fd8-ef8e1e8280e5",
+                                    "tiles": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "numTiles": 0,
+            "canvasWidth": 32,
+            "canvasHeight": 32,
             "boundsX": 0,
             "boundsY": 0,
             "boundsWidth": 16,
@@ -37599,6 +37281,119 @@
                     "id": "23b45fc2-4862-4067-a072-b2920e2834af"
                 }
             ]
+        },
+        {
+            "id": "88cf3e97-6832-4700-b180-9da7920e49f4",
+            "name": "Fire Gun",
+            "description": "",
+            "variables": {},
+            "actors": {},
+            "symbol": "script_21",
+            "script": [
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "9",
+                        "operator": ">",
+                        "comparator": "0",
+                        "__collapseElse": true,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "Shoot"
+                                },
+                                "id": "0f67a225-6a3b-4511-a386-65e5876c4ac5"
+                            },
+                            {
+                                "command": "EVENT_SOUND_PLAY_EFFECT",
+                                "args": {
+                                    "type": "crash",
+                                    "priority": "medium",
+                                    "pitch": 1,
+                                    "frequency": 200,
+                                    "duration": 0.1,
+                                    "wait": false,
+                                    "effect": 0
+                                },
+                                "id": "f0786a85-449c-4566-bc6a-f72e0113c221"
+                            },
+                            {
+                                "command": "EVENT_LAUNCH_PROJECTILE",
+                                "args": {
+                                    "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
+                                    "spriteStateId": "",
+                                    "actorId": "player",
+                                    "x": 0,
+                                    "y": 0,
+                                    "otherActorId": "$self$",
+                                    "direction": "right",
+                                    "angle": 0,
+                                    "angleVariable": "L0",
+                                    "directionType": "actor",
+                                    "initialOffset": 0,
+                                    "speed": 4,
+                                    "animSpeed": 255,
+                                    "lifeTime": 1,
+                                    "loopAnim": false,
+                                    "destroyOnHit": true,
+                                    "collisionGroup": "3",
+                                    "collisionMask": [
+                                        "1"
+                                    ],
+                                    "__collapse": false,
+                                    "__comment": false
+                                },
+                                "id": "148f703f-e315-490f-8dfb-4af673d6a4f2"
+                            },
+                            {
+                                "command": "EVENT_CAMERA_SHAKE",
+                                "args": {
+                                    "time": 0.5,
+                                    "frames": 1,
+                                    "shakeDirection": "horizontal",
+                                    "units": "frames"
+                                },
+                                "id": "3f1d2d10-c650-44ed-b1cd-0b334bdbcaaa"
+                            },
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "86479e8b-e4a2-49e6-993a-7c09f2748b01",
+                                    "$variable[V0]$": {
+                                        "type": "number",
+                                        "value": 1
+                                    },
+                                    "$actor[0]$": "603a5649-ff37-477b-95a7-f7cd2ff3f555"
+                                },
+                                "id": "e64beba1-1bd0-4c87-b027-ae100b1cf052"
+                            },
+                            {
+                                "command": "EVENT_WAIT",
+                                "args": {
+                                    "time": 0.4,
+                                    "frames": 30
+                                },
+                                "id": "b557f5be-a62f-4ee4-bd48-4af517ea0f10"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": ""
+                                },
+                                "id": "b4d5fffc-097b-40b1-8fb8-7d5ad627894d"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "daa62147-4071-479d-9171-d470f6f2c1e1"
+                }
+            ]
         }
     ],
     "music": [
@@ -37972,8 +37767,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3117,
-        "worldScrollY": 601,
+        "worldScrollX": 3534,
+        "worldScrollY": 589,
         "zoom": 275,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -38002,9 +37797,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            797,
-            262,
-            249
+            579,
+            189,
+            180
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
