@@ -1478,7 +1478,8 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "0",
-                                "__collapseElse": false
+                                "__collapseElse": false,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -1578,6 +1579,25 @@
                                     }
                                 ],
                                 "false": [
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "avatar",
+                                            "text": [
+                                                "I would let you\ndown here. But I am\ntrying to type a whole\nlot to see what happens"
+                                            ],
+                                            "nameTag": "Cat",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "516ebb3b-104d-47bd-8266-6013c066f77c",
+                                            "largeAvatar": "Avatar",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "right"
+                                        },
+                                        "id": "125e3628-018f-4ae3-a1e0-235bb5ace489"
+                                    },
                                     {
                                         "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                         "args": {
@@ -36903,7 +36923,15 @@
             "filename": "gbs-var.png"
         }
     ],
-    "avatars": [],
+    "avatars": [
+        {
+            "id": "516ebb3b-104d-47bd-8266-6013c066f77c",
+            "name": "catavatar",
+            "width": 16,
+            "height": 16,
+            "filename": "catavatar.png"
+        }
+    ],
     "emotes": [
         {
             "id": "9df5f63f-ea47-447e-9b14-cb2dbafb697d",
@@ -37213,9 +37241,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3534,
-        "worldScrollY": 589,
-        "zoom": 275,
+        "worldScrollX": 0,
+        "worldScrollY": 82,
+        "zoom": 175,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
@@ -37243,9 +37271,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            404,
-            205,
-            339
+            557,
+            283,
+            468
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
