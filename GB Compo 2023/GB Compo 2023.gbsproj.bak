@@ -1584,12 +1584,12 @@
                                         "args": {
                                             "__scriptTabs": "avatar",
                                             "text": [
-                                                "I would let you\ndown here."
+                                                "I would let you\ndown here. But I am\ntrying to type a whole\nlot to see what happens"
                                             ],
                                             "nameTag": "Cat",
                                             "nameX": 2,
                                             "avatarType": "small",
-                                            "avatarId": "",
+                                            "avatarId": "516ebb3b-104d-47bd-8266-6013c066f77c",
                                             "largeAvatar": "Avatar",
                                             "avatarX": 2,
                                             "avatarY": 2,
@@ -36923,7 +36923,15 @@
             "filename": "gbs-var.png"
         }
     ],
-    "avatars": [],
+    "avatars": [
+        {
+            "id": "516ebb3b-104d-47bd-8266-6013c066f77c",
+            "name": "catavatar",
+            "width": 16,
+            "height": 16,
+            "filename": "catavatar.png"
+        }
+    ],
     "emotes": [
         {
             "id": "9df5f63f-ea47-447e-9b14-cb2dbafb697d",
