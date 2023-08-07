@@ -8221,7 +8221,7 @@
             "autoFadeSpeed": 1,
             "id": "4917d385-4c5f-4b89-8e46-5692ec4a8a99",
             "symbol": "scene_0",
-            "x": 1139.3711853662853,
+            "x": 1139.033335406805,
             "y": 255.95228199977643,
             "actors": [
                 {
@@ -8272,7 +8272,8 @@
                             "command": "EVENT_IF_FALSE",
                             "args": {
                                 "variable": "T0",
-                                "__collapseElse": true
+                                "__collapseElse": true,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -8290,7 +8291,7 @@
                                                 {
                                                     "command": "EVENT_GROUP",
                                                     "args": {
-                                                        "__collapse": true
+                                                        "__collapse": false
                                                     },
                                                     "children": {
                                                         "true": [
@@ -9708,6 +9709,13 @@
                     },
                     "children": {
                         "true": [
+                            {
+                                "command": "EVENT_SET_FALSE",
+                                "args": {
+                                    "variable": "T0"
+                                },
+                                "id": "c005777f-b89a-4e90-8ee0-b6377e1a1b88"
+                            },
                             {
                                 "command": "EVENT_SHOW_SPRITES",
                                 "args": {
@@ -31491,8 +31499,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1544,
-        "worldScrollY": 711,
+        "worldScrollX": 3053,
+        "worldScrollY": 583,
         "zoom": 295.9893798828125,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -31521,9 +31529,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            564,
-            282,
-            472
+            410,
+            205,
+            343
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
