@@ -2706,6 +2706,17 @@
                                     "__collapse": false
                                 },
                                 "id": "9761d111-55c1-4f6c-89ac-a09e609ff0d3"
+                            },
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "3ecb3fca-49e8-4e7f-8a7f-b0792908c4a9",
+                                    "x": 6,
+                                    "y": 52,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
+                                },
+                                "id": "f23caaeb-394f-4ba5-9f47-c05c50baaebd"
                             }
                         ]
                     },
@@ -5974,7 +5985,7 @@
             "id": "3ecb3fca-49e8-4e7f-8a7f-b0792908c4a9",
             "symbol": "scene_6",
             "x": 632.9117846265096,
-            "y": 256.11280155687604,
+            "y": 256.4506515163563,
             "actors": [
                 {
                     "name": "Health",
@@ -6550,7 +6561,7 @@
                                         "type": "variable",
                                         "value": "2"
                                     },
-                                    "__comment": true,
+                                    "__comment": false,
                                     "__collapse": false
                                 },
                                 "id": "1c1217a7-1c54-4a90-a12a-d17c12d1062f"
@@ -31532,8 +31543,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 632,
-        "worldScrollY": 529,
+        "worldScrollX": 1516,
+        "worldScrollY": 561,
         "zoom": 295.9893798828125,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -31562,9 +31573,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            565,
-            282,
-            472
+            567,
+            278,
+            474
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",

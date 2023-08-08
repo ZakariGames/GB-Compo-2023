@@ -2684,7 +2684,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "Element Selection",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -2706,18 +2706,6 @@
                                     "__collapse": false
                                 },
                                 "id": "9761d111-55c1-4f6c-89ac-a09e609ff0d3"
-                            },
-                            {
-                                "command": "EVENT_SWITCH_SCENE",
-                                "args": {
-                                    "sceneId": "3ecb3fca-49e8-4e7f-8a7f-b0792908c4a9",
-                                    "x": 6,
-                                    "y": 52,
-                                    "direction": "",
-                                    "fadeSpeed": "2",
-                                    "__collapse": false
-                                },
-                                "id": "5a995d38-a96b-43e2-a148-84bfd42facc9"
                             }
                         ]
                     },
@@ -5985,8 +5973,8 @@
             "autoFadeSpeed": 1,
             "id": "3ecb3fca-49e8-4e7f-8a7f-b0792908c4a9",
             "symbol": "scene_6",
-            "x": 622.4384358826212,
-            "y": 259.4913011516789,
+            "x": 632.9117846265096,
+            "y": 256.11280155687604,
             "actors": [
                 {
                     "name": "Health",
@@ -7044,10 +7032,51 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "A Attach",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
+                            {
+                                "command": "EVENT_IF_VALUE",
+                                "args": {
+                                    "variable": "3",
+                                    "operator": "==",
+                                    "comparator": "0",
+                                    "__collapseElse": true,
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_INPUT_SCRIPT",
+                                            "args": {
+                                                "input": [
+                                                    "a"
+                                                ],
+                                                "override": false,
+                                                "__scriptTabs": "press",
+                                                "__collapse": false
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                                        "args": {
+                                                            "customEventId": "e71aa80f-efeb-49ff-b63a-785f77cef3ec",
+                                                            "$actor[0]$": "603a5649-ff37-477b-95a7-f7cd2ff3f555",
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "ddf8b666-2f47-4e56-b944-374a1464dc34"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "6add99b4-0584-43ee-a2a6-65f9c788b4f0"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "58adf997-04c4-4d6a-84a2-115fd19b6c93"
+                            },
                             {
                                 "command": "EVENT_IF_VALUE",
                                 "args": {
@@ -26306,13 +26335,13 @@
                                                         "args": {
                                                             "variable": "3",
                                                             "choices": 4,
-                                                            "__collapseCase0": false,
+                                                            "__collapseCase0": true,
                                                             "value0": 1,
-                                                            "__collapseCase1": false,
+                                                            "__collapseCase1": true,
                                                             "value1": 2,
-                                                            "__collapseCase2": false,
+                                                            "__collapseCase2": true,
                                                             "value2": 3,
-                                                            "__collapseCase3": false,
+                                                            "__collapseCase3": true,
                                                             "value3": 4,
                                                             "__collapseCase4": false,
                                                             "value4": 5,
@@ -31503,8 +31532,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1425,
-        "worldScrollY": 597,
+        "worldScrollX": 632,
+        "worldScrollY": 529,
         "zoom": 295.9893798828125,
         "customColorsEnabled": true,
         "sgbEnabled": false,
