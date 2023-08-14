@@ -2229,8 +2229,8 @@
             "autoFadeSpeed": 1,
             "id": "02bb0c08-240f-4098-986e-3b22ad123571",
             "symbol": "scene_1",
-            "x": 60,
-            "y": 236.42337604329828,
+            "x": 428.07361218350377,
+            "y": 61.487291131907654,
             "actors": [
                 {
                     "name": "",
@@ -7238,8 +7238,8 @@
             "autoFadeSpeed": 1,
             "id": "3ecb3fca-49e8-4e7f-8a7f-b0792908c4a9",
             "symbol": "scene_6",
-            "x": 513.5912180395492,
-            "y": 247.34993033599497,
+            "x": 846.2731367438699,
+            "y": 58.257168032931396,
             "actors": [
                 {
                     "name": "Health",
@@ -8552,7 +8552,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "A Attach",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -9365,8 +9365,8 @@
             "autoFadeSpeed": 1,
             "id": "ee8b685b-e28f-4073-b27b-134503f77be3",
             "symbol": "scene_5",
-            "x": 63.19999999999999,
-            "y": 54.79999999999998,
+            "x": 60,
+            "y": 47.72166130416338,
             "actors": [],
             "triggers": [],
             "script": [
@@ -9771,8 +9771,8 @@
             "autoFadeSpeed": 1,
             "id": "4917d385-4c5f-4b89-8e46-5692ec4a8a99",
             "symbol": "scene_0",
-            "x": 1065.2465060944558,
-            "y": 251.52208932033705,
+            "x": 1403.9955722523505,
+            "y": 56.362179563699186,
             "actors": [
                 {
                     "name": "",
@@ -10340,6 +10340,17 @@
                                             "actorId": "$self$"
                                         },
                                         "id": "881c410e-8935-4d3b-b4d5-11c2f9600001"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_VALUE",
+                                        "args": {
+                                            "variable": "3",
+                                            "value": {
+                                                "type": "number",
+                                                "value": 1
+                                            }
+                                        },
+                                        "id": "d57a385f-a1f9-4f99-ab98-9a765190a62f"
                                     }
                                 ],
                                 "false": []
@@ -11839,7 +11850,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -12712,8 +12723,8 @@
             "autoFadeSpeed": 1,
             "id": "2dfa94f9-4711-46c2-90f7-23791b5d0b64",
             "symbol": "scene_7",
-            "x": 1067.1061535429706,
-            "y": 433.9604486573571,
+            "x": 1404.8440284586036,
+            "y": 249.92364256560495,
             "actors": [],
             "triggers": [],
             "script": [],
@@ -13094,8 +13105,8 @@
             "autoFadeSpeed": 1,
             "id": "377a18e1-0e53-499b-8706-91afd4bfe7cd",
             "symbol": "scene_8",
-            "x": 252.13911906665237,
-            "y": 649.466221341688,
+            "x": 435.1647339161418,
+            "y": 494.7539612755447,
             "actors": [],
             "triggers": [
                 {
@@ -13501,8 +13512,8 @@
             "autoFadeSpeed": 1,
             "id": "9e0f16e2-a370-42ce-8ed3-b6eeebf90846",
             "symbol": "scene_9",
-            "x": 255.91028993406556,
-            "y": 821.8835778847051,
+            "x": 620.9503283907817,
+            "y": 495.26880663395866,
             "actors": [],
             "triggers": [
                 {
@@ -13908,8 +13919,8 @@
             "autoFadeSpeed": 1,
             "id": "e55b04d6-8989-4f18-aa3f-d80d225ca1a3",
             "symbol": "scene_10",
-            "x": 66.37687769199292,
-            "y": 823.626363266614,
+            "x": 241.31296260338368,
+            "y": 497.0115920158672,
             "actors": [],
             "triggers": [
                 {
@@ -14316,7 +14327,7 @@
             "id": "f768f373-2544-4c69-88c3-75e04c93b016",
             "symbol": "scene_11",
             "x": 60,
-            "y": 645.5643169440465,
+            "y": 497.9303955737402,
             "actors": [],
             "triggers": [
                 {
@@ -35232,8 +35243,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 71,
+        "worldScrollX": 170,
+        "worldScrollY": 0,
         "zoom": 98.893261551857,
         "customColorsEnabled": true,
         "sgbEnabled": false,
