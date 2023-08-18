@@ -2352,29 +2352,6 @@
                     "name": "",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "82304314-ab15-4fb1-aaa4-17dba8d922f1",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": false,
-                    "persistent": false,
-                    "collisionGroup": "",
-                    "symbol": "actor_30",
-                    "script": [],
-                    "startScript": [],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "9ba749d1-2575-40da-a03e-605de628a110",
-                    "x": 32,
-                    "y": 40
-                },
-                {
-                    "name": "",
-                    "frame": 0,
-                    "animate": false,
                     "spriteSheetId": "8cd2e1f9-9828-4b13-8db4-d51dc0eab985",
                     "direction": "down",
                     "moveSpeed": 1,
@@ -2519,7 +2496,186 @@
                     "symbol": "trigger_14",
                     "width": 1,
                     "height": 7,
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "L5",
+                                "operator": "==",
+                                "comparator": 0,
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "8defb9f3-9ca1-43a9-a19c-8656f5d65fa6",
+                                            "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+                                        },
+                                        "id": "9519f043-f985-487d-972d-013973e53bcd"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "8defb9f3-9ca1-43a9-a19c-8656f5d65fa6",
+                                            "direction": {
+                                                "type": "direction",
+                                                "value": "left"
+                                            },
+                                            "__collapse": true
+                                        },
+                                        "id": "9d2dbe95-c89f-4a3a-85ea-0c4dfbf8b116"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "text": [
+                                                "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Back again, Traitor?\nAin't you done taking\nfrom this town?"
+                                            ],
+                                            "nameTag": "Sheriff",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "c37667be-3bb0-47ce-b3fa-180fef51aab2",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": false
+                                        },
+                                        "id": "995674a7-12ba-42dd-8962-b7ffda2ddd7a"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "text": [
+                                                "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!I'm just here for\nwhat's owed to me."
+                                            ],
+                                            "nameTag": "Traitor",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "e8fad1da-f75e-4461-8adc-0dad66320ac9",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": false
+                                        },
+                                        "id": "da7b94fb-576d-4d55-965a-41093d93552b"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "text": [
+                                                "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Curse that debt!",
+                                                "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Payin' off the\nmonster who sold us\nout, it ain't right!"
+                                            ],
+                                            "nameTag": "Sheriff",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "c37667be-3bb0-47ce-b3fa-180fef51aab2",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": false
+                                        },
+                                        "id": "cbebaa23-7f27-432b-b644-c81d546dba31"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "text": [
+                                                "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!You might recall I\nsaved this place...",
+                                                "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!I paid a price,\njust like you."
+                                            ],
+                                            "nameTag": "Traitor",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "e8fad1da-f75e-4461-8adc-0dad66320ac9",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": false
+                                        },
+                                        "id": "6c32db50-96d3-4007-a120-7758185db5f6"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "text": [
+                                                "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!You mighta lost\nyour arm, but the\nfolks of this town\nlost a lot more.",
+                                                "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Lost it 'cause\nof you!",
+                                                "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Well, go on.\nTake from us again."
+                                            ],
+                                            "nameTag": "Sheriff",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "c37667be-3bb0-47ce-b3fa-180fef51aab2",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": false
+                                        },
+                                        "id": "aae76f43-49df-4488-971c-5142f1a48a6c"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "8defb9f3-9ca1-43a9-a19c-8656f5d65fa6",
+                                            "direction": {
+                                                "type": "direction",
+                                                "value": "up"
+                                            },
+                                            "__collapse": true
+                                        },
+                                        "id": "84320e47-f30d-44d5-b2b6-01a3718b8270"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                        "args": {
+                                            "actorId": "8defb9f3-9ca1-43a9-a19c-8656f5d65fa6",
+                                            "x": 0,
+                                            "y": -3,
+                                            "moveType": "horizontal",
+                                            "useCollisions": false,
+                                            "__collapse": true
+                                        },
+                                        "id": "6d696927-c958-4430-9d2e-f9b9932ae133"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "args": {
+                                            "actorId": "8defb9f3-9ca1-43a9-a19c-8656f5d65fa6",
+                                            "__collapse": true
+                                        },
+                                        "id": "1287d7f4-6922-4749-9844-2a4764385875"
+                                    },
+                                    {
+                                        "command": "EVENT_INC_VALUE",
+                                        "args": {
+                                            "variable": "L5"
+                                        },
+                                        "id": "7e24600f-3ae6-46bb-acc8-47b4ecd44a0c"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "881c06cf-cd37-447e-bdeb-c5b9f75ac5b4"
+                        }
+                    ],
                     "leaveScript": []
                 }
             ],
@@ -14132,7 +14288,145 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_16",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!You've sent the\ntown into an uproar,\nincluding my classroom.",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Make sure you don't\nset a bad example\nfor my students."
+                                ],
+                                "nameTag": "Schoolmarm",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "db7a4fa5-70bb-4977-98b9-88422836ef55"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!I won't, miss. Just\npassin' through."
+                                ],
+                                "nameTag": "Traitor",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "e8fad1da-f75e-4461-8adc-0dad66320ac9",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "4b899fb6-f420-4006-9f3b-271d5f227575"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!The hero returns to\nthe town they saved,\nsounds like it would\nmake a wonderful book!"
+                                ],
+                                "nameTag": "Schoolmarm",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "c8fff30b-cb0c-41a1-af15-664e6c00f06c"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!I don't think the\nother townsfolk would\nagree with you.",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!They would rather\nhave neither sight nor\nsound of me, I reckon."
+                                ],
+                                "nameTag": "Traitor",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "e8fad1da-f75e-4461-8adc-0dad66320ac9",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "aa9a23d7-652a-457d-b7db-52660932b201"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!An old grudge, I'm\nafraid. They judge too\nharshly.",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!They'd a died in that\nbarn if it weren't for\nyou. They might ignore\nthat fact but I can't.",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Just because you're a\nvillain doesn't mean you\ncan't become the hero!"
+                                ],
+                                "nameTag": "Schoolmarm",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "16c653b4-3f43-4ed2-b804-fae3b80b65c4"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Not sure I agree\nwith you, but...\nThank you."
+                                ],
+                                "nameTag": "Traitor",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "e8fad1da-f75e-4461-8adc-0dad66320ac9",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "99d42c54-14e4-4250-b15d-d327d21edf2d"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Don't mention it. Now\nbest be on your way or\nI'll never get these\nkids to pay attention."
+                                ],
+                                "nameTag": "Schoolmarm",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "1affdcb4-641c-4bd0-8cad-d7cba8f1c05f"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -14155,7 +14449,145 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_17",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!You don't look so\nscary!"
+                                ],
+                                "nameTag": "Schoolboy",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "0d1628ff-a86e-4885-996c-039a279aeb3d"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Who says I'm scary?"
+                                ],
+                                "nameTag": "Traitor",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "e8fad1da-f75e-4461-8adc-0dad66320ac9",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "338225b6-6b13-44a4-9fd2-6f4b55fd4aa2"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Everyone in town,\nthat's who!"
+                                ],
+                                "nameTag": "Schoolboy",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "dc26e225-3ba2-4121-bd65-6a93db18b610"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Everyone in town is\nwrong, I'm not a\nmonster."
+                                ],
+                                "nameTag": "Traitor",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "e8fad1da-f75e-4461-8adc-0dad66320ac9",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "20bc2c3b-03e4-48d9-ab3a-71a5358ecb03"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!That ain't what my\ndaddy says.",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!My daddy say he saw\nyou turn into one!",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!He say you set the\nKing of Hearts on fire\njust by lookin' at him!"
+                                ],
+                                "nameTag": "Schoolboy",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "d42f992d-ea39-4737-b687-d1d12a77f07f"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!I...",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!I don't remember\nthat."
+                                ],
+                                "nameTag": "Traitor",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "e8fad1da-f75e-4461-8adc-0dad66320ac9",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "883fc792-9efc-4bfc-9cac-c338890c8d38"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!I'd sure remember if\nI could turn into a\nmonster.",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!I'd show those bullies\nwho's strong!"
+                                ],
+                                "nameTag": "Schoolboy",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "95477866-b374-476b-9341-77195dd1510f"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -14632,7 +15064,27 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_15",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Got nothin' to say\nto you, Traitor..."
+                                ],
+                                "nameTag": "Sheriff",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "c37667be-3bb0-47ce-b3fa-180fef51aab2",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "040293f6-5bec-4483-9260-90fe468987fc"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -36663,8 +37115,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 532,
-        "worldScrollY": 306,
+        "worldScrollX": 0,
+        "worldScrollY": 531,
         "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -36714,7 +37166,8 @@
         "favoriteEvents": [
             "EVENT_TEXT",
             "EVENT_SWITCH_SCENE",
-            "EVENT_CALL_CUSTOM_EVENT"
+            "EVENT_CALL_CUSTOM_EVENT",
+            "EVENT_DIALOGUE_NAME_LARGE_AVATAR"
         ],
         "defaultFadeStyle": "white",
         "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
