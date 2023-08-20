@@ -2245,15 +2245,36 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_0",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Keep walkin',\nTraitor!",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Got nothin' to say\nto you, fiend!"
+                                ],
+                                "nameTag": "Dancer",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "89d2b6ab-2d74-4c63-ab87-b407f167dcd6"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "904411d3-6661-48e3-8421-8093fa0dcf35",
-                    "x": 20,
-                    "y": 12
+                    "x": 36,
+                    "y": 36
                 },
                 {
                     "name": "Health",
@@ -13995,7 +14016,90 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_22",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Hmmm...that time of\nyear again, huh?",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Time to collect\nthe Debt?"
+                                ],
+                                "nameTag": "Barkeep Bill",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "cce76835-c6b6-4f8f-b514-e7670e3729bc"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!You don't sound\nso upset by that."
+                                ],
+                                "nameTag": "Traitor",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "e8fad1da-f75e-4461-8adc-0dad66320ac9",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "16391400-8654-4f81-a29d-b81605cefb8b"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Don't get me wrong,\nI see why the others\ndon't wantcha here.",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!You done terrible\nthings to this town,\nto these folks.",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!But the King of\nHearts burned down\nthe old Saloon...",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!And I was able to\nbuild my own saloon\nin its place!",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Without you, the\nMaiden's Fancy\nwouldn't exist...",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!And I wouldn't\nbe filthy rich!"
+                                ],
+                                "nameTag": "Barkeep Bill",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "eca5cd40-7d3e-449e-bbc9-a86fdb912be3"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!And they call me\na monster..."
+                                ],
+                                "nameTag": "Traitor",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "e8fad1da-f75e-4461-8adc-0dad66320ac9",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "5c17c2f1-ffff-4ad6-8e2a-270805b6264d"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -14123,7 +14227,67 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_28",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Hmph, you don't look\nso tough.",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!I should take you\ndown and do this town\na favor."
+                                ],
+                                "nameTag": "Tough Farmhand",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "06fbc43a-4de3-4e28-a302-9246cfb035c6"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Let's step outside\nif you're so sure."
+                                ],
+                                "nameTag": "Traitor",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "e8fad1da-f75e-4461-8adc-0dad66320ac9",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "be7aa69e-ef1a-4574-9d32-7472149a891e"
+                        },
+                        {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Nah, you ain't worth\nmy time.",
+                                    "!F:8ed435d9-51cb-44e7-8b0d-ca85e63ca427!Now scram before you\nruin my whiskey."
+                                ],
+                                "nameTag": "Tough Farmhand",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left"
+                            },
+                            "id": "41c719c4-49df-44fb-85bb-0211677869b7"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -38284,8 +38448,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 531,
+        "worldScrollX": 1,
+        "worldScrollY": 100,
         "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
