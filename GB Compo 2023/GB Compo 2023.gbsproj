@@ -26883,7 +26883,7 @@
                         "comparator": 2,
                         "__collapseElse": false,
                         "__label": "B Attach",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -27066,7 +27066,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -27305,7 +27305,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "A Attach",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -30137,7 +30137,7 @@
                         "comparator": 2,
                         "__collapseElse": false,
                         "__label": "B Attach",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -30320,7 +30320,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -30559,7 +30559,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "A Attach",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -30642,7 +30642,7 @@
                                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                                         "args": {
                                                             "customEventId": "df448158-6461-4d0e-95dc-e1f9c4fff718",
-                                                            "$actor[0]$": "d62ce28e-c477-4746-bca3-a339711c7767",
+                                                            "$actor[0]$": "f20561e1-7425-4c5b-a3e5-68303a1e46da",
                                                             "__collapse": false
                                                         },
                                                         "id": "ab324276-7149-4e18-bf98-4c550e2ae9fe"
@@ -30697,7 +30697,7 @@
                                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                                         "args": {
                                                             "customEventId": "649c087a-78c0-4673-a71b-ac0b66253eec",
-                                                            "$actor[0]$": "1d3e462c-d6d2-439f-b0bd-397b6bdf8b50",
+                                                            "$actor[0]$": "9ec80792-6d8c-4ab1-87bb-dd16d95f4085",
                                                             "$variable[V1]$": {
                                                                 "type": "variable",
                                                                 "value": "L1"
@@ -30773,7 +30773,7 @@
                                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                                         "args": {
                                                             "customEventId": "e2421272-5721-44a1-9867-75aecc561374",
-                                                            "$actor[0]$": "8c978a05-16b1-4258-86ab-62477e3493d4"
+                                                            "$actor[0]$": "ebfaa1e8-78df-40e6-ba4e-ee08628036e2"
                                                         },
                                                         "id": "a6cc5baa-ea47-41e0-b624-8687a34ab61b"
                                                     }
@@ -30864,7 +30864,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -30872,7 +30872,7 @@
                                 "command": "EVENT_CALL_CUSTOM_EVENT",
                                 "args": {
                                     "customEventId": "e71aa80f-efeb-49ff-b63a-785f77cef3ec",
-                                    "$actor[0]$": "d62ce28e-c477-4746-bca3-a339711c7767"
+                                    "$actor[0]$": "f20561e1-7425-4c5b-a3e5-68303a1e46da"
                                 },
                                 "id": "348cd80d-5a27-4719-8daf-5387ef56dbc6"
                             }
@@ -31010,325 +31010,6 @@
                         "__collapse": true
                     },
                     "id": "2357bbaf-ebab-4014-b98f-8a6cf813aa92"
-                },
-                {
-                    "command": "EVENT_SET_TIMER_SCRIPT",
-                    "args": {
-                        "duration": 1.5,
-                        "frames": 30,
-                        "__scriptTabs": "end",
-                        "__collapse": true
-                    },
-                    "children": {
-                        "script": [
-                            {
-                                "command": "EVENT_IF_TRUE",
-                                "args": {
-                                    "variable": "L0",
-                                    "__collapseElse": false,
-                                    "__collapse": false
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Raise Top and Bottom Spikes",
-                                                "__collapse": true,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 12\nVM_REPLACE_TILE_XY 8, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "c64e23e6-5cd5-46fd-96de-056312b146de"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 13\nVM_REPLACE_TILE_XY 9, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "824f0a42-a4a2-449e-86bb-4d8386a54510"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 29\nVM_REPLACE_TILE_XY 8, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "7bac51d4-92b0-4c66-a5da-527210f18baf"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 30\nVM_REPLACE_TILE_XY 9, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "4bdda4c4-7c50-4410-ba5c-05398cbd5949"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "4c74df4c-c105-4074-ae3b-fa55d1fde0e4"
-                                        },
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Lower Middle Spikes",
-                                                "__collapse": true,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 10\nVM_REPLACE_TILE_XY 8, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "89e543b7-858d-47aa-aa4f-370b8ec86bf5"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 11\nVM_REPLACE_TILE_XY 9, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "6da742c8-39b3-46c3-bdaf-1d837add8e06"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 27\nVM_REPLACE_TILE_XY 8, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "588914ed-f6cf-4403-b0d5-751f0d601876"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 28\nVM_REPLACE_TILE_XY 9, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "abc5cbf3-afdc-494d-8956-58ada0a586ff"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "cf720c6d-785d-4d1d-ba0a-3861dcfcb3bb"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_FALSE",
-                                            "args": {
-                                                "variable": "L0"
-                                            },
-                                            "id": "2ef39f72-ace4-4153-a3f6-ac4787712749"
-                                        }
-                                    ],
-                                    "false": [
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Lower Top and Bottom Spikes",
-                                                "__collapse": true,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 14\nVM_REPLACE_TILE_XY 8, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "3fbfd674-c457-4b04-9432-1b78d3eb0811"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 15\nVM_REPLACE_TILE_XY 9, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "f6ab5b7c-ec53-4166-89a1-214e723d2ae9"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 31\nVM_REPLACE_TILE_XY 8, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "523f8980-92aa-4378-ab76-064813d9ac5f"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 32\nVM_REPLACE_TILE_XY 9, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "91e5ec67-23e9-420f-9ae3-6e119ab2c6ae"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "0a1bfacb-3731-42a3-af92-fca57e1c05ef"
-                                        },
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Raise Middle Spikes",
-                                                "__collapse": false,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 8\nVM_REPLACE_TILE_XY 8, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "4bb36899-7cdc-493d-9aef-7c934b7a9879"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 9\nVM_REPLACE_TILE_XY 9, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "ce8cf35f-d5dd-4fa8-8112-e9d29eac10f2"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 25\nVM_REPLACE_TILE_XY 8, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "68046d9e-eda8-4e05-899f-403cae866d74"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 26\nVM_REPLACE_TILE_XY 9, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "716c7593-f952-40ab-8bca-b584bd6e5dc0"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "8f55532b-a6d6-4136-9444-aab625eaf185"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_TRUE",
-                                            "args": {
-                                                "variable": "L0"
-                                            },
-                                            "id": "c9f15a84-5687-4b13-a3cf-cb469a40f24d"
-                                        }
-                                    ]
-                                },
-                                "id": "ec46fecb-7672-4a1b-b773-2bad7bb581d9"
-                            }
-                        ]
-                    },
-                    "id": "7de00e9b-c67e-4acc-a44b-7e73a9cca992"
                 }
             ],
             "playerHit1Script": [],
@@ -31709,8 +31390,8 @@
             "autoFadeSpeed": 1,
             "id": "ae711e82-54a9-4614-a54c-073b09d94092",
             "symbol": "scene_19",
-            "x": 2603.9596299411282,
-            "y": 773.278385197645,
+            "x": 2609.986894737588,
+            "y": 772.8478662836121,
             "actors": [
                 {
                     "name": "Bone Shield Actor",
@@ -31959,7 +31640,7 @@
                         "comparator": 2,
                         "__collapseElse": false,
                         "__label": "B Attach",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -32142,7 +31823,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -32381,7 +32062,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "A Attach",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -32464,7 +32145,7 @@
                                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                                         "args": {
                                                             "customEventId": "df448158-6461-4d0e-95dc-e1f9c4fff718",
-                                                            "$actor[0]$": "d62ce28e-c477-4746-bca3-a339711c7767",
+                                                            "$actor[0]$": "ad1473e5-82ee-4ca4-9a28-c512f4005236",
                                                             "__collapse": false
                                                         },
                                                         "id": "57cc3c79-de7f-4d3a-b707-af309d7b19b1"
@@ -32519,7 +32200,7 @@
                                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                                         "args": {
                                                             "customEventId": "649c087a-78c0-4673-a71b-ac0b66253eec",
-                                                            "$actor[0]$": "1d3e462c-d6d2-439f-b0bd-397b6bdf8b50",
+                                                            "$actor[0]$": "ad1473e5-82ee-4ca4-9a28-c512f4005236",
                                                             "$variable[V1]$": {
                                                                 "type": "variable",
                                                                 "value": "L1"
@@ -32595,7 +32276,7 @@
                                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                                         "args": {
                                                             "customEventId": "e2421272-5721-44a1-9867-75aecc561374",
-                                                            "$actor[0]$": "8c978a05-16b1-4258-86ab-62477e3493d4"
+                                                            "$actor[0]$": "2a034284-6335-4663-9f0f-cd370ff91020"
                                                         },
                                                         "id": "6367907c-c477-4922-aa24-502c37577deb"
                                                     }
@@ -32686,7 +32367,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -32694,7 +32375,7 @@
                                 "command": "EVENT_CALL_CUSTOM_EVENT",
                                 "args": {
                                     "customEventId": "e71aa80f-efeb-49ff-b63a-785f77cef3ec",
-                                    "$actor[0]$": "d62ce28e-c477-4746-bca3-a339711c7767"
+                                    "$actor[0]$": "ad1473e5-82ee-4ca4-9a28-c512f4005236"
                                 },
                                 "id": "06beb48e-11c3-4cf1-962f-70950deb45cd"
                             }
@@ -32832,325 +32513,6 @@
                         "__collapse": true
                     },
                     "id": "c863d71a-f4ad-46ca-b1d4-6711aace142f"
-                },
-                {
-                    "command": "EVENT_SET_TIMER_SCRIPT",
-                    "args": {
-                        "duration": 1.5,
-                        "frames": 30,
-                        "__scriptTabs": "end",
-                        "__collapse": true
-                    },
-                    "children": {
-                        "script": [
-                            {
-                                "command": "EVENT_IF_TRUE",
-                                "args": {
-                                    "variable": "L0",
-                                    "__collapseElse": false,
-                                    "__collapse": false
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Raise Top and Bottom Spikes",
-                                                "__collapse": true,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 12\nVM_REPLACE_TILE_XY 8, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "b7effe30-5778-4599-ad4d-51721b5a0c5f"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 13\nVM_REPLACE_TILE_XY 9, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "b24a117c-58dd-45e3-80b2-3cd7211bf741"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 29\nVM_REPLACE_TILE_XY 8, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "4e8aa1f3-47a8-4db0-9125-e8251126ce73"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 30\nVM_REPLACE_TILE_XY 9, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "d546ae25-e5be-407c-8dd6-169cdf5a18fa"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "1d814411-a974-44b8-8953-553d3e62ec94"
-                                        },
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Lower Middle Spikes",
-                                                "__collapse": true,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 10\nVM_REPLACE_TILE_XY 8, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "04619832-5a79-4baf-ae54-982daedcdd74"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 11\nVM_REPLACE_TILE_XY 9, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "712df0e1-f635-446d-a4ee-30961480c56e"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 27\nVM_REPLACE_TILE_XY 8, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "713db4b1-0483-4dfb-937f-520a7cc44350"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 28\nVM_REPLACE_TILE_XY 9, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "2913dab7-8b23-41af-bcd7-a766a71b6357"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "3cd5f11a-6707-4217-a195-66dac0058353"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_FALSE",
-                                            "args": {
-                                                "variable": "L0"
-                                            },
-                                            "id": "55bd84e9-70cb-4c16-b8f7-b4ced98c243b"
-                                        }
-                                    ],
-                                    "false": [
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Lower Top and Bottom Spikes",
-                                                "__collapse": true,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 14\nVM_REPLACE_TILE_XY 8, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "5f1b640d-15b3-4bd2-85c5-818bbfd3a4af"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 15\nVM_REPLACE_TILE_XY 9, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "cbd124b2-b269-470d-a516-709b1cd2289f"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 31\nVM_REPLACE_TILE_XY 8, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "c4b6141e-0b9c-416e-b396-0ffa1a486633"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 32\nVM_REPLACE_TILE_XY 9, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "d640253e-b138-4ea1-a399-689e0786b3d5"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "6f85997e-ad34-4433-8e6f-65553efc7d88"
-                                        },
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Raise Middle Spikes",
-                                                "__collapse": false,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 8\nVM_REPLACE_TILE_XY 8, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "e65bb608-3e76-42fb-a428-19faeb47cb41"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 9\nVM_REPLACE_TILE_XY 9, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "634b410b-8268-4808-a780-dcb95a280bed"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 25\nVM_REPLACE_TILE_XY 8, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "79213a0f-ce60-47cb-a1dd-f21126a3a7c0"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 26\nVM_REPLACE_TILE_XY 9, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "d621f038-7fcf-49dd-9669-859af4ecbecf"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "5c164fd6-aef1-4fb0-85e8-7a5c929c1020"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_TRUE",
-                                            "args": {
-                                                "variable": "L0"
-                                            },
-                                            "id": "0d3c5e8b-5b92-4621-84a4-e42bc451d101"
-                                        }
-                                    ]
-                                },
-                                "id": "487b84a2-30a0-4c64-9c8b-15712a84f1df"
-                            }
-                        ]
-                    },
-                    "id": "bc07a1f0-175b-4dff-b0b5-f08dd22b9d18"
                 }
             ],
             "playerHit1Script": [],
@@ -34667,7 +34029,7 @@
                                                     "value": "2"
                                                 },
                                                 "__collapse": false,
-                                                "$actor[0]$": "ad1473e5-82ee-4ca4-9a28-c512f4005236"
+                                                "$actor[0]$": "ec9a727e-6b29-4b6e-bb71-14b4084e53ae"
                                             },
                                             "id": "626fbbb2-3734-4cfa-b1b7-86e520689795"
                                         },
@@ -34701,7 +34063,7 @@
                         "comparator": 2,
                         "__collapseElse": false,
                         "__label": "B Attach",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -34884,7 +34246,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -35123,7 +34485,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "A Attach",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -35206,7 +34568,7 @@
                                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                                         "args": {
                                                             "customEventId": "df448158-6461-4d0e-95dc-e1f9c4fff718",
-                                                            "$actor[0]$": "d62ce28e-c477-4746-bca3-a339711c7767",
+                                                            "$actor[0]$": "ec9a727e-6b29-4b6e-bb71-14b4084e53ae",
                                                             "__collapse": false
                                                         },
                                                         "id": "96dd6a6d-be14-445f-b569-ffc9b442cb82"
@@ -35261,7 +34623,7 @@
                                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                                         "args": {
                                                             "customEventId": "649c087a-78c0-4673-a71b-ac0b66253eec",
-                                                            "$actor[0]$": "1d3e462c-d6d2-439f-b0bd-397b6bdf8b50",
+                                                            "$actor[0]$": "10420901-402b-4790-9230-7cf69d2202a8",
                                                             "$variable[V1]$": {
                                                                 "type": "variable",
                                                                 "value": "L1"
@@ -35337,7 +34699,7 @@
                                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                                         "args": {
                                                             "customEventId": "e2421272-5721-44a1-9867-75aecc561374",
-                                                            "$actor[0]$": "8c978a05-16b1-4258-86ab-62477e3493d4"
+                                                            "$actor[0]$": "37f21c16-fe13-403b-97a5-6cb53877d7d9"
                                                         },
                                                         "id": "c3223104-ad09-4818-9b90-bc8486449faa"
                                                     }
@@ -35428,7 +34790,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -35436,7 +34798,7 @@
                                 "command": "EVENT_CALL_CUSTOM_EVENT",
                                 "args": {
                                     "customEventId": "e71aa80f-efeb-49ff-b63a-785f77cef3ec",
-                                    "$actor[0]$": "d62ce28e-c477-4746-bca3-a339711c7767"
+                                    "$actor[0]$": "ec9a727e-6b29-4b6e-bb71-14b4084e53ae"
                                 },
                                 "id": "17781b39-f1ba-43fd-a310-f3f2d7d8a376"
                             }
@@ -35448,7 +34810,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "Dashes",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -35574,325 +34936,6 @@
                         "__collapse": true
                     },
                     "id": "f8ca4d00-e65f-4033-9dda-673204a946f8"
-                },
-                {
-                    "command": "EVENT_SET_TIMER_SCRIPT",
-                    "args": {
-                        "duration": 1.5,
-                        "frames": 30,
-                        "__scriptTabs": "end",
-                        "__collapse": true
-                    },
-                    "children": {
-                        "script": [
-                            {
-                                "command": "EVENT_IF_TRUE",
-                                "args": {
-                                    "variable": "L0",
-                                    "__collapseElse": false,
-                                    "__collapse": false
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Raise Top and Bottom Spikes",
-                                                "__collapse": true,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 12\nVM_REPLACE_TILE_XY 8, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "025dfbf8-28b0-4bd9-8408-5fc4364e98cb"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 13\nVM_REPLACE_TILE_XY 9, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "9dc509c6-a42f-435c-934c-55419f542433"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 29\nVM_REPLACE_TILE_XY 8, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "38996f8c-f8a4-456c-a16e-0c75fc0b7dbc"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 30\nVM_REPLACE_TILE_XY 9, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "c15a5782-b84f-4941-9378-d6d84c02be0f"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "832cd0fa-742b-47ac-b4bb-ed6433e1245c"
-                                        },
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Lower Middle Spikes",
-                                                "__collapse": true,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 10\nVM_REPLACE_TILE_XY 8, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "62aad22c-3cc6-4e43-8555-ad842a98d2eb"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 11\nVM_REPLACE_TILE_XY 9, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "b11f42c4-e9bd-4982-8cb5-5a8e4d7c551f"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 27\nVM_REPLACE_TILE_XY 8, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "387372be-5b61-4af4-9213-df9748cfae76"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 28\nVM_REPLACE_TILE_XY 9, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "9ffa62ea-6d39-4309-98ed-1eadfa2e0aca"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "1f1b7a8f-bc51-45c7-b576-ff48c8b34e86"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_FALSE",
-                                            "args": {
-                                                "variable": "L0"
-                                            },
-                                            "id": "a08a48cc-0045-43c0-911d-b9b56882988e"
-                                        }
-                                    ],
-                                    "false": [
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Lower Top and Bottom Spikes",
-                                                "__collapse": true,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 14\nVM_REPLACE_TILE_XY 8, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "c61cb079-4de1-4ac0-847c-9951b9ead362"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 15\nVM_REPLACE_TILE_XY 9, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "b7a13c71-1d72-42d9-af53-d1d011d9815d"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 31\nVM_REPLACE_TILE_XY 8, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "de6a2464-0668-4f6a-bd76-1085619dcd85"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 32\nVM_REPLACE_TILE_XY 9, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "8f451c9f-22c2-45ad-b92f-314298c862eb"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "93af8d6d-2ea9-4800-8865-e42884c88b61"
-                                        },
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Raise Middle Spikes",
-                                                "__collapse": false,
-                                                "__comment": false
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 8\nVM_REPLACE_TILE_XY 8, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "3163b3b8-1669-44bf-825c-4510d1820949"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 9\nVM_REPLACE_TILE_XY 9, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "5fc0223b-cabe-47f9-bfa0-033c88e1953d"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 25\nVM_REPLACE_TILE_XY 8, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "ee33a819-4866-44a3-a7b0-b782b8598948"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_PUSH_CONST 26\nVM_REPLACE_TILE_XY 9, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
-                                                            "references": [
-                                                                {
-                                                                    "type": "background",
-                                                                    "id": "27da139c-a061-493f-9e49-322e900559e3"
-                                                                }
-                                                            ],
-                                                            "__collapse": false
-                                                        },
-                                                        "id": "c1eae156-6883-4d3f-afd7-eba6da7b9b71"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "fe1b2532-6e8c-4ebf-92ac-4abe1ef1a165"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_TRUE",
-                                            "args": {
-                                                "variable": "L0"
-                                            },
-                                            "id": "b3dfd71c-0d91-433d-9f77-f171e815926f"
-                                        }
-                                    ]
-                                },
-                                "id": "925400cb-9d6f-468e-aa9f-89cc1fef06ac"
-                            }
-                        ]
-                    },
-                    "id": "e52a9608-eaa1-4b1c-a255-45d75e970a1b"
                 }
             ],
             "playerHit1Script": [],
@@ -48386,7 +47429,8 @@
             "height": 32,
             "imageWidth": 448,
             "imageHeight": 256,
-            "filename": "bone_level_room3.png"
+            "filename": "bone_level_room3.png",
+            "tileColors": []
         },
         {
             "id": "82e15a56-7f84-4a56-8b69-4f1ea47c417f",
@@ -72422,9 +71466,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2113,
-        "worldScrollY": 562,
-        "zoom": 232.27783203125,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 45.0103759765625,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
@@ -72452,9 +71496,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            575,
-            268,
-            475
+            418,
+            195,
+            345
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
