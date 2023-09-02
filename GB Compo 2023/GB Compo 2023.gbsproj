@@ -2962,9 +2962,9 @@
                                         {
                                             "command": "EVENT_SWITCH_SCENE",
                                             "args": {
-                                                "sceneId": "9f399cc9-9cc7-4c4a-b8dd-052bb449bdc0",
-                                                "x": 42,
-                                                "y": 39,
+                                                "sceneId": "26c10ced-b09b-4332-8906-923b7e202b0f",
+                                                "x": 10,
+                                                "y": 27,
                                                 "direction": "",
                                                 "fadeSpeed": "2",
                                                 "__collapse": false
@@ -10440,15 +10440,40 @@
                     "height": 1,
                     "script": [
                         {
-                            "command": "EVENT_SWITCH_SCENE",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "sceneId": "9f399cc9-9cc7-4c4a-b8dd-052bb449bdc0",
-                                "x": 26,
-                                "y": 38,
-                                "direction": "",
-                                "fadeSpeed": "2"
+                                "variable": "8",
+                                "__collapseElse": false
                             },
-                            "id": "8f361a02-4cd8-446e-9dc2-fc257e5f4935"
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "9f399cc9-9cc7-4c4a-b8dd-052bb449bdc0",
+                                            "x": 26,
+                                            "y": 38,
+                                            "direction": "",
+                                            "fadeSpeed": "2"
+                                        },
+                                        "id": "8f361a02-4cd8-446e-9dc2-fc257e5f4935"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "3ecb3fca-49e8-4e7f-8a7f-b0792908c4a9",
+                                            "x": 33,
+                                            "y": 14,
+                                            "direction": "",
+                                            "fadeSpeed": "2"
+                                        },
+                                        "id": "1edb7a7b-cc7e-43c5-b709-db41b06524d2"
+                                    }
+                                ]
+                            },
+                            "id": "5b398d6e-3f63-4ad6-9f75-a2dfe4ca0d5f"
                         }
                     ],
                     "leaveScript": []
@@ -15598,7 +15623,7 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -23626,7 +23651,7 @@
                             "args": {
                                 "sceneId": "26c10ced-b09b-4332-8906-923b7e202b0f",
                                 "x": 10,
-                                "y": 18,
+                                "y": 28,
                                 "direction": "",
                                 "fadeSpeed": "2"
                             },
@@ -23649,7 +23674,7 @@
                             "args": {
                                 "sceneId": "26c10ced-b09b-4332-8906-923b7e202b0f",
                                 "x": 10,
-                                "y": 2,
+                                "y": 4,
                                 "direction": "",
                                 "fadeSpeed": "2"
                             },
@@ -23909,7 +23934,7 @@
                         "comparator": 2,
                         "__collapseElse": false,
                         "__label": "B Attach",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -26431,10 +26456,14 @@
             "name": "Room1",
             "backgroundId": "7d552d9e-26a0-4c0a-b85d-cb9b154919a4",
             "width": 22,
-            "height": 20,
+            "height": 30,
             "type": "TOPDOWN",
             "paletteIds": [],
-            "spritePaletteIds": [],
+            "spritePaletteIds": [
+                null,
+                "0a50bea4-e0d4-4eb7-9948-142324574ce6",
+                "default-bg-5"
+            ],
             "collisions": [
                 0,
                 0,
@@ -26443,408 +26472,9 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                15,
                 0,
                 0,
-                15,
-                15,
-                15,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                15,
-                15,
-                0,
-                0,
-                15,
                 15,
                 15,
                 0,
@@ -26864,12 +26494,631 @@
                 0,
                 0,
                 15,
-                0,
-                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
                 15,
                 0,
                 0,
                 0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -26880,8 +27129,8 @@
             "autoFadeSpeed": 1,
             "id": "26c10ced-b09b-4332-8906-923b7e202b0f",
             "symbol": "scene_17",
-            "x": 1620.6864754314895,
-            "y": 778.9809199162694,
+            "x": 1619.3071650866614,
+            "y": 778.2912647438557,
             "actors": [
                 {
                     "name": "Bone Shield Actor",
@@ -27021,7 +27270,7 @@
                     "name": "",
                     "id": "db70db35-df77-49ab-bbb6-1b0b5e9f32ae",
                     "x": 10,
-                    "y": 19,
+                    "y": 29,
                     "symbol": "trigger_33",
                     "width": 2,
                     "height": 1,
@@ -27058,7 +27307,7 @@
                     "name": "",
                     "id": "d88b37be-e6cd-42e5-aeb3-84c14d5d1e7c",
                     "x": 10,
-                    "y": 0,
+                    "y": 2,
                     "symbol": "trigger_34",
                     "width": 2,
                     "height": 1,
@@ -27090,6 +27339,171 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "edb0bee7-8382-4e89-a01f-b7849983d906",
+                    "x": 8,
+                    "y": 10,
+                    "symbol": "trigger_40",
+                    "width": 6,
+                    "height": 4,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "19"
+                            },
+                            "id": "5832504c-731f-45ba-bff4-e49f3f86ba86"
+                        },
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "21",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [],
+                                "false": [
+                                    {
+                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                        "args": {
+                                            "customEventId": "b1d8b746-6898-4e02-b713-eb1b7ca6df3a",
+                                            "$variable[V0]$": {
+                                                "type": "number",
+                                                "value": 2
+                                            }
+                                        },
+                                        "id": "cbbcda07-94d8-4880-92f8-dd4a3357b48f"
+                                    }
+                                ]
+                            },
+                            "id": "bd5c56be-e174-4549-b374-1c58db7850d8"
+                        }
+                    ],
+                    "leaveScript": [
+                        {
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "19"
+                            },
+                            "id": "a269196e-bf6d-4fdd-b260-967f84623088"
+                        }
+                    ]
+                },
+                {
+                    "name": "",
+                    "id": "a7567522-6d01-4bfc-b2a2-862fe018f55d",
+                    "x": 8,
+                    "y": 18,
+                    "symbol": "trigger_42",
+                    "width": 6,
+                    "height": 4,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "19"
+                            },
+                            "id": "a2e3c41f-444f-414a-bbde-eb2de3a2ab03"
+                        },
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "21",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [],
+                                "false": [
+                                    {
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "__collapseElse": true
+                                        },
+                                        "children": {
+                                            "true": [],
+                                            "false": []
+                                        },
+                                        "id": "5a6eafab-d680-4b64-9d90-0fc96e273f20"
+                                    },
+                                    {
+                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                        "args": {
+                                            "customEventId": "b1d8b746-6898-4e02-b713-eb1b7ca6df3a",
+                                            "$variable[V0]$": {
+                                                "type": "number",
+                                                "value": 2
+                                            }
+                                        },
+                                        "id": "207c50a2-b5f4-46d0-b7f6-7bdea28aa474"
+                                    }
+                                ]
+                            },
+                            "id": "864272bd-6c18-4b38-a531-bedc2b6d348e"
+                        }
+                    ],
+                    "leaveScript": [
+                        {
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "19"
+                            },
+                            "id": "cbaae0a3-6e32-4399-994c-8aff56244320"
+                        }
+                    ]
+                },
+                {
+                    "name": "",
+                    "id": "c9425e6f-c405-4684-83fa-55be8f00d98f",
+                    "x": 8,
+                    "y": 14,
+                    "symbol": "trigger_43",
+                    "width": 6,
+                    "height": 4,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "20"
+                            },
+                            "id": "02223c48-908c-41ab-bf6b-c770805909d8"
+                        },
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "21",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                        "args": {
+                                            "customEventId": "b1d8b746-6898-4e02-b713-eb1b7ca6df3a",
+                                            "$variable[V0]$": {
+                                                "type": "number",
+                                                "value": 2
+                                            }
+                                        },
+                                        "id": "9997a2d5-be24-406b-be46-225a75f448c5"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "09c298bc-a9fd-454d-b2a0-c2da55ed7977"
+                        }
+                    ],
+                    "leaveScript": [
+                        {
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "20"
+                            },
+                            "id": "ad85d962-6f96-4194-b387-eb7a137377d9"
+                        }
+                    ]
                 }
             ],
             "script": [
@@ -27132,7 +27546,7 @@
                                         "type": "variable",
                                         "value": "2"
                                     },
-                                    "__collapse": false,
+                                    "__collapse": true,
                                     "$actor[0]$": "d3bd5f41-251c-417c-a696-40c272528a89"
                                 },
                                 "id": "d44c248a-9d33-45b4-b743-bf21c29e4516"
@@ -27146,9 +27560,23 @@
                                         "value": "2"
                                     },
                                     "__comment": false,
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "id": "449cee7d-8dd3-462d-93bb-be4c29988a9e"
+                            },
+                            {
+                                "command": "EVENT_SET_FALSE",
+                                "args": {
+                                    "variable": "20"
+                                },
+                                "id": "bf933bbc-94f1-4d5b-9515-9474afe584af"
+                            },
+                            {
+                                "command": "EVENT_SET_FALSE",
+                                "args": {
+                                    "variable": "19"
+                                },
+                                "id": "47bc1755-9054-42ce-896b-0007df6e090e"
                             },
                             {
                                 "command": "EVENT_IF_VALUE",
@@ -27157,7 +27585,7 @@
                                     "operator": "!=",
                                     "comparator": 2,
                                     "__collapseElse": false,
-                                    "__collapse": false,
+                                    "__collapse": true,
                                     "__label": "Bullet Count"
                                 },
                                 "children": {
@@ -28092,7 +28520,7 @@
                             {
                                 "command": "EVENT_IF_TRUE",
                                 "args": {
-                                    "variable": "L0",
+                                    "variable": "21",
                                     "__collapseElse": false,
                                     "__collapse": false
                                 },
@@ -28110,7 +28538,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 12\nVM_REPLACE_TILE_XY 8, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 12\nVM_REPLACE_TILE_XY 8, 10, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28124,7 +28552,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 13\nVM_REPLACE_TILE_XY 9, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 13\nVM_REPLACE_TILE_XY 9, 10, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28138,7 +28566,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 29\nVM_REPLACE_TILE_XY 8, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 29\nVM_REPLACE_TILE_XY 8, 11, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28152,7 +28580,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 30\nVM_REPLACE_TILE_XY 9, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 30\nVM_REPLACE_TILE_XY 9, 11, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28168,10 +28596,35 @@
                                             "id": "bca5192b-13f0-43bf-b4bd-4eb88845a09d"
                                         },
                                         {
+                                            "command": "EVENT_IF_TRUE",
+                                            "args": {
+                                                "variable": "19",
+                                                "__collapseElse": true,
+                                                "__collapse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                                        "args": {
+                                                            "customEventId": "b1d8b746-6898-4e02-b713-eb1b7ca6df3a",
+                                                            "$variable[V0]$": {
+                                                                "type": "number",
+                                                                "value": 2
+                                                            }
+                                                        },
+                                                        "id": "65220542-443e-4e1a-94e8-34b30e9026f1"
+                                                    }
+                                                ],
+                                                "false": []
+                                            },
+                                            "id": "71814a43-80b3-4d3b-a66f-29aa94a29e7f"
+                                        },
+                                        {
                                             "command": "EVENT_GROUP",
                                             "args": {
                                                 "__label": "Lower Middle Spikes",
-                                                "__collapse": false,
+                                                "__collapse": true,
                                                 "__comment": false
                                             },
                                             "children": {
@@ -28179,7 +28632,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 10\nVM_REPLACE_TILE_XY 8, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 10\nVM_REPLACE_TILE_XY 8, 14, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28193,7 +28646,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 11\nVM_REPLACE_TILE_XY 9, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 11\nVM_REPLACE_TILE_XY 9, 14, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28207,7 +28660,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 27\nVM_REPLACE_TILE_XY 8, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 27\nVM_REPLACE_TILE_XY 8, 15, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28221,7 +28674,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 28\nVM_REPLACE_TILE_XY 9, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 28\nVM_REPLACE_TILE_XY 9, 15, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28239,7 +28692,8 @@
                                         {
                                             "command": "EVENT_SET_FALSE",
                                             "args": {
-                                                "variable": "L0"
+                                                "variable": "21",
+                                                "__collapse": false
                                             },
                                             "id": "14fbd6b0-a3a2-49f5-97a3-ed8f821911ce"
                                         }
@@ -28249,7 +28703,7 @@
                                             "command": "EVENT_GROUP",
                                             "args": {
                                                 "__label": "Lower Top and Bottom Spikes",
-                                                "__collapse": true,
+                                                "__collapse": false,
                                                 "__comment": false
                                             },
                                             "children": {
@@ -28257,7 +28711,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 14\nVM_REPLACE_TILE_XY 8, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 14\nVM_REPLACE_TILE_XY 8, 10, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28271,7 +28725,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 15\nVM_REPLACE_TILE_XY 9, 4, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 15\nVM_REPLACE_TILE_XY 9, 10, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28285,7 +28739,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 31\nVM_REPLACE_TILE_XY 8, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 31\nVM_REPLACE_TILE_XY 8, 11, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28299,7 +28753,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 32\nVM_REPLACE_TILE_XY 9, 5, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 32\nVM_REPLACE_TILE_XY 9, 11, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28326,7 +28780,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 8\nVM_REPLACE_TILE_XY 8, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 8\nVM_REPLACE_TILE_XY 8, 14, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28340,7 +28794,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 9\nVM_REPLACE_TILE_XY 9, 8, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 9\nVM_REPLACE_TILE_XY 9, 14, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28354,7 +28808,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 25\nVM_REPLACE_TILE_XY 8, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 25\nVM_REPLACE_TILE_XY 8, 15, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28368,7 +28822,7 @@
                                                     {
                                                         "command": "EVENT_GBVM_SCRIPT",
                                                         "args": {
-                                                            "script": "VM_PUSH_CONST 26\nVM_REPLACE_TILE_XY 9, 9, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
+                                                            "script": "VM_PUSH_CONST 26\nVM_REPLACE_TILE_XY 9, 15, ___bank_bg_dungeon_dangers_tileset, _bg_dungeon_dangers_tileset, .ARG0\nVM_POP 1",
                                                             "references": [
                                                                 {
                                                                     "type": "background",
@@ -28384,9 +28838,34 @@
                                             "id": "2f36aa8c-4052-4a9e-8dd2-4a2e6aa3fcd2"
                                         },
                                         {
+                                            "command": "EVENT_IF_TRUE",
+                                            "args": {
+                                                "variable": "20",
+                                                "__collapseElse": true,
+                                                "__collapse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                                        "args": {
+                                                            "customEventId": "b1d8b746-6898-4e02-b713-eb1b7ca6df3a",
+                                                            "$variable[V0]$": {
+                                                                "type": "number",
+                                                                "value": 2
+                                                            }
+                                                        },
+                                                        "id": "d379c077-17a1-4875-88d4-4cfda541a8c9"
+                                                    }
+                                                ],
+                                                "false": []
+                                            },
+                                            "id": "a287d567-7710-412c-aa47-b553c721535d"
+                                        },
+                                        {
                                             "command": "EVENT_SET_TRUE",
                                             "args": {
-                                                "variable": "L0"
+                                                "variable": "21"
                                             },
                                             "id": "8f4bc70f-fe9c-4c79-b108-89aba01eb021"
                                         }
@@ -28411,7 +28890,11 @@
             "height": 32,
             "type": "TOPDOWN",
             "paletteIds": [],
-            "spritePaletteIds": [],
+            "spritePaletteIds": [
+                null,
+                "0a50bea4-e0d4-4eb7-9948-142324574ce6",
+                "default-bg-5"
+            ],
             "collisions": [
                 0,
                 0,
@@ -29872,7 +30355,7 @@
                 0,
                 15,
                 15,
-                0,
+                15,
                 0,
                 0,
                 0,
@@ -31297,7 +31780,7 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__comment": false
                                 },
                                 "children": {
@@ -31410,7 +31893,7 @@
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
                                             "args": {
                                                 "customEventId": "88cf3e97-6832-4700-b180-9da7920e49f4",
-                                                "$actor[0]$": "d62ce28e-c477-4746-bca3-a339711c7767"
+                                                "$actor[0]$": "f20561e1-7425-4c5b-a3e5-68303a1e46da"
                                             },
                                             "id": "dcc5c488-e301-4fd7-a63f-e7883fb12774"
                                         },
@@ -32173,7 +32656,11 @@
             "height": 18,
             "type": "TOPDOWN",
             "paletteIds": [],
-            "spritePaletteIds": [],
+            "spritePaletteIds": [
+                null,
+                "0a50bea4-e0d4-4eb7-9948-142324574ce6",
+                "default-bg-5"
+            ],
             "collisions": [
                 0,
                 0,
@@ -32539,8 +33026,8 @@
             "autoFadeSpeed": 1,
             "id": "ae711e82-54a9-4614-a54c-073b09d94092",
             "symbol": "scene_19",
-            "x": 2609.986894737588,
-            "y": 772.8478662836121,
+            "x": 2609.297239565174,
+            "y": 773.537521456026,
             "actors": [
                 {
                     "name": "Bone Shield Actor",
@@ -33117,7 +33604,7 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__comment": false
                                 },
                                 "children": {
@@ -33230,7 +33717,7 @@
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
                                             "args": {
                                                 "customEventId": "88cf3e97-6832-4700-b180-9da7920e49f4",
-                                                "$actor[0]$": "d62ce28e-c477-4746-bca3-a339711c7767"
+                                                "$actor[0]$": "ad1473e5-82ee-4ca4-9a28-c512f4005236"
                                             },
                                             "id": "754bfbc8-da6b-4798-b8bf-7876969f91a8"
                                         },
@@ -33992,7 +34479,11 @@
             "height": 32,
             "type": "TOPDOWN",
             "paletteIds": [],
-            "spritePaletteIds": [],
+            "spritePaletteIds": [
+                null,
+                "0a50bea4-e0d4-4eb7-9948-142324574ce6",
+                "default-bg-5"
+            ],
             "collisions": [
                 0,
                 0,
@@ -36634,7 +37125,7 @@
                                     ],
                                     "override": true,
                                     "__scriptTabs": "press",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__comment": false
                                 },
                                 "children": {
@@ -36747,7 +37238,7 @@
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
                                             "args": {
                                                 "customEventId": "88cf3e97-6832-4700-b180-9da7920e49f4",
-                                                "$actor[0]$": "d62ce28e-c477-4746-bca3-a339711c7767"
+                                                "$actor[0]$": "ec9a727e-6b29-4b6e-bb71-14b4084e53ae"
                                             },
                                             "id": "a36d080e-c836-480b-8e4a-b097948144dd"
                                         },
@@ -48252,11 +48743,231 @@
             "name": "bone_level_room1",
             "symbol": "bg_bone_level_room1",
             "width": 22,
-            "height": 20,
+            "height": 30,
             "imageWidth": 176,
-            "imageHeight": 160,
+            "imageHeight": 240,
             "filename": "bone_level_room1.png",
             "tileColors": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1,
                 1,
                 1,
@@ -67454,18 +68165,31 @@
             "symbol": "script_5",
             "script": [
                 {
-                    "command": "EVENT_VARIABLE_MATH_EVALUATE",
+                    "command": "EVENT_IF_FALSE",
                     "args": {
-                        "variable": "2",
-                        "expression": "$02$ - $V0$"
+                        "variable": "4",
+                        "__collapseElse": true
                     },
-                    "id": "bab0338d-f119-4445-9bdb-22aef601ea29"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_VARIABLE_MATH_EVALUATE",
+                                "args": {
+                                    "variable": "2",
+                                    "expression": "$02$ - $V0$"
+                                },
+                                "id": "bab0338d-f119-4445-9bdb-22aef601ea29"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "a1abcf79-60b3-4505-89b9-9631052b584f"
                 },
                 {
                     "command": "EVENT_IF_VALUE",
                     "args": {
                         "variable": "2",
-                        "operator": "<",
+                        "operator": "<=",
                         "comparator": "0",
                         "__collapseElse": false
                     },
@@ -67961,6 +68685,13 @@
                                                                     "children": {
                                                                         "true": [
                                                                             {
+                                                                                "command": "EVENT_SET_TRUE",
+                                                                                "args": {
+                                                                                    "variable": "4"
+                                                                                },
+                                                                                "id": "f6da209d-850c-423d-b225-83525a9a86ce"
+                                                                            },
+                                                                            {
                                                                                 "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                                 "args": {
                                                                                     "actorId": "$self$",
@@ -68015,6 +68746,13 @@
                                                                                     ]
                                                                                 },
                                                                                 "id": "11ff33ed-95e1-45bf-87ed-38517e973dba"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_SET_FALSE",
+                                                                                "args": {
+                                                                                    "variable": "4"
+                                                                                },
+                                                                                "id": "84e25bae-df5c-4ab1-8450-bc681b9e2d6f"
                                                                             }
                                                                         ]
                                                                     },
@@ -68425,6 +69163,13 @@
                                                                     "children": {
                                                                         "true": [
                                                                             {
+                                                                                "command": "EVENT_SET_TRUE",
+                                                                                "args": {
+                                                                                    "variable": "4"
+                                                                                },
+                                                                                "id": "6e743711-9b7f-4903-a6b5-2ba5966b64fb"
+                                                                            },
+                                                                            {
                                                                                 "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                                 "args": {
                                                                                     "actorId": "$self$",
@@ -68479,6 +69224,13 @@
                                                                                     ]
                                                                                 },
                                                                                 "id": "1fdd9f0b-331b-4d99-a86e-652d134a1f33"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_SET_FALSE",
+                                                                                "args": {
+                                                                                    "variable": "4"
+                                                                                },
+                                                                                "id": "f4280afd-e0c1-4fba-bbbe-b2965fadf205"
                                                                             }
                                                                         ]
                                                                     },
@@ -68887,6 +69639,13 @@
                                                                     "children": {
                                                                         "true": [
                                                                             {
+                                                                                "command": "EVENT_SET_TRUE",
+                                                                                "args": {
+                                                                                    "variable": "4"
+                                                                                },
+                                                                                "id": "db3f3e61-af8b-4482-8685-2454ac21158a"
+                                                                            },
+                                                                            {
                                                                                 "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                                 "args": {
                                                                                     "actorId": "$self$",
@@ -68941,6 +69700,13 @@
                                                                                     ]
                                                                                 },
                                                                                 "id": "efdee59e-188a-43de-a89a-d6db9a368d11"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_SET_FALSE",
+                                                                                "args": {
+                                                                                    "variable": "4"
+                                                                                },
+                                                                                "id": "cf793840-d679-4c24-870c-0284552fc273"
                                                                             }
                                                                         ]
                                                                     },
@@ -69349,6 +70115,13 @@
                                                                     "children": {
                                                                         "true": [
                                                                             {
+                                                                                "command": "EVENT_SET_TRUE",
+                                                                                "args": {
+                                                                                    "variable": "4"
+                                                                                },
+                                                                                "id": "42d0ce04-9479-4cca-ac9e-586b9a361833"
+                                                                            },
+                                                                            {
                                                                                 "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                                                                                 "args": {
                                                                                     "actorId": "$self$",
@@ -69404,6 +70177,13 @@
                                                                                     "__collapse": true
                                                                                 },
                                                                                 "id": "55f9151f-b0e0-4bbc-a4f8-49ef06376815"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_SET_FALSE",
+                                                                                "args": {
+                                                                                    "variable": "4"
+                                                                                },
+                                                                                "id": "f50a3231-2d3d-461d-8931-6936f0542486"
                                                                             }
                                                                         ]
                                                                     },
@@ -73774,9 +74554,29 @@
             "symbol": "var_playerinlevel2area2"
         },
         {
+            "id": "17",
+            "name": "PlayerInLevel2Area3",
+            "symbol": "var_playerinlevel2area3"
+        },
+        {
             "id": "18",
             "name": "stopEnemyFire",
             "symbol": "var_stopenemyfire"
+        },
+        {
+            "id": "19",
+            "name": "PlayerInToporBottomSpikes",
+            "symbol": "var_playerintoporbottomspik"
+        },
+        {
+            "id": "20",
+            "name": "PlayerInMiddleSpikes",
+            "symbol": "var_playerinmiddlespikes"
+        },
+        {
+            "id": "21",
+            "name": "Top And Bottom Down",
+            "symbol": "var_top_and_bottom_down_3"
         },
         {
             "id": "904411d3-6661-48e3-8421-8093fa0dcf35__L0",
@@ -74330,8 +75130,8 @@
         },
         {
             "id": "26c10ced-b09b-4332-8906-923b7e202b0f__L0",
-            "name": "Top and Bottom Down",
-            "symbol": "var_top_and_bottom_down"
+            "name": "Local0",
+            "symbol": "var_local0"
         },
         {
             "id": "495d08ee-5180-4bb7-901c-235fc1c36643__L0",
@@ -74609,11 +75409,6 @@
             "symbol": "var_localstop_38"
         },
         {
-            "id": "17",
-            "name": "PlayerInLevel2Area3",
-            "symbol": "var_playerinlevel2area3"
-        },
-        {
             "id": "c9b17864-9038-4023-9734-11e3dadee451__L0",
             "name": "Player_Direction",
             "symbol": "var_player_direction_44"
@@ -74735,8 +75530,8 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3032,
-        "worldScrollY": 744,
+        "worldScrollX": 1937,
+        "worldScrollY": 615,
         "zoom": 145,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -74765,9 +75560,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            370,
-            172,
-            305
+            418,
+            194,
+            345
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
