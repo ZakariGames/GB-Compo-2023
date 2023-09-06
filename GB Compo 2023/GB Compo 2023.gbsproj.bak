@@ -51039,19 +51039,7 @@
                     "collisionGroup": "1",
                     "symbol": "actor_97",
                     "script": [],
-                    "startScript": [
-                        {
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "L0",
-                                "value": {
-                                    "type": "number",
-                                    "value": 3
-                                }
-                            },
-                            "id": "0a6111e0-0ec9-4b8b-832c-ac017a1dc77e"
-                        }
-                    ],
+                    "startScript": [],
                     "updateScript": [
                         {
                             "command": "EVENT_IF_TRUE",
@@ -51085,6 +51073,17 @@
                                                         "useCollisions": false
                                                     },
                                                     "id": "20ec7694-5492-4336-902c-0ca359c9447f"
+                                                },
+                                                {
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "L0",
+                                                        "value": {
+                                                            "type": "number",
+                                                            "value": 7
+                                                        }
+                                                    },
+                                                    "id": "85a8bd2c-7a05-4ce1-a238-8f19c2361f22"
                                                 },
                                                 {
                                                     "command": "EVENT_SET_TRUE",
@@ -51193,6 +51192,13 @@
                                             "useCollisions": false
                                         },
                                         "id": "a6b3440f-8176-4100-8677-d138867f9c29"
+                                    },
+                                    {
+                                        "command": "EVENT_GBVM_SCRIPT",
+                                        "args": {
+                                            "script": "VM_LOCK"
+                                        },
+                                        "id": "b1797c25-8dc1-473a-94b8-b1a0f90b048a"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_DEACTIVATE",
@@ -96039,7 +96045,7 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3887,
+        "worldScrollX": 1365,
         "worldScrollY": 35,
         "zoom": 205,
         "customColorsEnabled": true,
