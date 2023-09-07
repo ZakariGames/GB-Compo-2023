@@ -2917,7 +2917,7 @@
                                 "args": {
                                     "variable": "L0",
                                     "operator": "==",
-                                    "comparator": "0",
+                                    "comparator": 0,
                                     "__collapseElse": true,
                                     "__comment": false,
                                     "__label": "Debug Options"
@@ -2938,9 +2938,9 @@
                                         {
                                             "command": "EVENT_SWITCH_SCENE",
                                             "args": {
-                                                "sceneId": "3ecb3fca-49e8-4e7f-8a7f-b0792908c4a9",
-                                                "x": 1,
-                                                "y": 57,
+                                                "sceneId": "b6a93796-5f17-4a95-bb8c-59b32d186789",
+                                                "x": 4,
+                                                "y": 77,
                                                 "direction": "",
                                                 "fadeSpeed": "2",
                                                 "__collapse": false
@@ -13187,7 +13187,7 @@
             "autoFadeSpeed": 1,
             "id": "2dfa94f9-4711-46c2-90f7-23791b5d0b64",
             "symbol": "scene_7",
-            "x": 2139.9028519880135,
+            "x": 2140.841254973216,
             "y": 265.9236425656049,
             "actors": [],
             "triggers": [],
@@ -14321,7 +14321,7 @@
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "a5445156-7fbd-4590-95e7-b08d7c97203a",
-                    "direction": "up",
+                    "direction": "right",
                     "moveSpeed": 1,
                     "animSpeed": 15,
                     "paletteId": "",
@@ -28755,7 +28755,7 @@
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "a5445156-7fbd-4590-95e7-b08d7c97203a",
-                    "direction": "up",
+                    "direction": "right",
                     "moveSpeed": 1,
                     "animSpeed": 15,
                     "paletteId": "",
@@ -29754,7 +29754,7 @@
             "id": "26c10ced-b09b-4332-8906-923b7e202b0f",
             "symbol": "scene_17",
             "x": 3355.3071650866614,
-            "y": 166.29126474385566,
+            "y": 165.3528617586528,
             "actors": [
                 {
                     "name": "Bone Shield Actor",
@@ -30984,7 +30984,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -31154,7 +31154,7 @@
                                             "command": "EVENT_GROUP",
                                             "args": {
                                                 "__label": "Raise Top and Bottom Spikes",
-                                                "__collapse": true,
+                                                "__collapse": false,
                                                 "__comment": false
                                             },
                                             "children": {
@@ -44762,7 +44762,7 @@
                         "text": [
                             "Once upon a time\n..."
                         ],
-                        "avatarId": ""
+                        "avatarId": "1234fb85-f5fa-483a-bb6f-a4e46db8e021"
                     },
                     "id": "e249fc07-dd86-4566-9152-606f8e6d11ee"
                 },
@@ -44772,7 +44772,7 @@
                         "text": [
                             "There was a story\nto be told"
                         ],
-                        "avatarId": ""
+                        "avatarId": "1234fb85-f5fa-483a-bb6f-a4e46db8e021"
                     },
                     "id": "050f900c-3d2a-4893-af33-e5d461f7a8c2"
                 },
@@ -44782,7 +44782,7 @@
                         "text": [
                             "But I wont be able\nto tell you this"
                         ],
-                        "avatarId": ""
+                        "avatarId": "1234fb85-f5fa-483a-bb6f-a4e46db8e021"
                     },
                     "id": "417bb5c3-b8b0-4460-ba49-5cba9fdeb8bc"
                 },
@@ -44817,7 +44817,7 @@
                         "text": [
                             "Because I don't\nknow the words"
                         ],
-                        "avatarId": ""
+                        "avatarId": "1234fb85-f5fa-483a-bb6f-a4e46db8e021"
                     },
                     "id": "91a3881e-edae-49f1-a8c4-9a1917fe95db"
                 },
@@ -44836,7 +44836,17 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "playerSpriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2"
+            "playerSpriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+            "parallax": [
+                {
+                    "height": 3,
+                    "speed": 1
+                },
+                {
+                    "height": 0,
+                    "speed": 0
+                }
+            ]
         },
         {
             "name": "Town Cutscene",
@@ -60843,7 +60853,7 @@
                 1,
                 1,
                 1,
-                7,
+                1,
                 1,
                 1,
                 1,
@@ -97922,9 +97932,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3051,
-        "worldScrollY": 114,
-        "zoom": 205,
+        "worldScrollX": 33,
+        "worldScrollY": 32,
+        "zoom": 106.56402587890625,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
