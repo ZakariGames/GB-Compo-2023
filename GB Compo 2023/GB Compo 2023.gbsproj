@@ -36696,91 +36696,6 @@
                     "id": "f12a31ee-e46e-4e74-9843-e3addf61f11b",
                     "x": 15,
                     "y": 10
-                },
-                {
-                    "name": "",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "a8b1762c-b01a-4002-927f-1e7f55a3638e",
-                    "direction": "down",
-                    "moveSpeed": 0.5,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": false,
-                    "persistent": false,
-                    "collisionGroup": "1",
-                    "symbol": "actor_63",
-                    "script": [
-                        {
-                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                            "args": {
-                                "customEventId": "b68e40ec-a3cb-42df-b42b-f2a9fe2333a2",
-                                "$actor[1]$": "dac8c8e7-b86c-4700-b7df-eb4662caa796",
-                                "$variable[V0]$": {
-                                    "type": "variable",
-                                    "value": "L2"
-                                }
-                            },
-                            "id": "7133ef12-e0d1-46d9-8371-d561be5c73ab"
-                        }
-                    ],
-                    "startScript": [
-                        {
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "L1",
-                                "value": {
-                                    "type": "number",
-                                    "value": 3
-                                }
-                            },
-                            "id": "186fef8f-567a-40dc-89e4-97a5a2f35cdc"
-                        }
-                    ],
-                    "updateScript": [
-                        {
-                            "command": "EVENT_IF_FALSE",
-                            "args": {
-                                "variable": "L2",
-                                "__collapseElse": true,
-                                "__collapse": false
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_CALL_CUSTOM_EVENT",
-                                        "args": {
-                                            "customEventId": "ad1a91f1-54aa-477e-9c86-ce3b3f291d78",
-                                            "$actor[1]$": "2a034284-6335-4663-9f0f-cd370ff91020",
-                                            "__comment": false,
-                                            "$actor[0]$": "$self$"
-                                        },
-                                        "id": "5cefc821-6d33-4442-8530-91440bbb0a7e"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "1c8a0cc6-b01e-4f6f-9d86-69dafe78567b"
-                        }
-                    ],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [
-                        {
-                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                            "args": {
-                                "customEventId": "1e636413-b609-4008-aad5-def7a3a44f3b",
-                                "$variable[V1]$": {
-                                    "type": "variable",
-                                    "value": "L1"
-                                }
-                            },
-                            "id": "fef0260b-488e-42b5-b01e-0a900d90b70e"
-                        }
-                    ],
-                    "id": "cb24862f-3618-4cd7-8ad1-2ed2a07e7fb2",
-                    "x": 10,
-                    "y": 7
                 }
             ],
             "triggers": [
@@ -63519,7 +63434,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "Town_Sheriffs Office2.png"
+            "filename": "Town_Sheriffs Office2.png",
+            "tileColors": []
         },
         {
             "id": "cb5f3897-a3a8-4e90-82f9-a7184533bed0",
@@ -63901,7 +63817,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "black_bg.png"
+            "filename": "black_bg.png",
+            "tileColors": []
         },
         {
             "id": "6c80427d-da88-4f0a-82da-93c5879fc652",
@@ -99752,34 +99669,34 @@
             "symbol": "sound_hammered_sav",
             "filename": "hammered.sav",
             "type": "fxhammer",
-            "inode": "4222124651035214",
+            "inode": "4867590",
             "_v": 1693919922918
         }
     ],
     "fonts": [
         {
             "id": "00f8380e-7717-4143-a1d7-481369f831a9",
-            "name": "default caps slant\\ascii",
+            "name": "default caps slant/ascii",
             "symbol": "font_default_caps_slant_asc",
             "width": 128,
             "height": 112,
-            "filename": "default caps slant\\ascii.png"
+            "filename": "default caps slant/ascii.png"
         },
         {
             "id": "b64facea-97b5-41fc-bfd3-411f5adc0704",
-            "name": "default caps thick\\ascii",
+            "name": "default caps thick/ascii",
             "symbol": "font_default_caps_thick_asc",
             "width": 128,
             "height": 112,
-            "filename": "default caps thick\\ascii.png"
+            "filename": "default caps thick/ascii.png"
         },
         {
             "id": "1c4ba03b-f6e1-42fa-a356-58a3563a36a9",
-            "name": "default low slant\\ascii",
+            "name": "default low slant/ascii",
             "symbol": "font_default_low_slant_asci",
             "width": 128,
             "height": 112,
-            "filename": "default low slant\\ascii.png"
+            "filename": "default low slant/ascii.png"
         },
         {
             "id": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
@@ -99799,11 +99716,11 @@
         },
         {
             "id": "cc6ab40d-78e4-4cec-9a41-d90892c0d2dc",
-            "name": "slant\\ascii",
+            "name": "slant/ascii",
             "symbol": "font_slant_ascii",
             "width": 128,
             "height": 112,
-            "filename": "slant\\ascii.png"
+            "filename": "slant/ascii.png"
         }
     ],
     "avatars": [
@@ -101164,9 +101081,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 163,
-        "worldScrollY": 100,
-        "zoom": 200,
+        "worldScrollX": 4707,
+        "worldScrollY": 579,
+        "zoom": 140,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
@@ -101194,9 +101111,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            323,
-            276,
-            348
+            327,
+            279,
+            352
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
