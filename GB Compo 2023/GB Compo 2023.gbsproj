@@ -5148,8 +5148,8 @@
                 0,
                 0,
                 0,
-                0,
-                0,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -7883,7 +7883,7 @@
                     "y": 33
                 },
                 {
-                    "name": "",
+                    "name": "Cinder",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "cdb24571-694d-4158-b77e-b5af277aebde",
@@ -7989,88 +7989,120 @@
                     "height": 5,
                     "script": [
                         {
-                            "command": "EVENT_ACTOR_SET_POSITION",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "actorId": "6c2e5ce9-70c9-49fc-a0ac-136a47ed71a6",
-                                "x": {
-                                    "type": "number",
-                                    "value": 12
-                                },
-                                "y": {
-                                    "type": "number",
-                                    "value": 36
-                                }
+                                "variable": "34",
+                                "__collapseElse": true
                             },
-                            "id": "ec299641-6822-4cc9-88d0-51a1b146ff13"
-                        },
-                        {
-                            "command": "EVENT_ACTOR_ACTIVATE",
-                            "args": {
-                                "actorId": "6c2e5ce9-70c9-49fc-a0ac-136a47ed71a6"
-                            },
-                            "id": "9a608187-77f8-4934-8cc1-bd6d67ee9522"
-                        },
-                        {
-                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
-                            "args": {
-                                "__scriptTabs": "avatar",
-                                "text": [
-                                    "Is that all you've\ngot?"
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_POSITION",
+                                        "args": {
+                                            "actorId": "6c2e5ce9-70c9-49fc-a0ac-136a47ed71a6",
+                                            "x": {
+                                                "type": "number",
+                                                "value": 10
+                                            },
+                                            "y": {
+                                                "type": "number",
+                                                "value": 36
+                                            }
+                                        },
+                                        "id": "e95c0a90-7c09-4208-9dcc-534cd1545a26"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_ACTIVATE",
+                                        "args": {
+                                            "actorId": "6c2e5ce9-70c9-49fc-a0ac-136a47ed71a6"
+                                        },
+                                        "id": "b2c59a8c-63b4-4aeb-87fd-086573b34da7"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                        "args": {
+                                            "actorId": "6c2e5ce9-70c9-49fc-a0ac-136a47ed71a6",
+                                            "x": 3,
+                                            "y": 0,
+                                            "moveType": "horizontal",
+                                            "useCollisions": false
+                                        },
+                                        "id": "06d885bc-eccf-409b-825f-1320c7b368ca"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "avatar",
+                                            "text": [
+                                                "Is that all you've\ngot?"
+                                            ],
+                                            "nameTag": "Traitor",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "e95cc0e4-8771-438e-9118-b64ad9095372",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": false
+                                        },
+                                        "id": "a03cc8c2-1c03-47a5-803b-55d3de9dad01"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "avatar",
+                                            "text": [
+                                                "HA! If only."
+                                            ],
+                                            "nameTag": "Cinder",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "8603deaa-1c82-443a-9f12-2f7876396cc3",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left"
+                                        },
+                                        "id": "e9c669c2-90a3-4fd3-a94c-d7a3ca85506c"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_MOVE_TO",
+                                        "args": {
+                                            "actorId": "6c2e5ce9-70c9-49fc-a0ac-136a47ed71a6",
+                                            "x": {
+                                                "type": "number",
+                                                "value": 7
+                                            },
+                                            "y": {
+                                                "type": "number",
+                                                "value": 36
+                                            },
+                                            "moveType": "horizontal",
+                                            "useCollisions": false
+                                        },
+                                        "id": "f1a5e0aa-e640-4b41-99ac-88c8bf4c50c9"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "args": {
+                                            "actorId": "6c2e5ce9-70c9-49fc-a0ac-136a47ed71a6"
+                                        },
+                                        "id": "ae4eaf0e-f17b-48a2-9682-da938c6b698c"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "34"
+                                        },
+                                        "id": "34a8cc4e-ecca-47ab-87e8-0e022e52c43a"
+                                    }
                                 ],
-                                "nameTag": "Traitor",
-                                "nameX": 2,
-                                "avatarType": "small",
-                                "avatarId": "e95cc0e4-8771-438e-9118-b64ad9095372",
-                                "largeAvatar": "",
-                                "avatarX": 2,
-                                "avatarY": 2,
-                                "avatarWidth": 3,
-                                "orientation": "left"
+                                "false": []
                             },
-                            "id": "8670834c-b099-4add-b513-ce5a4ddbfa59"
-                        },
-                        {
-                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
-                            "args": {
-                                "__scriptTabs": "avatar",
-                                "text": [
-                                    "HA! If only."
-                                ],
-                                "nameTag": "Cinder",
-                                "nameX": 2,
-                                "avatarType": "small",
-                                "avatarId": "8603deaa-1c82-443a-9f12-2f7876396cc3",
-                                "largeAvatar": "",
-                                "avatarX": 2,
-                                "avatarY": 2,
-                                "avatarWidth": 3,
-                                "orientation": "left"
-                            },
-                            "id": "cfa3da6b-9bca-420c-aeda-b2818b3450bc"
-                        },
-                        {
-                            "command": "EVENT_ACTOR_MOVE_TO",
-                            "args": {
-                                "actorId": "6c2e5ce9-70c9-49fc-a0ac-136a47ed71a6",
-                                "x": {
-                                    "type": "number",
-                                    "value": 7
-                                },
-                                "y": {
-                                    "type": "number",
-                                    "value": 36
-                                },
-                                "moveType": "horizontal",
-                                "useCollisions": false
-                            },
-                            "id": "b8ca0452-50f2-4339-a10e-71dd4bddc3dc"
-                        },
-                        {
-                            "command": "EVENT_ACTOR_DEACTIVATE",
-                            "args": {
-                                "actorId": "6c2e5ce9-70c9-49fc-a0ac-136a47ed71a6"
-                            },
-                            "id": "60df27e6-21a4-4f4d-8bcd-67f9a1876271"
+                            "id": "2b4ba270-982f-4860-b220-0f2485df66b9"
                         }
                     ],
                     "leaveScript": []
@@ -22857,22 +22889,22 @@
                 0,
                 15,
                 15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -47899,7 +47931,7 @@
                                         "args": {
                                             "field": "camera_x",
                                             "variable": "L0",
-                                            "__comment": true
+                                            "__comment": false
                                         },
                                         "id": "4fe48af5-5f12-426a-9ac7-888391ea6e31"
                                     },
@@ -47908,7 +47940,7 @@
                                         "args": {
                                             "field": "camera_y",
                                             "variable": "L1",
-                                            "__comment": true
+                                            "__comment": false
                                         },
                                         "id": "6dbfc476-4cfe-4e4e-92d8-0bf7d4b51217"
                                     },
@@ -47924,7 +47956,7 @@
                                                 "value": "L1"
                                             },
                                             "speed": 0,
-                                            "__comment": true
+                                            "__comment": false
                                         },
                                         "id": "9580a33c-fbef-4398-8651-460f7b403717"
                                     },
@@ -96950,7 +96982,7 @@
             "symbol": "sound_hammered_sav",
             "filename": "hammered.sav",
             "type": "fxhammer",
-            "inode": "4480228",
+            "inode": "4813648",
             "_v": 1693919922918
         }
     ],
@@ -97319,6 +97351,11 @@
             "id": "33",
             "name": "Town2CutsceneOver",
             "symbol": "var_town2cutsceneover"
+        },
+        {
+            "id": "34",
+            "name": "Chase Over",
+            "symbol": "var_chase_over"
         },
         {
             "id": "904411d3-6661-48e3-8421-8093fa0dcf35__L0",
@@ -98357,9 +98394,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 9270,
-        "worldScrollY": 1432,
-        "zoom": 234.90540547668934,
+        "worldScrollX": 409,
+        "worldScrollY": 336,
+        "zoom": 165.55535308271646,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
@@ -98387,9 +98424,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            289,
-            247,
-            311
+            327,
+            279,
+            352
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
